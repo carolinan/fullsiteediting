@@ -1,0 +1,43 @@
+Where to find documentation & how to stay up to date with full site editing and block based themes
+
+Weekly meetings on WordPress Slack
+The slack meetings are open for anyone, but please respect that the meetings follow a set agenda and that the slack channels are not for support.
+
+To join the WordPress.org Slack, you first need to create an account: https://make.wordpress.org/chat/
+
+For a list of upcoming meetings please see
+https://make.wordpress.org/meetings/
+
+Summaries and updates
+The core editor team publishes monthly goals,
+meeting notes, and information about new versions of Gutenberg on:
+https://make.wordpress.org/core/
+
+The core editor team and the themes theme publishes weekly summaries of notable changes and current github issues and pull requests on:
+https://make.wordpress.org/themes/
+
+The Gutenberg Github repository
+
+https://github.com/WordPress/gutenberg/
+
+The following labels may be of interest:
+
+[Feature] Full Site Editing
+https://github.com/WordPress/gutenberg/labels/%5BFeature%5D%20Full%20Site%20Editing
+
+[Feature] Themes
+https://github.com/WordPress/gutenberg/labels/%5BFeature%5D%20themes
+
+[Feature] Patterns
+https://github.com/WordPress/gutenberg/labels/%5BFeature%5D%20Patterns
+
+Global Styles
+https://github.com/WordPress/gutenberg/labels/Global%20Styles
+
+Official documentation
+https://developer.wordpress.org/block-editor/developers/themes/block-based-themes/
+
+Blogs and podcasts
+https://gutenbergtimes.com/
+
+

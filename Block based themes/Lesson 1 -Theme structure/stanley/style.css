@@ -1,0 +1,112 @@
+/*
+Theme Name:Stanley
+Theme URI: 
+Author: 
+Author URI: https://fullsiteediting.com/
+Description: Example theme for the full site editing course
+Version: 2.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: stanley
+Tags: blog
+Requires at least: 5.4
+Tested up to: 5.4
+Requires PHP: 7.0
+*/
+
+body {
+	background: #d5d6d7;
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+a {
+	color: #06c;
+}
+
+a:hover,
+a:focus {
+	color: #147;
+	text-decoration: none;
+}
+
+h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited {
+	color: #333;
+}
+
+.wp-block-group.wrapper {
+	margin: 3rem auto;
+	border: 1px solid #959596;
+	padding: 12px;
+}
+
+.has-style-rounded-corners {
+	border-radius: 8px;
+}
+
+.wp-block-search {
+	margin: 10px auto;
+	padding: 5px 3px;
+	text-align: center;
+}
+
+.wp-block-search .wp-block-search__input {
+	width: 108px;
+	padding: 2px;
+}
+
+.wp-block-search .wp-block-search__button {
+	padding: 1px;
+}
+
+.wp-block-latest-posts a {
+	color: #333;
+	font-size: 1.2em;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+
+.alignleft,
+.alignright {
+	max-width: 580px !important;  /* Let's work to make this !important unnecessary */
+}
+
+.alignleft img,
+.alignright img,
+.alignleft figcaption,
+.alignright figcaption {
+	max-width: 50%;
+	width: 50%;
+}
+
+.alignleft figcaption {
+	clear: left;
+}
+
+.alignright figcaption {
+	clear: right;
+}
+
+.alignleft img,
+.alignleft figcaption {
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright img,
+.alignright figcaption {
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignwide {
+	max-width: 1100px;
+}

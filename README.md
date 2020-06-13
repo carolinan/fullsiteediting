@@ -18,3 +18,6 @@ Please pick and choose from the lessons or articles that interests you.
 To make the most out of this course, you need to have basic knowledge of theme development.
 You need to know about basic WordPress functions, PHP, HTML and CSS.
 If you find that the course is too fast or too slow -let me know. It would only help me improve the course)
+
+## License
+All code examples are dual licensed as MIT & GPL v2 or later. For themes, see the license file in the specific theme.

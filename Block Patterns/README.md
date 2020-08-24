@@ -21,3 +21,6 @@ Requires the WooCommerce plugin: https://wordpress.org/plugins/woocommerce/
 
 ### A store section with a full with background image
 Requires the WooCommerce plugin: https://wordpress.org/plugins/woocommerce/
+
+### A profile pattern
+The profile includes a photo, heading, example text, social links and latest posts.

@@ -1,8 +1,8 @@
 <?php
 /**
- * Stanley functions
+ * Stanley Lesson Two functions
  *
- * @package Stanley
+ * @package Stanley Lesson Two
  * @since 1.0.0
  */
 
@@ -13,7 +13,7 @@
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function stanley_theme_support() {
+function stanley_lesson_two_theme_support() {
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -35,13 +35,13 @@ function stanley_theme_support() {
 	add_theme_support( 'align-wide' );
 }
 
-add_action( 'after_setup_theme', 'stanley_theme_support' );
+add_action( 'after_setup_theme', 'stanley_lesson_two_theme_support' );
 
 /**
  * Enqueue Styles.
  */
-function stanley_styles() {
-	wp_enqueue_style( 'stanley-style', get_stylesheet_uri() );
+function stanley_lesson_two_styles() {
+	wp_enqueue_style( 'stanley-lesson-two-style', get_stylesheet_uri() );
 
 }
-add_action( 'wp_enqueue_scripts', 'stanley_styles' );
+add_action( 'wp_enqueue_scripts', 'stanley_lesson_two_styles' );

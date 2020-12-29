@@ -4,11 +4,11 @@ This repository contains the course material for the course on
 
 https://fullsiteediting.com/courses/full-site-editing-for-theme-developers/
 
-At this time, it does not include the full transscripts, but they are avalable on the website.
+At this time, it does not include the full transcripts, but they are available on the website.
 
 ## Who is this course for?
 
-This course is an overview created for theme authors who wants to learn about full site editing. 
+This course is an overview created for theme authors who want to learn about full site editing. 
 -And If you have already been creating advanced custom blocks for a while and you are working on enterprise level WordPress projects; 
 brilliant, I probably don’t have much to new teach you here =D.
 

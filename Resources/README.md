@@ -4,7 +4,7 @@ Resources for developing block based themes.
 
 ## FSE.code-snippets
 
-This is a VSCode auoto complete snippet that outputs WordPress block grammar.
+This is a VSCode auto complete snippet that outputs WordPress block grammar.
 Simply type `group`, and you will have the option to output:
 ```
 <!-- wp:group -->

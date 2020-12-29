@@ -29,7 +29,7 @@ function armando_register_block_styles() {
 		'core/paragraph',
 			array(
 				'name'         => 'armando-rounded-corners',
-				'label'        => __( 'Rounced corners (Requires background color)', 'armando' ),
+				'label'        => __( 'Rounded corners (Requires background color)', 'armando' ),
 				'inline_style' => '.is-style-armando-rounded-corners {
 				border-radius: 6px;
 			}',

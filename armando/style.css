@@ -72,8 +72,8 @@ pre {
 	white-space: pre-wrap;
 }
 
-/* Date and categories are all block elements, 
-we need to adjust them to align them better next to eachother. */
+/* Date and categories are all block elements,
+we need to adjust them to align them better next to each other. */
 .post-meta .wp-block-post-date,
 .post-meta .wp-block-post-hierarchical-terms {
 	display: inline;

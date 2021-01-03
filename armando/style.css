@@ -3,7 +3,7 @@ Theme Name: Armando
 Author: Carolina Nymark
 Author URI: https://fullsiteediting.com
 Theme URI:
-Version: 1.0.0
+Version: 1.0.1
 Description: A basic full side editing theme for blogs. This theme has a three different header templates to choose from.
 Tags: full-site-editing, blog
 Text Domain: armando
@@ -51,7 +51,7 @@ input[type="reset"] {
 }
 
 .wp-site-blocks .wp-block-search .wp-block-search__input,
-.wp-site-blocks .wp-block-search .wp-block-search__button  {
+.wp-site-blocks .wp-block-search .wp-block-search__button {
 	border: 2px solid #fff;
 	border-radius: 4px;
 }
@@ -98,6 +98,11 @@ we need to adjust them to align them better next to each other. */
 	display: none;
 }
 
+/* Hide single page comment area on the home page */
+.home .comment-area {
+	display: none;
+}
+
 /* Adjust underlines to improve accessibility. This is a temporary solution.*/
 .wp-site-blocks a:not(.wp-block-button__link) {
 	text-decoration: underline;
@@ -107,7 +112,7 @@ we need to adjust them to align them better next to each other. */
 	text-decoration: none;
 }
 
-.wp-block-site-title.has-normal-font-size.has-white-color{
+.wp-block-site-title.has-normal-font-size.has-white-color {
 	margin: 0;
 	line-height: 1;
 }
@@ -130,22 +135,12 @@ we need to adjust them to align them better next to each other. */
 	margin-right: auto;
 }
 
-@media screen and (max-width: 840px) {
-
-	.wp-site-blocks .default-width,
-	.wp-site-blocks .wp-block-post-content > *,
-	.wp-site-blocks [class*="wp-block-post-excerpt"] > * {
-		max-width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-
 .entry-content > * {
 	margin-top: var(--wp--custom--margin--horizontal);
 	margin-bottom: var(--wp--custom--margin--horizontal);
 }
 
+/* Increase the spacing around the search block when inside the navigation menu.*/
 nav .wp-block-search {
 	padding: var(--wp--custom--margin--horizontal);
 }
@@ -210,22 +205,8 @@ nav .wp-block-search {
 	margin-left: var(--wp--custom--margin--horizontal);
 }
 
-.site-footer .wp-block-column {
-	padding: 0 var(--wp--custom--margin--horizontal);
-}
-
 .site-footer .wp-block-latest-posts.wp-block-latest-posts__list {
 	padding-left: 0;
-}
-
-@media screen and (max-width: 840px) {
-
-	.wp-site-blocks .site-footer {
-		max-width: 90%;
-		margin-bottom: calc(2* var(--wp--custom--margin--horizontal));
-		margin-left: auto;
-		margin-right: auto;
-	}
 }
 
 @media screen and (min-width: 840px) {
@@ -238,6 +219,21 @@ nav .wp-block-search {
 	}
 }
 
+@media screen and (max-width: 840px) {
+
+	.wp-site-blocks .default-width,
+	.wp-site-blocks .wp-block-post-content > *,
+	.wp-site-blocks [class*="wp-block-post-excerpt"] > *,
+	.wp-site-blocks .site-footer > *  {
+		max-width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.wp-site-blocks .site-footer > * {
+		margin-bottom: calc(2* var(--wp--custom--margin--horizontal));
+	}
+}
 
 /* Theme check*/
 .wp-caption,
@@ -247,4 +243,40 @@ nav .wp-block-search {
 .gallery-caption,
 .bypostauthor {
 
+}
+
+.is-style-armando-hide-caption figcaption,
+.is-style-armando-gallery-rounded figcaption {
+	display: none;
+}
+
+.is-style-armando-gallery-rounded img {
+	border-radius: 50%;
+}
+
+.is-style-armando-rounded-corners {
+	border-radius: 6px;
+}
+
+.is-style-armando-box-shadow {
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.06);
+	padding: 0.5rem;
+	border-radius: 2px;
+}
+
+.is-style-armando-border {
+	border: 2px solid currentColor;
+	padding: 0.5rem;
+}
+
+.wp-block-social-links.is-style-armando-social-icons-color a {
+	color: var(--wp--preset--color--dark-blue);
+}
+
+.wp-block-social-links.is-style-armando-social-icons-color .wp-social-link button {
+	color: var(--wp--preset--color--dark-blue);
+}
+
+.wp-block-social-links.is-style-armando-social-icons-color .wp-social-link {
+	background: none;
 }

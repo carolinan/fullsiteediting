@@ -3,7 +3,7 @@ Contributors: poena
 Tested up to: 5.6
 Requires at least: 5.5
 Requires PHP: 7.2
-Version: 1.0.0
+Version: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,6 +21,19 @@ This theme has no skip link, because this feature is not implemented in full sit
 The theme has many temporary solutions, such as the archive pagination and manual archive page headings.
 
 == Changelog ==
+
+* January 3 2021
+Add editor styles.
+Update responsive footer width and spacing.
+Improve block styles and add the styles to more blocks for ease of use.
+Lighten the silver grey color. Reduce the opacity of the box shadow style.
+Add box shadow to meta and comment area.
+Hide single page comment area on the home page.
+
+Bug fixes:
+Add support for custom units
+Fix default page title width
+Fix typos
 
 * December 28 2020
 Initial release

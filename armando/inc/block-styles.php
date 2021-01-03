@@ -11,8 +11,7 @@ function armando_register_block_styles() {
 		'core/gallery',
 		array(
 			'name'         => 'armando-hide-caption',
-			'label'        => __( 'Hide caption', 'armando' ),
-				'inline_style' => '.is-style-armando-hide-caption figcaption {display:none;}',
+			'label'        => __( 'Hide caption', 'armando' )
 			)
 		);
 
@@ -20,19 +19,31 @@ function armando_register_block_styles() {
 		'core/gallery',
 		array(
 			'name'         => 'armando-gallery-rounded',
-			'label'        => __( 'Rounded corners', 'armando' ),
-			'inline_style' => '.is-style-armando-gallery-rounded img {border-radius:50%;} .is-style-armando-gallery-rounded figcaption {display:none;}',
+			'label'        => __( 'Rounded corners', 'armando' )
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/paragraph',
-			array(
-				'name'         => 'armando-rounded-corners',
-				'label'        => __( 'Rounded corners (Requires background color)', 'armando' ),
-				'inline_style' => '.is-style-armando-rounded-corners {
-				border-radius: 6px;
-			}',
+		array(
+			'name'         => 'armando-rounded-corners',
+			'label'        => __( 'Rounded corners (Requires background color)', 'armando' )
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/group',
+		array(
+			'name'         => 'armando-rounded-corners',
+			'label'        => __( 'Rounded corners (Requires background color)', 'armando' )
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/template-part',
+		array(
+			'name'         => 'armando-rounded-corners',
+			'label'        => __( 'Rounded corners (Requires background color)', 'armando' )
 		)
 	);
 
@@ -40,24 +51,48 @@ function armando_register_block_styles() {
 		'core/paragraph',
 		array(
 			'name'         => 'armando-box-shadow',
-			'label'        => __( 'Box shadow', 'armando' ),
-			'inline_style' => '.is-style-armando-box-shadow {
-				box-shadow: 0 0 1em rgba(0, 0, 0, 0.08);
-				padding: 0.5rem;
-				border-radius: 2px;
-			}',
+			'label'        => __( 'Box shadow', 'armando' )
 		)
 	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/group',
+		array(
+			'name'         => 'armando-box-shadow',
+			'label'        => __( 'Box shadow', 'armando' )
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/template-part',
+		array(
+			'name'         => 'armando-box-shadow',
+			'label'        => __( 'Box shadow', 'armando' )
+		)
+	);
+
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/paragraph',
 		array(
 			'name'         => 'armando-border',
-			'label'        => __( 'Border', 'armando' ),
-			'inline_style' => '.is-style-armando-border {
-				border: 2px solid currentColor;
-				padding: 0.5rem;
-			}',
+			'label'        => __( 'Border', 'armando' )
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/group',
+		array(
+			'name'         => 'armando-border',
+			'label'        => __( 'Border', 'armando' )
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/template-part',
+		array(
+			'name'         => 'armando-border',
+			'label'        => __( 'Border', 'armando' )
 		)
 	);
 

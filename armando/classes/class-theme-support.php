@@ -66,6 +66,7 @@ class Theme_Support {
 		add_theme_support( 'wp-block-styles' );
 
 		add_theme_support( 'editor-styles' );
+		add_editor_style( 'editor-style.css' );
 
 		// Add support for full and wide align images.
 		add_theme_support( 'align-wide' );
@@ -78,6 +79,8 @@ class Theme_Support {
 
 		// Add support for custom spacing controls.
 		add_theme_support( 'custom-spacing' );
+
+		// Add support for custom units.
 		add_theme_support( 'custom-units' );
 
 		// Add support for custom link colors.

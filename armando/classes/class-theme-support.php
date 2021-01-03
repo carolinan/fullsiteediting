@@ -78,6 +78,7 @@ class Theme_Support {
 
 		// Add support for custom spacing controls.
 		add_theme_support( 'custom-spacing' );
+		add_theme_support( 'custom-units' );
 
 		// Add support for custom link colors.
 		add_theme_support( 'experimental-link-color' );

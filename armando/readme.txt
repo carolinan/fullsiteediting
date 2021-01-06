@@ -38,6 +38,7 @@ Added support for custom units.
 Fixed default page title width.
 Prevented long titles from overflowing.
 Fixed typos.
+Updated screenshot.
 
 * December 28 2020
 Initial release

@@ -9,7 +9,7 @@ This is temporary until the border radius has been added to the block.
 
 /* Increase the spacing around the search block when inside the navigation menu.*/
 nav .wp-block-search {
-	padding: var(--wp--custom--margin--horizontal);
+	padding: var(--wp--custom--spacing);
 }
 
 /* Date and categories are all block elements,

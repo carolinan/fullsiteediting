@@ -1,21 +1,9 @@
 <?php
 /**
- * Temporary file for Theme Check and fallback.
+ * Without this file, WordPress will consider the theme broken.
  * @package armando
  */
 
-get_header();
-
-while ( have_posts() ) :
-	the_post();
-	?>
-	<h2 class="page-title" <?php post_class(); ?>><?php single_post_title(); ?></h2>
-	<?php
-	wp_link_pages();
-	the_tags();
-	comments_template();
-	comment_form();
-	the_posts_navigation();
-endwhile;
-
-get_footer();
+if ( current_user_can( 'activate_plugins' ) ) {
+	esc_html_e( 'This theme is an experimental full site editing theme that requires the Gutenberg plugin. Activate the plugin to view the theme.', 'armando' );
+}

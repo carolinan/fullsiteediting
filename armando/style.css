@@ -3,8 +3,8 @@ Theme Name: Armando
 Author: Carolina Nymark
 Author URI: https://fullsiteediting.com
 Theme URI:
-Version: 1.0.1
-Description: A basic full side editing theme for blogs. This theme has a three different header templates to choose from.
+Version: 1.1
+Description: A basic full side editing theme for blogs. This theme has a three different header templates to choose from. This is an experimental theme.
 Tags: full-site-editing, blog
 Text Domain: armando
 Requires at least: 5.5
@@ -94,13 +94,9 @@ we need to adjust them to align them better next to each other. */
 	list-style: none;
 }
 
-.comment-meta .says {
-	display: none;
-}
-
-/* Hide single page comment area on the home page */
+.comment-meta .says,
 .home .comment-area {
-	display: none;
+	display: none; /* Hide single page comment area on the home page */
 }
 
 /* Adjust underlines to improve accessibility. This is a temporary solution.*/
@@ -122,9 +118,15 @@ we need to adjust them to align them better next to each other. */
 	color: var(--wp--preset--color--white);
 }
 
+/* Prevent long titles from overflowing */
+.wp-site-blocks h2.wp-block-post-title {
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
 /* Alignments, widths, margins and padding*/
 .wp-site-blocks {
-	padding: 0 var(--wp--custom--margin--horizontal);
+	padding: 0 var(--wp--custom--spacing);
 }
 
 .wp-site-blocks .default-width,
@@ -136,13 +138,13 @@ we need to adjust them to align them better next to each other. */
 }
 
 .entry-content > * {
-	margin-top: var(--wp--custom--margin--horizontal);
-	margin-bottom: var(--wp--custom--margin--horizontal);
+	margin-top: var(--wp--custom--spacing);
+	margin-bottom: var(--wp--custom--spacing);
 }
 
 /* Increase the spacing around the search block when inside the navigation menu.*/
 nav .wp-block-search {
-	padding: var(--wp--custom--margin--horizontal);
+	padding: var(--wp--custom--spacing);
 }
 
 .wp-site-blocks .alignwide {
@@ -153,9 +155,9 @@ nav .wp-block-search {
 }
 
 .wp-site-blocks .alignfull {
-	transform: translateX(calc(0px - var(--wp--custom--margin--horizontal)));
-	width: calc(100% + (2 * var(--wp--custom--margin--horizontal)));
-	max-width: calc(100% + (2 * var(--wp--custom--margin--horizontal)));
+	transform: translateX(calc(0px - var(--wp--custom--spacing)));
+	width: calc(100% + (2 * var(--wp--custom--spacing)));
+	max-width: calc(100% + (2 * var(--wp--custom--spacing)));
 	margin-left: 0;
 	margin-right: 0;
 	box-sizing: content-box;
@@ -168,23 +170,27 @@ nav .wp-block-search {
 .wp-site-blocks .alignleft {
 	float: left;
 	margin-right: 2em;
-	margin-top: var(--wp--custom--margin--horizontal);
-	margin-bottom: var(--wp--custom--margin--horizontal);
+	margin-top: var(--wp--custom--spacing);
+	margin-bottom: var(--wp--custom--spacing);
 	max-width: 360px;
 }
 
 .wp-site-blocks .alignright {
 	float: right;
 	margin-left: 2em;
-	margin-top: var(--wp--custom--margin--horizontal);
-	margin-bottom: var(--wp--custom--margin--horizontal);
+	margin-top: var(--wp--custom--spacing);
+	margin-bottom: var(--wp--custom--spacing);
 	max-width: 360px;
+}
+
+.site-main .wp-block-query-loop.is-flex-container {
+	padding: var(--wp--custom--spacing);
 }
 
 /* Query pagination block has no working CSS class, add a wrapper as a work around.*/
 .archive-pagination div {
 	display: inline;
-	line-height:3;
+	line-height: 3;
 }
 
 .archive-pagination a {
@@ -202,7 +208,7 @@ nav .wp-block-search {
 }
 
 .archive-pagination div:nth-of-type(2) a{
-	margin-left: var(--wp--custom--margin--horizontal);
+	margin-left: var(--wp--custom--spacing);
 }
 
 .site-footer .wp-block-latest-posts.wp-block-latest-posts__list {
@@ -231,20 +237,11 @@ nav .wp-block-search {
 	}
 
 	.wp-site-blocks .site-footer > * {
-		margin-bottom: calc(2* var(--wp--custom--margin--horizontal));
+		margin-bottom: calc(2* var(--wp--custom--spacing));
 	}
 }
 
-/* Theme check*/
-.wp-caption,
-.wp-caption-text,
-.sticky,
-.screen-reader-text,
-.gallery-caption,
-.bypostauthor {
-
-}
-
+/* Custom block styles */
 .is-style-armando-hide-caption figcaption,
 .is-style-armando-gallery-rounded figcaption {
 	display: none;

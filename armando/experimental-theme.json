@@ -182,9 +182,7 @@
 					"default": "840px",
 					"wide": "1100px"
 				},
-				"margin": {
-					"horizontal": "14px"
-				}
+				"spacing": "14px"
 			}
 		},
 		"styles": {

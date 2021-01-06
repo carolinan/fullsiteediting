@@ -3,7 +3,7 @@ Contributors: poena
 Tested up to: 5.6
 Requires at least: 5.5
 Requires PHP: 7.2
-Version: 1.0.1
+Version: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,18 +22,22 @@ The theme has many temporary solutions, such as the archive pagination and manua
 
 == Changelog ==
 
-* January 3 2021
-Add editor styles.
-Update responsive footer width and spacing.
-Improve block styles and add the styles to more blocks for ease of use.
-Lighten the silver grey color. Reduce the opacity of the box shadow style.
-Add box shadow to meta and comment area.
-Hide single page comment area on the home page.
+* January 6 2021 Version: 1.1
 
-Bug fixes:
-Add support for custom units
-Fix default page title width
-Fix typos
+Removed the temporary Theme Check files.
+Copied the content of the meta template part to the main query because of a bug / missing featured in Gutenberg.
+Added editor styles.
+Updated the spacing variable since it was not only used for horizontal margins.
+Updated responsive footer width and spacing.
+Improved block styles and added the styles to more blocks for ease of use.
+Lightened the silver grey color. Reduced the opacity of the box shadow style.
+Added box shadow to meta and comment area.
+Hid the single page comment area on the home page.
+Added a post grid template called main-grid.
+Added support for custom units.
+Fixed default page title width.
+Prevented long titles from overflowing.
+Fixed typos.
 
 * December 28 2020
 Initial release

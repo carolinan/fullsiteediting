@@ -20,17 +20,18 @@ if ( have_comments() ) :
 	?>
 	<?php the_comments_navigation(); ?>
 
-	<ol class="comment-list">
+	<ol class="comment-list hej">
 		<?php
 		wp_list_comments(
 			array(
-				'style'      => 'ol',
+				'style'      => 'ul',
 				'short_ping' => true,
 			)
 		);
 		?>
 	</ol><!-- .comment-list -->
-		<?php
+
+	<?php
 	the_comments_navigation();
 endif; // Check for have_comments().
 

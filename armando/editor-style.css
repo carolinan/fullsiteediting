@@ -22,6 +22,7 @@ The post meta tag for the wrapper is kept here for increased flexibility.
 	display: inline;
 }
 
+/* Custom block styles */
 .is-style-armando-hide-caption figcaption,
 .is-style-armando-gallery-rounded figcaption {
 	display: none;

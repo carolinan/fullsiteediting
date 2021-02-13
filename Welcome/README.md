@@ -1,4 +1,4 @@
-The following is a transcript of the vido available at 
+The following is a transcript of the video available at 
 https://fullsiteediting.com/lessons/welcome/
 
 # Hi, and welcome to this course about full site editing with WordPress.
@@ -23,12 +23,6 @@ These steps are essential if we want full site editing to work for us.
 The Gutenberg plugin is on a short release schedule.
 
 The first version of this course, will only be an overview of what is available right now.
-
-[Screen: A screenshot of the site editor, with the text: All template parts can be added in the site editor ]
-
-[Screen: A screenshot of the post author block, with the text: Several of the new blocks are basic placeholders ]
-
-[Screen: A screenshot of the site title block, with the text: The site title control will have the same controls as a heading]
 
 You will have access to all updates that are added to the course.
 

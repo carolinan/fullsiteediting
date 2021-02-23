@@ -1,0 +1,73 @@
+/*
+Theme Name: FSE
+Author:
+Description: Experimental Full Site Editing Theme
+Version: 1.0.0
+Requires at least: 5.6
+Tested up to: 5.6
+Requires PHP: 7.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: full-site-editing
+Text Domain: fse
+*/
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Elements */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.wp-site-blocks * {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-site-blocks,
+.wp-block-template-part.alignfull,
+main.alignfull {
+	padding: 0 var(--wp--custom--spacing);
+}
+
+.wp-site-blocks *:not(.alignfull):not(.alignwide):not(.wp-block-post-content):not([class$="__inner-container"]):not(img) {
+	max-width: var(--wp--custom--width--default);
+}
+
+.wp-site-blocks .alignwide {
+	width: var(--wp--custom--width--wide);
+	max-width: 100%;
+}
+
+.wp-site-blocks .alignfull {
+	margin: 0 calc(0px - var(--wp--custom--spacing));
+	width: calc(100% + (2 - var(--wp--custom--spacing)));
+}
+
+.aligncenter {
+	text-align: center;
+}
+
+.wp-site-blocks .alignleft {
+	float: left;
+	margin-right: 2em;
+	margin-top: var(--wp--custom--spacing);
+	margin-bottom: var(--wp--custom--spacing);
+	max-width: 360px;
+}
+
+.wp-site-blocks .alignright {
+	float: right;
+	margin-left: 2em;
+	margin-top: var(--wp--custom--spacing);
+	margin-bottom: var(--wp--custom--spacing);
+	max-width: 360px;
+}

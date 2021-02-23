@@ -28,6 +28,7 @@ if ( ! function_exists( 'fse_setup' ) ) {
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'responsive-embeds' );
 		add_theme_support( 'align-wide' );
+		add_theme_support( 'wp-block-styles' );
 	}
 }
 add_action( 'after_setup_theme', 'fse_setup' );

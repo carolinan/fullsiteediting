@@ -1,0 +1,10 @@
+{
+	"settings": {
+		"defaults" : {
+			"layout": {
+				"contentSize": "840px",
+				"wideSize": "1100px"
+			}
+		}
+	}
+}

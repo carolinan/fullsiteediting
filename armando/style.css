@@ -3,7 +3,7 @@ Theme Name: Armando
 Author: Carolina Nymark
 Author URI: https://fullsiteediting.com
 Theme URI:
-Version: 1.2
+Version: 1.2.1
 Description: An experimental full site editing theme for blogs or sports teams. This theme requires Gutenberg version 10.4 or later. Armando includes 13 block styles and 25 block patterns including six headers and four footers.
 Tags: full-site-editing, blog, one-column, two-columns, editor-style, block-styles
 Text Domain: armando
@@ -292,6 +292,11 @@ we need to adjust them to align them better next to each other. */
 	}
 }
 
+.armando-sidebar-right,
+.armando-sidebar-left {
+	height: 100%;
+}
+
 /* Sidebars */
 @media (min-width: 782px) {
 	.armando-has-sidebar-right .wp-block-column:not(:first-child),
@@ -302,7 +307,8 @@ we need to adjust them to align them better next to each other. */
 }
 
 @media ( min-width: 600px ) {
-	.armando-sidebar-right, .armando-sidebar-left  {
+	.armando-sidebar-right,
+	.armando-sidebar-left  {
 		position: sticky;
 		border-left: 1px solid var(--wp--preset--color--silver);
 	}

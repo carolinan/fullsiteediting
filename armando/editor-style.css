@@ -126,6 +126,11 @@ The post meta tag for the wrapper is kept here for increased flexibility.
 	border-right: 1px solid var(--wp--preset--color--silver);
 }
 
+.armando-sidebar-right,
+.armando-sidebar-left {
+	height: 100%;
+}
+
 .is-style-armando-multi-color.has-background {
 	padding-bottom: 0;
 	padding-top: 0;

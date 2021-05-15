@@ -10,13 +10,14 @@
 
 /**
  * Enqueue the style.css file.
- * 
+ *
  * @since 1.0.0
  */
 function fse_styles() {
 	wp_enqueue_style(
 		'fse-style',
 		get_stylesheet_uri(),
+		'',
 		wp_get_theme()->get( 'Version' )
 	);
 

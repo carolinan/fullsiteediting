@@ -17,6 +17,7 @@ function fse_styles() {
 	wp_enqueue_style(
 		'fse-style',
 		get_stylesheet_uri(),
+		'',
 		wp_get_theme()->get( 'Version' )
 	);
 

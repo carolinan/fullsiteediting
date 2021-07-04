@@ -3,13 +3,13 @@ Theme Name: Armando
 Author: Carolina Nymark
 Author URI: https://fullsiteediting.com
 Theme URI:
-Version: 1.2.1
-Description: An experimental full site editing theme for blogs or sports teams. This theme requires Gutenberg version 10.4 or later. Armando includes 13 block styles and 25 block patterns including six headers and four footers.
+Version: 1.2.3
+Description: An experimental full site editing theme for blogs or sports teams. This theme requires Gutenberg version 10.6 or newer. Armando includes multiple block styles and block patterns including site headers, site footers and page layouts.
 Tags: full-site-editing, blog, one-column, two-columns, editor-style, block-styles
 Text Domain: armando
 Requires at least: 5.5
 Requires PHP: 7.2
-Tested up to: 5.7
+Tested up to: 5.8
 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -24,7 +24,6 @@ with others.
 
 /* Make sure that full width blocks are full width, reset the browser margins. */
 body {
-	margin: 0;
 	overflow-x: hidden;
 }
 
@@ -38,37 +37,6 @@ img {
 	height: auto;
 }
 
-/* Match HTML buttons with the search block button.*/
-button,
-input[type="submit"],
-input[type="reset"] {
-	background: #f7f7f7;
-	border:2px solid #fff;
-	border-radius: 4px;
-	padding: 6px 10px;
-	color: #32373c;
-	word-break: normal;
-}
-
-.site-header .wp-block-search .wp-block-search__input {
-	border: 2px solid #fff;
-}
-
-.site-header .wp-block-search .wp-block-search__button {
-	border: 2px solid #fff;
-	border-radius: 4px;
-}
-
-input,
-textarea {
-	font-size: var(--wp--preset--font-style--normal);
-	padding: 0.25em;
-}
-
-input[type=search] {
-	border-radius: 4px;
-}
-
 textarea {
 	clear: both;
 	display: block;
@@ -79,90 +47,68 @@ pre {
 	white-space: pre-wrap;
 }
 
-/* Date and categories are all block elements,
-we need to adjust them to align them better next to each other. */
-.post-meta .wp-block-post-date,
-.post-meta .wp-block-post-hierarchical-terms,
-.post-nav .wp-block-post-navigation-link,
-.is-style-armando-inline {
-	display: inline;
-}
-
-.post-meta .wp-block-post-date,
-.post-meta .wp-block-post-hierarchical-terms {
-	margin-right: 0.5em;
-}
-
-.post-nav .post-navigation-link-next {
-	float: right;
+.wp-site-blocks a {
+	text-underline-offset: 2px;
 }
 
 /* Adjust underlines to improve accessibility. This is a temporary solution.*/
-.wp-site-blocks a:not(.wp-block-button__link) {
-	text-decoration: underline;
-}
-
 .wp-site-blocks a:hover {
 	text-decoration: none;
 }
 
-.wp-site-blocks .site-header .wp-block-site-title a {
-	text-decoration: none;
-}
+/* Adjust when the menu button is shown */
+@media (max-width: 1000px) {
 
-.wp-site-blocks .site-header .wp-block-site-title a:hover {
-	text-decoration: underline;
-}
-
-/* Center site title and menu on small screens */
-@media ( max-width: 781px ) {
-	.wp-site-blocks .site-header .wp-block-site-title {
-		text-align: center;
+	.wp-site-blocks .site-header  .wp-block-navigation__responsive-container {
+		display: none;
 	}
-}
 
-@media ( max-width: 1300px ) {
-	.wp-site-blocks .site-header .items-justified-right>ul {
-		justify-content: initial;
+	.wp-site-blocks .site-header .wp-block-navigation__responsive-container.is-menu-open,
+	.wp-site-blocks .site-header .wp-block-navigation__responsive-container-open {
+		display: flex;
 	}
+
 }
 
-/* Override column breakpoints for the site header. */
-@media (min-width: 600px) and (max-width: 1024px) {
+/* Expand the last column in the header to full width on small screens */
+@media (min-width: 400px) and (max-width: 781px) {
 	.wp-site-blocks .site-header .wp-block-column:not(:only-child) {
-		flex-basis: 100%!important;
-		flex-grow: initial;
-	}
-
-	.wp-site-blocks .site-header .wp-block-column:nth-child(2n) {
-		margin-left: initial;
+		flex-grow: 1;
 	}
 }
 
-@media ( min-width: 782px ) {
-	.is-style-armando-multi-color.has-background {
-		padding-bottom: 0;
-		padding-top: 0;
-		padding-right: 0;
+/* Add padding to the menu button */
+.wp-site-blocks .site-header .wp-block-navigation__responsive-container-open {
+	font-size: var(--wp--preset--font-size--normal);
+	padding: 1rem 2.375em;
+}
+
+/* Center the menu button and site title on small screens*/
+@media (max-width: 599px) {
+	.wp-site-blocks .site-header .items-justified-right .wp-block-navigation__responsive-container-open {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.wp-site-blocks .site-header .wp-block-site-title {
+		padding-right: 2.375em; /* The left side already has inline styling */
+		text-align: center;
+		font-size: var(--wp--preset--font-size--medium) !important;
 	}
 }
 
-/* Block figcaptions has an incorrect width on the front. */
-.wp-block-image .aligncenter>figcaption {
-	display: block;
+/* 
+ * Site logo can not be centered on the front without this.
+ * Confirmed that this is still a problem July 2 2021. 
+ * Related issue: https://github.com/WordPress/gutenberg/issues/30406
+*/
+.wp-block-site-logo.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
 }
 
-.wp-block-quote,
-.wp-block-quote.has-text-align-right {
-	border-left: none;
-	border-right: none;
-}
-
-.blocks-gallery-caption,
-.comment-body {
-	margin-bottom: 2em;
-}
-
+/* Comments */
 .commentlist,
 .children {
 	list-style: none;
@@ -179,93 +125,10 @@ we need to adjust them to align them better next to each other. */
 	word-wrap: break-word;
 }
 
-/* Custom block styles and utilities */
-.wp-site-blocks .wp-block-post-author__avatar {
-	margin-right: 1em;
-}
-
-.is-style-armando-hide-caption figcaption,
-.is-style-armando-gallery-rounded figcaption {
-	display: none;
-}
-
-.is-style-armando-gallery-rounded img {
-	border-radius: 50%;
-}
-
-.is-style-armando-rounded-corners {
-	border-radius: 6px;
-}
-
-.is-style-armando-box-shadow {
-	box-shadow: 0 0 1em rgba(0, 0, 0, 0.06);
-	padding: 1.25em 2.375em;
-	border-radius: 2px;
-}
-
-.is-style-armando-box-shadow-no-padding {
-	box-shadow: 0 0 1em rgba(0, 0, 0, 0.06);
-}
-
-.is-style-armando-border {
-	border: 2px solid currentColor;
-	padding: 0.5rem;
-}
-
-.is-style-armando-column-border {
-	border: 1px solid currentColor;
-	padding: 1.25em 2.375em;
-}
-
-.is-style-armando-columns-border {
-	border: 1px solid currentColor;
-}
-
-.is-style-armando-column-r-l-borders {
-	border-left: 1px solid currentColor;
-	border-right: 1px solid currentColor;
-	padding: 1.25em 2.375em;
-}
-
-.is-style-armando-top-bottom-border {
-	border-top: 2px solid currentColor;
-	border-bottom: 2px solid currentColor;
-}
-
-/* Remove these when blocks have margin controls */
-.is-style-armando-no-bottom-margin,
-.is-style-armando-no-bottom-margin .wp-block-columns {
-	margin-bottom: 0;
-}
-
-.is-style-armando-no-top-margin {
-	margin-top: 0;
-}
-
-@media ( min-width: 600px ) {
-	.is-style-armando-media-overlap {
-		width: 150%;
-	}
-}
-
-.is-style-armando-circular-cover.wp-block-cover,
-.is-style-armando-circular-cover .wp-block-cover__image-background,
-.is-style-armando-circular-cover.wp-block-cover-image,
-.is-style-armando-circular-cover.wp-block-cover-image:before,
-.is-style-armando-circular-cover.wp-block-cover.has-background-dim:not(.has-background-gradient):before {
-	border-radius: 50% !important;
-}
-
-.is-style-armando-vertical-text {
-	writing-mode: vertical-lr;
-}
-
-.is-style-armando-skewed {
-	transform: rotate(-0.8deg);
-}
-
-.wp-block-post-featured-image {
-	margin-bottom: 50px;
+/* Override the display: inline-block that is set by the the block editor, as it is 
+causing long titles with links to overflow. */
+.wp-site-blocks h2.wp-block-post-title a {
+	display: initial;
 }
 
 /* Sticky header */
@@ -274,21 +137,16 @@ we need to adjust them to align them better next to each other. */
 	top: 0;
 }
 
+/* Move the position down to adjust for the WordPress admin bar */
 .admin-bar .is-style-armando-sticky-header {
 	position: sticky;
 	top: 32px;
 }
 
-/* Revert the fixed position on smaller screens */
+/* Revert the sticky position on smaller screens */
 @media screen and (max-width: 782px) {
 	.is-style-armando-sticky-header {
 		position: initial;
-	}
-}
-
-@media screen and (max-width: 782px) {
-	.is-style-armando-hide-on-mobile {
-		display: none;
 	}
 }
 
@@ -308,14 +166,14 @@ we need to adjust them to align them better next to each other. */
 
 @media ( min-width: 600px ) {
 	.armando-sidebar-right,
-	.armando-sidebar-left  {
+	.armando-sidebar-left {
 		position: sticky;
-		border-left: 1px solid var(--wp--preset--color--silver);
+		border-left: 1px solid var(--wp--preset--color--white);
 	}
 
 	.armando-sidebar-left {
 		position: sticky;
-		border-right: 1px solid var(--wp--preset--color--silver);
+		border-right: 1px solid var(--wp--preset--color--white);
 	}
 }
 
@@ -325,3 +183,35 @@ we need to adjust them to align them better next to each other. */
 p:empty:before {
 	content: none !important;
 }
+
+
+/* Reduce the size of extra large text on small screens. */
+@media ( max-width: 600px ) {
+	body {
+		--wp--preset--font-size--extra-large: 2rem;
+	}
+}
+
+/*
+ * Increase padding on smaller screens. 
+ * Temporary solution to avoid text content running up to the edge of the browser window,
+ * making the text difficult to read.
+*/
+@media ( max-width: 840px ) {
+	main > :not(.alignfull),
+	main .entry-content > :not(.alignfull),
+	main .entry-content .wp-block-columns.alignfull p {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}
+
+@media ( max-width: 1200px ) {
+	.post-template-post-sidebar-right main,
+	.post-template-post-sidebar-left main,
+	.page-template-post-sidebar-right main,
+	.page-template-post-sidebar-left main {
+		padding: 8px;
+	}
+}
+

@@ -10,7 +10,7 @@
 
 /**
  * Enqueue the style.css file.
- * 
+ *
  * @since 1.0.0
  */
 function fse_styles() {

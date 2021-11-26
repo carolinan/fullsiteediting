@@ -26,8 +26,6 @@ add_action( 'wp_enqueue_scripts', 'fse_styles' );
 
 if ( ! function_exists( 'fse_setup' ) ) {
 	function fse_setup() {
-		add_theme_support( 'automatic-feed-links' );
-		add_theme_support( 'responsive-embeds' );
 		add_theme_support( 'wp-block-styles' );
 	}
 }

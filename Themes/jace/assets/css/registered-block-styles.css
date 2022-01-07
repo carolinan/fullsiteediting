@@ -1,0 +1,60 @@
+/*
+ * CSS for registered block styles.
+ * See styles/block-styles.php.
+ */
+
+/* Flat button */
+.is-style-jace-flat-button .wp-block-button__link,
+.is-style-jace-flat-button .wp-block-button__link:hover,
+.is-style-jace-flat-button .wp-block-button__link:focus,
+.is-style-jace-flat-button .wp-block-button__link:active,
+.is-style-jace-flat-button .wp-block-button__link:visited {
+	box-shadow: none;
+	border-radius: 0;
+	margin-top: initial;
+	margin-bottom: initial;
+}
+
+/* Button with shadow */
+.is-style-jace-shadow-button .wp-block-button__link,
+.is-style-jace-shadow-button .wp-block-button__link:hover,
+.is-style-jace-shadow-button .wp-block-button__link:focus,
+.is-style-jace-shadow-button .wp-block-button__link:visited {
+	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Menu button with shadow */
+.is-style-jace-navigation-button-shadow button.wp-block-navigation__responsive-container-close,
+.is-style-jace-navigation-button-shadow button.wp-block-navigation__responsive-container-open {
+	box-shadow: 0 8px 8px 0 rgb(0 0 0 / 20%);
+	padding: 0;
+}
+
+.is-style-jace-shadow-button .wp-block-button__link:active {
+	box-shadow: 0 0 0 #fff;
+}
+
+.is-style-jace-text-shadow {
+	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.is-style-jace-box-shadow {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Lists*/
+.is-style-jace-list-underline li {
+	border-bottom: 1px solid currentColor;
+}
+
+.is-style-jace-list-underline ul {
+	border-top: 1px solid currentColor;
+}
+
+.is-style-jace-list-underline ul li {
+	border: none;
+}
+
+.is-style-jace-vertical-text {
+	writing-mode: vertical-lr;
+}

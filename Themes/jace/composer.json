@@ -1,0 +1,31 @@
+{
+	"name": "poena/jace",
+	"type": "package",
+	"description": "A full site editing theme",
+	"keywords": [
+		"WordPress",
+		"Themes"
+	],
+	"homepage": "https://fullsiteediting.com/",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Carolina Nymark",
+			"homepage": "https://fullsiteediting.com/"
+		}
+	],
+	"require": {
+		"php": ">=7.4"
+	},
+	"require-dev": {
+		"szepeviktor/phpstan-wordpress": "^1.0.2",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+		"wp-coding-standards/wpcs": "*",
+		"wptrt/wpthemereview": "^0.2.1"
+	},
+	"scripts": {
+		"analyze": "./vendor/bin/phpstan analyze",
+		"standards:check": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
+		"standards:fix": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf",
+	}
+}

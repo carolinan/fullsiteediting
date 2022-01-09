@@ -1,8 +1,8 @@
 /*
 Theme Name: Jace
-Author: poena
+Author: Carolina Nymark
 Author URI: https://fullsiteediting.com
-Theme URI:
+Theme URI: https://fullsiteediting.com
 Description: A full site editing theme
 Tags: full-site-editing, editor-style, block-styles
 Text Domain: jace
@@ -33,8 +33,9 @@ html {
 	}
 }
 
-.wp-site-blocks a {
-	text-underline-offset: 2px;
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 }
 
 /*

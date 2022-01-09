@@ -6,14 +6,8 @@
 		"WordPress",
 		"Themes"
 	],
-	"homepage": "https://fullsiteediting.com/",
+	"homepage": "https://fullsiteediting.com",
 	"license": "GPL-2.0-or-later",
-	"authors": [
-		{
-			"name": "Carolina Nymark",
-			"homepage": "https://fullsiteediting.com/"
-		}
-	],
 	"require": {
 		"php": ">=7.4"
 	},
@@ -24,8 +18,8 @@
 		"wptrt/wpthemereview": "^0.2.1"
 	},
 	"scripts": {
-		"analyze": "./vendor/bin/phpstan analyze",
+		"analyze": "@php ./vendor/bin/phpstan analyze",
 		"standards:check": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
-		"standards:fix": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf",
+		"standards:fix": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf"
 	}
 }

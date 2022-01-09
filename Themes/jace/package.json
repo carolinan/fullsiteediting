@@ -2,13 +2,13 @@
 	"name": "jace",
 	"version": "1.0.0",
 	"description": "A full site editing theme",
-	"author": "poena",
+	"author": "Carolina Nymark",
 	"license": "GPL-2.0-or-later",
 	"keywords": [
 		"WordPress",
 		"Theme"
 	],
-	"homepage": "fullsiteediting.com",
+	"homepage": "https://fullsiteediting.com",
 	"devDependencies": {
 		"@wordpress/stylelint-config": "^19.1.0",
 		"@wordpress/eslint-plugin": "^9.3.0",

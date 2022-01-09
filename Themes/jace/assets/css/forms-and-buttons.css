@@ -1,6 +1,5 @@
 /*
 Styles for form elements and buttons.
-Contains CSS for both HTML buttons, button block, and search block.
 */
 
 textarea {
@@ -14,12 +13,7 @@ select {
 
 textarea,
 select,
-.wp-block-post-comments input,
-.wp-block-post-comments textarea,
-.wp-block-search .wp-block-search__button,
-button:not(.components-button):not(.wp-block-navigation__submenu-icon),
-button.wp-block-navigation__responsive-container-close,
-button.wp-block-navigation__responsive-container-open,
+button:not(.components-button):not(.wp-block-navigation *),
 input[type="color"],
 input[type="date"],
 input[type="datetime-local"],
@@ -41,10 +35,7 @@ input[type="week"] {
 	line-height: 1.7;
 }
 
-.wp-block-search .wp-block-search__button,
-button:not(.components-button):not(.wp-block-navigation__submenu-icon),
-button.wp-block-navigation__responsive-container-close,
-button.wp-block-navigation__responsive-container-open,
+button:not(.components-button):not(.wp-block-navigation *),
 input[type="reset"],
 input[type="submit"] {
 	border: 2px solid rgba(0, 0, 0, 0.05);
@@ -55,20 +46,8 @@ input[type="submit"] {
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
-.wp-block-button__link {
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
-}
-
-.wp-block-button__link:focus,
-.wp-block-button__link:hover,
-.wp-block-search .wp-block-search__button:focus,
-.wp-block-search .wp-block-search__button:hover,
-button:not(.components-button):not(.wp-block-navigation__submenu-icon):focus,
-button:not(.components-button):not(.wp-block-navigation__submenu-icon):hover,
-button.wp-block-navigation__responsive-container-close:focus,
-button.wp-block-navigation__responsive-container-open:focus,
-button.wp-block-navigation__responsive-container-close:hover,
-button.wp-block-navigation__responsive-container-open:hover,
+button:not(.components-button):not(.wp-block-navigation *):focus,
+button:not(.components-button):not(.wp-block-navigation *):hover,
 input[type="reset"]:focus,
 input[type="reset"]:hover,
 input[type="submit"]:focus,
@@ -78,11 +57,7 @@ input[type="submit"]:hover {
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
-.wp-block-button__link:active,
-.wp-block-search .wp-block-search__button:active,
-button:not(.components-button):not(.wp-block-navigation__submenu-icon):active,
-button.wp-block-navigation__responsive-container-close:active,
-button.wp-block-navigation__responsive-container-open:active,
+button:not(.components-button):not(.wp-block-navigation *):active,
 input[type="reset"]:active,
 input[type="submit"]:active {
 	border-color: rgba(0, 0, 0, 0.05);
@@ -93,11 +68,7 @@ input[type="submit"]:active {
 	margin-bottom: -1px;
 }
 
-.wp-block-button__link:visited,
-.wp-block-search .wp-block-search__button:visited,
-button:not(.components-button):not(.wp-block-navigation__submenu-icon):visited,
-button.wp-block-navigation__responsive-container-close:visited,
-button.wp-block-navigation__responsive-container-open:visited,
+button:not(.components-button):not(.wp-block-navigation *):visited,
 input[type="reset"]:visited,
 input[type="submit"]:visited {
 	background-color: initial;
@@ -106,22 +77,8 @@ input[type="submit"]:visited {
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
-.wp-block-search button.wp-block-search__button {
-	margin-bottom: 0;
-}
-
 .post-password-form input[type="password"] {
 	min-height: 46px;
-}
-
-.is-style-outline > .wp-block-button__link,
-.wp-block-button__link.is-style-outline {
-	padding: .3rem 1rem;
-}
-
-/* Match the editor */
-.wp-block-buttons > .wp-block-button {
-	margin-top: .5em;
 }
 
 /* Accessibility: Increase icon size so that the button is easier to click */
@@ -129,9 +86,4 @@ input[type="submit"]:visited {
 .wp-block-navigation__responsive-container-open svg {
 	width: 48px;
 	height: 48px;
-}
-
-.wp-block-navigation button.wp-block-navigation__responsive-container-close,
-.wp-block-navigation button.wp-block-navigation__responsive-container-open {
-	padding: 0;
 }

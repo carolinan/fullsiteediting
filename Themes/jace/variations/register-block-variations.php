@@ -13,6 +13,8 @@
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-variations/
  *
  * @since 1.0.0
+ *
+ * @return void
  */
 function jace_register_block_variation() {
 	wp_enqueue_script(

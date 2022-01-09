@@ -1,6 +1,6 @@
 /*
  * CSS for registered block styles.
- * See styles/block-styles.php.
+ * See styles/register-block-styles.php.
  */
 
 /* Flat button */
@@ -23,21 +23,98 @@
 	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Menu button with shadow */
-.is-style-jace-navigation-button-shadow button.wp-block-navigation__responsive-container-close,
-.is-style-jace-navigation-button-shadow button.wp-block-navigation__responsive-container-open {
-	box-shadow: 0 8px 8px 0 rgb(0 0 0 / 20%);
-	padding: 0;
-}
-
 .is-style-jace-shadow-button .wp-block-button__link:active {
 	box-shadow: 0 0 0 #fff;
 }
 
-.is-style-jace-text-shadow {
-	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+/* Menu button style */
+.is-style-jace-navigation-button button.wp-block-navigation__responsive-container-close,
+.is-style-jace-navigation-button button.wp-block-navigation__responsive-container-open {
+	font-size: var(--wp--preset--font-size--small);
+	font-family: var(--wp--preset--font-family--system);
+	line-height: 1.7;
+	padding: 0;
+	border: 2px solid rgba(0, 0, 0, 0.05);
+	border-radius: 4px;
+	background: var(--wp--preset--color--secondary);
+	color: var(--wp--preset--color--foreground);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
+.is-style-jace-navigation-button button.wp-block-navigation__responsive-container-close:hover,
+.is-style-jace-navigation-button button.wp-block-navigation__responsive-container-open:hover,
+.is-style-jace-navigation-button button.wp-block-navigation__responsive-container-close:focus,
+.is-style-jace-navigation-button button.wp-block-navigation__responsive-container-open:focus {
+	color: var(--wp--preset--color--foreground);
+	filter: brightness(94%) !important;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.is-style-jace-navigation-button button.wp-block-navigation__responsive-container-close:active,
+.is-style-jace-navigation-button button.wp-block-navigation__responsive-container-open:active {
+	border-color: rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 0 #fff;
+	color: var(--wp--preset--color--foreground);
+	filter: brightness(93%) !important;
+	margin-top: 1px;
+	margin-bottom: -1px;
+}
+
+.is-style-jace-navigation-button button.wp-block-navigation__responsive-container-close:visited,
+.is-style-jace-navigation-button button.wp-block-navigation__responsive-container-open:visited {
+	background-color: initial;
+	border-color: rgba(0, 0, 0, 0.05);
+	color: var(--wp--preset--color--foreground);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Menu button with shadow */
+.is-style-jace-navigation-button-shadow button.wp-block-navigation__responsive-container-close,
+.is-style-jace-navigation-button-shadow button.wp-block-navigation__responsive-container-open {
+	font-size: var(--wp--preset--font-size--small);
+	font-family: var(--wp--preset--font-family--system);
+	line-height: 1.7;
+	padding: 0;
+	border: 2px solid rgba(0, 0, 0, 0.05);
+	border-radius: 4px;
+	background: var(--wp--preset--color--secondary);
+	color: var(--wp--preset--color--foreground);
+	box-shadow: 0 8px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.is-style-jace-navigation-button-shadow button.wp-block-navigation__responsive-container-close:hover,
+.is-style-jace-navigation-button-shadow button.wp-block-navigation__responsive-container-open:hover,
+.is-style-jace-navigation-button-shadow button.wp-block-navigation__responsive-container-close:focus,
+.is-style-jace-navigation-button-shadow button.wp-block-navigation__responsive-container-open:focus {
+	color: var(--wp--preset--color--foreground);
+	filter: brightness(94%) !important;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.is-style-jace-navigation-button-shadow button.wp-block-navigation__responsive-container-close:active,
+.is-style-jace-navigation-button-shadow button.wp-block-navigation__responsive-container-open:active {
+	border-color: rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 0 #fff;
+	color: var(--wp--preset--color--foreground);
+	filter: brightness(93%) !important;
+	margin-top: 1px;
+	margin-bottom: -1px;
+}
+
+.is-style-jace-navigation-button-shadow button.wp-block-navigation__responsive-container-close:visited,
+.is-style-jace-navigation-button-shadow button.wp-block-navigation__responsive-container-open:visited {
+	background-color: initial;
+	border-color: rgba(0, 0, 0, 0.05);
+	color: var(--wp--preset--color--foreground);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Text shadow */
+.is-style-jace-text-shadow {
+	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+/* Box shadow */
 .is-style-jace-box-shadow {
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 }

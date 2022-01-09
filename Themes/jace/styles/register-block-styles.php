@@ -10,6 +10,8 @@
  * Register block styles
  *
  * @since 1.0.0
+ *
+ * @return void
  */
 function jace_register_block_styles() {
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
@@ -25,6 +27,14 @@ function jace_register_block_styles() {
 		array(
 			'name'  => 'jace-shadow-button',
 			'label' => __( 'Button with shadow', 'jace' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/navigation',
+		array(
+			'name'  => 'jace-navigation-button',
+			'label' => __( 'Button style', 'jace' ),
 		)
 	);
 
@@ -103,8 +113,8 @@ function jace_register_block_styles() {
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/post-title',
 		array(
-			'name'         => 'jace-vertical-text',
-			'label'        => __( 'Vertical', 'jace' ),
+			'name'  => 'jace-vertical-text',
+			'label' => __( 'Vertical', 'jace' ),
 		)
 	);
 
@@ -133,10 +143,12 @@ add_action( 'init', 'jace_register_block_styles' );
  * @see https://github.com/WordPress/gutenberg/pull/37580
  *
  * @since 1.0.0
+ *
+ * @return void
  */
 function jace_unregister_block_style() {
 	wp_enqueue_script(
-		'jace-block-editor-js',
+		'jace-unregister',
 		get_stylesheet_directory_uri() . '/assets/js/unregister.js',
 		array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ),
 		jace_VERSION,

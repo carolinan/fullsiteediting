@@ -8,9 +8,11 @@
 
 /**
  * Display the search term in the heading on the search page.
- * Todo: Remove when the Query title block is updated to work for the search page.
+ * Todo: Remove when the query title block is updated to work for the search page.
  *
  * @since 1.0.0
+ *
+ * @return string Search page title
  */
 function jace_search_title() {
 	/* translators: %s: Search term. */
@@ -21,6 +23,8 @@ function jace_search_title() {
  * Display a link to the privacy policy page, if one is published.
 
  * @since 1.0.0
+ *
+ * @return string Link to the privacy policy page, if one is published.
  */
 function jace_privacy() {
 	if ( get_the_privacy_policy_link() ) {
@@ -53,7 +57,8 @@ function jace_register_block_patterns() {
 		'search',
 		'404',
 		'footer-links',
-		'dual-images'
+		'dual-images',
+		'header-featured-image',
 	);
 
 	foreach ( $block_patterns as $block_pattern ) {
@@ -73,6 +78,8 @@ add_action( 'init', 'jace_register_block_patterns', 9 );
  * @see https://developer.wordpress.org/reference/functions/unregister_block_pattern_category/
  *
  * @since 1.0.0
+ *
+ * @return void
  */
 function jace_unregister_patterns() {
 	unregister_block_pattern( 'core/query-small-posts' );

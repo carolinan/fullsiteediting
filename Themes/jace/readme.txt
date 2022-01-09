@@ -1,11 +1,12 @@
 === Jace ===
-Contributors: poena
+Contributors: Carolina Nymark
 Tested up to: 5.9
 Requires at least: 5.8
 Requires PHP: 7.2
 Version: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Copyright: Carolina Nymark
 
 A full site editing theme.
 
@@ -47,7 +48,7 @@ To make changes to the CSS:
 To add additional block styles:
 1) Create a new CSS file inside the assets/css/blocks folder.
 Use the slug of the block as the file name: latest-comments.css
-2) Next, open functions.php and add the slug to the $styled_blocks array inside jace_editing_setup().
+2) Next, open functions.php and add the slug to the $styled_blocks array inside full_site_editing_setup().
 3) Minify the CSS with the command: gulp
 
 To watch for changes, use the command: gulp watch
@@ -73,8 +74,7 @@ Todo: Create a zip file without build tools, ready to be shared or uploaded to t
 == Changelog ==
 1.0.0 Initial release
 
-== Copyright ==
-Jace WordPress Theme, Copyright Carolina Nymark
+== Licence ==
 Jace is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
@@ -101,9 +101,8 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-* Webfonts Loader
+* Webfonts Loader https://github.com/WPTT/webfont-loader
 License: MIT
-https://github.com/WPTT/webfont-loader
 License URI: https://github.com/WPTT/webfont-loader/blob/master/LICENSE
 
 Images

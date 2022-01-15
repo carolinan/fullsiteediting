@@ -8,7 +8,7 @@
 /* Match the default color of the post. */
 .wp-block-latest-comments__comment-date {
 	color: var(--wp--preset--color--primary);
-	font-size: var(--wp--preset--font-size--extra-small);
+	font-size: var(--wp--preset--font-size--small);
 }
 
 /* Override the line height and font size which are too small. */

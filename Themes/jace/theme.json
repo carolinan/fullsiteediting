@@ -74,9 +74,19 @@
 			],
 			"duotone": [
 				{
+					"colors": [ "#1d2327", "#d3bc8e" ],
+					"slug": "background-primary",
+					"name": "Very Dark Gray and gold"
+				},
+				{
 					"colors": [ "#3c434a", "#d3bc8e"],
 					"slug": "seconary-primary",
 					"name": "Dark Gray and gold"
+				},
+				{
+					"colors": ["#3c434a","#f0f0f1"],
+					"slug": "background-foreground",
+					"name": "Very Dark Gray and white"
 				},
 				{
 					"colors": ["#3c434a","#f0f0f1"],
@@ -141,23 +151,6 @@
 		"blocks": {
 			"core/site-title": {
 				"typography": {
-					"fontFamilies": [
-						{
-							"name": "Lora",
-							"slug": "lora",
-							"fontFamily": "Lora, serif"
-						},
-						{
-							"name": "System",
-							"slug": "system",
-							"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif"
-						},
-						{
-							"name": "Serif",
-							"slug": "serif",
-							"fontFamily": "\"Times New Roman\", Times, Georgia, serif"
-						}
-					],
 					"fontSizes": [
 						{
 							"slug": "extra-small",
@@ -194,23 +187,6 @@
 			},
 			"core/query-title": {
 				"typography": {
-					"fontFamilies": [
-						{
-							"name": "Lora",
-							"slug": "lora",
-							"fontFamily": "Lora, serif"
-						},
-						{
-							"name": "System",
-							"slug": "system",
-							"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif"
-						},
-						{
-							"name": "Serif",
-							"slug": "serif",
-							"fontFamily": "\"Times New Roman\", Times, Georgia, serif"
-						}
-					],
 					"fontSizes": [
 						{
 							"slug": "extra-small",
@@ -247,23 +223,6 @@
 			},
 			"core/post-title": {
 				"typography": {
-					"fontFamilies": [
-						{
-							"name": "Lora",
-							"slug": "lora",
-							"fontFamily": "Lora, serif"
-						},
-						{
-							"name": "System",
-							"slug": "system",
-							"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif"
-						},
-						{
-							"name": "Serif",
-							"slug": "serif",
-							"fontFamily": "\"Times New Roman\", Times, Georgia, serif"
-						}
-					],
 					"fontSizes": [
 						{
 							"slug": "extra-small",
@@ -330,27 +289,6 @@
 							"slug": "xx-large",
 							"size": "3.75rem",
 							"name": "XXL"
-						}
-					]
-				}
-			},
-			"core/navigation": {
-				"typography": {
-					"fontFamilies": [
-						{
-							"name": "Lora",
-							"slug": "lora",
-							"fontFamily": "Lora, serif"
-						},
-						{
-							"name": "System",
-							"slug": "system",
-							"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif"
-						},
-						{
-							"name": "Serif",
-							"slug": "serif",
-							"fontFamily": "\"Times New Roman\", Times, Georgia, serif"
 						}
 					]
 				}
@@ -488,26 +426,36 @@
 			"area": "header"
 		},
 		{
-			"name": "header-home",
-			"title": "Header -Home",
-			"area": "header"
-		},
-		{
 			"name": "footer",
 			"title": "Footer",
+			"area": "footer"
+		},
+		{
+			"name": "footer-basic",
+			"title": "Footer without search- and scroll to top links",
 			"area": "footer"
 		}
 	],
 	"customTemplates": [
 		{
-			"name": "template-no-title",
+			"name": "no-title-template",
 			"title": "No title",
 			"postTypes": [ "post","page" ]
 		},
 		{
-			"name": "template-header-featured-image",
+			"name": "featured-image-header-split-post-template",
+			"title": "Split header with featured image",
+			"postTypes": [ "post" ]
+		},
+		{
+			"name": "full-width-featured-image-header-post-template",
+			"title": "Full width featured image in header",
+			"postTypes": [ "post" ]
+		},
+		{
+			"name": "featured-image-header-post-template",
 			"title": "Featured image in header",
-			"postTypes": [ "post","page" ]
+			"postTypes": [ "post" ]
 		}
 	]
 }

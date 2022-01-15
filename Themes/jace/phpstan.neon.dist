@@ -10,5 +10,4 @@ parameters:
 		- index.php
 		- patterns/
 		- styles/
-		- variations/
-		- classes/
+		- inc/

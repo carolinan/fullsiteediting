@@ -13,10 +13,17 @@
  *
  * @since 1.0.0
  */
-define( 'jace_VERSION', wp_get_theme()->get( 'Version' ) );
+define( 'JACE_VERSION', wp_get_theme()->get( 'Version' ) );
 
-// Include the webfont loader file.
-require_once get_theme_file_path( 'classes/wptt-webfont-loader.php' );
+/**
+ * Check if the WordPress version is 5.8 or higher, and if the PHP version is at least 7.4.
+ * If not, do not activate.
+ * Todo: Remove for 5.9.
+ */
+if ( version_compare( $GLOBALS['wp_version'], '5.8', '<' ) || version_compare( PHP_VERSION_ID, '70400', '<' ) ) {
+	require get_template_directory() . '/inc/back-compat.php';
+	return;
+}
 
 /**
  * Add theme support for block styles and editor style.
@@ -28,26 +35,40 @@ require_once get_theme_file_path( 'classes/wptt-webfont-loader.php' );
 function jace_setup() {
 	add_theme_support( 'wp-block-styles' );
 	add_editor_style( './assets/css/style-shared.min.css' );
-	add_editor_style(
-		wptt_get_webfont_url( 'https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap' ),
-	);
-
-	// Load additional block styles.
-	$styled_blocks = [ 'button', 'file', 'latest-comments', 'latest-posts', 'post-title', 'quote', 'search' ];
-	foreach ( $styled_blocks as $block_name ) {
-		$args = array(
-			'handle' => "jace-$block_name",
-			'src'    => get_theme_file_uri( "assets/css/blocks/$block_name.min.css" ),
-		);
-
-		// Add "path" to allow inlining.
-		$args['path'] = get_theme_file_path( "assets/css/blocks/$block_name.min.css" );
-
-		// Replace the "core" prefix if you are styling blocks from plugins.
-		wp_enqueue_block_style( "core/$block_name", $args );
-	}
 }
 add_action( 'after_setup_theme', 'jace_setup' );
+
+/**
+ * Attach extra styles to multiple blocks.
+ * Todo: Replace with wp_enqueue_block_style in 5.9.
+ */
+function jace_enqueue_block_styles() {
+	// An array of blocks.
+	$styled_blocks = [ 'button', 'file', 'latest-comments', 'latest-posts', 'navigation', 'post-title', 'quote', 'search', 'site-title' ];
+
+	foreach ( $styled_blocks as $block_name ) {
+		// Get the stylesheet handle. This is backwards-compatible and checks the
+		// availability of the `wp_should_load_separate_core_block_assets` function,
+		// and whether we want to load separate styles per-block or not.
+		$handle = (
+			function_exists( 'wp_should_load_separate_core_block_assets' ) &&
+			wp_should_load_separate_core_block_assets()
+		) ? "wp-block-$block_name" : 'wp-block-library';
+
+		// Get the styles.
+		$styles = file_get_contents( get_theme_file_path( "assets/css/blocks/$block_name.min.css" ) );
+
+		// Add frontend styles.
+		wp_add_inline_style( $handle, $styles );
+		// Add editor styles.
+		add_editor_style( "assets/css/blocks/$block_name.min.css" );
+	}
+}
+// Add frontend styles.
+add_action( 'wp_enqueue_scripts', 'jace_enqueue_block_styles' );
+// Add editor styles.
+add_action( 'admin_init', 'jace_enqueue_block_styles' );
+
 
 /**
  * Enqueue the CSS files.
@@ -61,58 +82,22 @@ function jace_styles() {
 		'jace-style',
 		get_stylesheet_uri(),
 		[],
-		jace_VERSION
+		JACE_VERSION
 	);
 	wp_enqueue_style(
 		'jace-shared-styles',
 		get_theme_file_uri( 'assets/css/style-shared.min.css' ),
 		[],
-		jace_VERSION
-	);
-
-	// Load the webfont.
-	wp_enqueue_style(
-		'lora',
-		wptt_get_webfont_url( 'https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap' ),
-		[],
-		'1.0'
+		JACE_VERSION
 	);
 }
 add_action( 'wp_enqueue_scripts', 'jace_styles' );
 
-// Block style examples.
-require_once 'styles/register-block-styles.php';
+// Filters.
+require_once get_theme_file_path( 'inc/filters.php' );
 
-// Block pattern and block category examples.
-require_once 'patterns/register-block-patterns.php';
+// Block styles.
+require_once get_theme_file_path( 'inc/register-block-styles.php' );
 
-// Block variation example.
-require_once 'variations/register-block-variations.php';
-
-/**
- * Show '(No title)' if a post has no title.
- *
- * @since 1.0.0
-*/
-add_filter(
-	'the_title',
-	function( $title ) {
-		if ( ! is_admin() && empty( $title ) ) {
-			$title = _x( '(No title)', 'Used if post or pages has no title', 'jace' );
-		}
-
-		return $title;
-	}
-);
-
-/**
- * Replace the default [...] excerpt more with an elipsis.
- *
- * @since 1.0.0
-*/
-add_filter(
-	'excerpt_more',
-	function( $more ) {
-		return '&hellip;';
-	}
-);
+// Block patterns.
+require_once get_theme_file_path( 'patterns/register-block-patterns.php' );

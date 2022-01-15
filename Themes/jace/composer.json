@@ -1,7 +1,7 @@
 {
-	"name": "poena/jace",
+	"name": "poena/fullsiteediting",
 	"type": "package",
-	"description": "A full site editing theme",
+	"description": "Full site editing theme.",
 	"keywords": [
 		"WordPress",
 		"Themes"

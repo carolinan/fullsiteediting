@@ -1,0 +1,40 @@
+/* Menu button with shadow */
+button.wp-block-navigation__responsive-container-close,
+button.wp-block-navigation__responsive-container-open {
+	font-size: var(--wp--preset--font-size--small);
+	font-family: var(--wp--preset--font-family--system);
+	line-height: 1.7;
+	padding: 0;
+	border: 2px solid rgba(0, 0, 0, 0.05);
+	border-radius: 4px;
+	background: var(--wp--preset--color--secondary);
+	color: var(--wp--preset--color--foreground);
+	box-shadow: 0 8px 8px 0 rgb(0 0 0 / 20%);
+}
+
+button.wp-block-navigation__responsive-container-close:hover,
+button.wp-block-navigation__responsive-container-open:hover,
+button.wp-block-navigation__responsive-container-close:focus,
+button.wp-block-navigation__responsive-container-open:focus {
+	color: var(--wp--preset--color--foreground);
+	filter: brightness(94%) !important;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+button.wp-block-navigation__responsive-container-close:active,
+button.wp-block-navigation__responsive-container-open:active {
+	border-color: rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 0 #fff;
+	color: var(--wp--preset--color--foreground);
+	filter: brightness(93%) !important;
+	margin-top: 1px;
+	margin-bottom: -1px;
+}
+
+button.wp-block-navigation__responsive-container-close:visited,
+button.wp-block-navigation__responsive-container-open:visited {
+	background-color: initial;
+	border-color: rgba(0, 0, 0, 0.05);
+	color: var(--wp--preset--color--foreground);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+}

@@ -41,24 +41,16 @@ function jace_privacy() {
  */
 function jace_register_block_patterns() {
 
-	/**
-	 * Register an example block pattern category.
-	 *
-	 * @since 1.0.0
-	 */
-	register_block_pattern_category(
-		'pages',
-		array( 'label' => esc_html__( 'Pages', 'jace' ) )
-	);
-
 	// Array of block pattern names.
 	$block_patterns = array(
-		'about-page',
-		'search',
 		'404',
+		'search',
 		'footer-links',
+		'footer-links-basic',
 		'dual-images',
 		'header-featured-image',
+		'circular-cover',
+		'circular-image',
 	);
 
 	foreach ( $block_patterns as $block_pattern ) {
@@ -70,21 +62,3 @@ function jace_register_block_patterns() {
 	}
 }
 add_action( 'init', 'jace_register_block_patterns', 9 );
-
-/**
- * This is an example of how to unregister a core block pattern and a block pattern category.
- *
- * @see https://developer.wordpress.org/reference/functions/unregister_block_pattern/
- * @see https://developer.wordpress.org/reference/functions/unregister_block_pattern_category/
- *
- * @since 1.0.0
- *
- * @return void
- */
-function jace_unregister_patterns() {
-	unregister_block_pattern( 'core/query-small-posts' );
-	unregister_block_pattern( 'core/query-large-title-posts' );
-	unregister_block_pattern( 'core/query-offset-posts' );
-	unregister_block_pattern_category( 'header' );
-}
-add_action( 'init', 'jace_unregister_patterns', 9 );

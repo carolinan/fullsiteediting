@@ -2,13 +2,14 @@
 Theme Name: Jace
 Author: Carolina Nymark
 Author URI: https://fullsiteediting.com
-Theme URI: https://fullsiteediting.com
-Description: A full site editing theme
+Theme URI:
+Description: A black and gold full site editing theme for blogging
 Tags: full-site-editing, editor-style, block-styles
 Text Domain: jace
+Version: 1.0.1
 Requires at least: 5.8
 Requires PHP: 7.4
-Tested up to: 5.9
+Tested up to: 5.8
 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -39,6 +40,24 @@ body {
 }
 
 /*
+* Sticky button is experimental,
+* only use it on the front for screens above 782px width.
+*/
+@media screen and (min-width: 782px) {
+
+	.is-style-jace-sticky .wp-block-navigation__responsive-container-open {
+		position: fixed;
+		top: 2em;
+		right: 2em;
+	}
+
+	/* Move the sticky position down to adjust for the WordPress admin bar */
+	.admin-bar .is-style-jace-sticky .wp-block-navigation__responsive-container-open {
+		top: calc(2em + 32px);
+	}
+}
+
+/*
  * Increase horizontal padding on smaller screens.
  * Temporary solution to avoid text content
  * running up to the edge of the browser window,
@@ -53,4 +72,11 @@ body {
 		padding-left: var(--wp--custom--h-spacing);
 		padding-right: var(--wp--custom--h-spacing);
 	}
+}
+
+/*
+* Hide the header block patterns on the paginated results.
+*/
+.home.paged .jace-header-pattern {
+	display: none;
 }

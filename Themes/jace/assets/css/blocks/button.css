@@ -37,4 +37,5 @@
 
 .wp-block-button__link svg {
 	vertical-align: middle;
+	fill: currentColor;
 }

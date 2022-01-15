@@ -15,7 +15,8 @@ A full site editing theme.
 Corrected some typos.
 Corrected the title of the circular cover block pattern.
 Removed an unnecesary folder and moved register-block-styles.php to the inc/ folder.
-
+Replaced a duotone color that was duplicated by mistake.
+Updated screenshot.
 
 1.0.0 Initial release
 

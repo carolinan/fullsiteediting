@@ -1,8 +1,8 @@
 {
-	"version": 1,
+	"version": 2,
 	"settings": {
+		"appearanceTools": true,
 		"color": {
-			"link": true,
 			"palette": [
 				{
 					"slug": "black",
@@ -55,8 +55,6 @@
 			"gradients": []
 		},
 		"typography": {
-			"customLineHeight": true,
-			"customFontSize": true,
 			"fontFamilies": [
 				{
 					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
@@ -87,18 +85,18 @@
 			],
 			"fontSizes": [
 				{
-					"slug": "small",
+					"slug": "extra-small",
 					"size": "1rem",
+					"name": "Extra small"
+				},
+				{
+					"slug": "small",
+					"size": "1.125rem",
 					"name": "Small"
 				},
 				{
-					"slug": "normal",
-					"size": "1.25rem",
-					"name": "Normal"
-				},
-				{
 					"slug": "medium",
-					"size": "1.5rem",
+					"size": "1.25rem",
 					"name": "medium"
 				},
 				{
@@ -107,27 +105,18 @@
 					"name": "Large"
 				},
 				{
-					"slug": "extra-large",
+					"slug": "x-large",
 					"size": "3rem",
 					"name": "Extra large"
 				}
 			]
 		},
 		"spacing": {
-			"customPadding": true,
-			"customMargin": true,
 			"units": [ "px", "em", "rem", "vh", "vw" ]
 		},
 		"layout": {
 			"contentSize": "840px",
-			"wideSize": "1100px",
-			"units": [ "px", "em", "rem", "%", "vw" ]
-		},
-		"border": {
-			"customColor": true,
-			"customRadius": true,
-			"customStyle": true,
-			"customWidth": true
+			"wideSize": "1100px"
 		}
 	},
 	"styles": {
@@ -159,7 +148,7 @@
 					"text": "var(--wp--preset--color--dark-blue)"
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--extra-large)"
+					"fontSize": "var(--wp--preset--font-size--x-large)"
 				}
 			},
 			"h2": {
@@ -194,12 +183,12 @@
 		"blocks": {
 			"core/post-title": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--extra-large)"
+					"fontSize": "var(--wp--preset--font-size--x-large)"
 				}
 			},
 			"core/paragraph": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--normal)"
+					"fontSize": "var(--wp--preset--font-size--medium)"
 				}
 			},
 			"core/post-date": {
@@ -302,6 +291,7 @@
 			"core/template-part": {
 				"spacing": {
 					"margin": {
+						"top": "0px",
 						"bottom": "0px"
 					}
 				}
@@ -311,10 +301,12 @@
 	"templateParts": [
 		{
 			"name": "header",
+			"title": "Header",
 			"area": "header"
 		},
 		{
 			"name": "footer",
+			"title": "Footer",
 			"area": "footer"
 		}
 	],

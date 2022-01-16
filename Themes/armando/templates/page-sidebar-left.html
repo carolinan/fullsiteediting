@@ -1,6 +1,11 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","align":"full","className":"site-header"} /-->
-<!-- wp:columns {"align":"full","className":"armando-has-sidebar-right is-style-armando-no-bottom-margin"} -->
-<div class="wp-block-columns alignfull armando-has-sidebar-right is-style-armando-no-bottom-margin"><!-- wp:column -->
+<!-- wp:columns {"align":"full","style":{"spacing":{"margin":{"top":"0px"}}},"className":"armando-has-sidebar-left"} -->
+<div class="wp-block-columns alignfull armando-has-sidebar-left" style="margin-top:0px">
+	<!-- wp:column {"width":"340px"} --><div class="wp-block-column" style="flex-basis:340px">
+	<!-- wp:template-part {"slug":"sidebar-left","tagName":"aside","backgroundColor":"silver","className":"armando-sidebar-left"} /-->
+</div>
+<!-- /wp:column -->
+<!-- wp:column -->
 <div class="wp-block-column">
 	<!-- wp:group {"tagName":"main","className":"site-main","align":"full","layout":{"inherit":true}} -->
 	<main class="wp-block-group site-main alignfull">
@@ -12,13 +17,8 @@
 		<!-- wp:spacer {"height":70} -->
 		<div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
-		<!-- wp:template-part {"slug":"comments"} /-->	
+		<!-- wp:template-part {"slug":"comments"} /-->
 	</main><!-- /wp:group -->
-</div>
-<!-- /wp:column -->
-<!-- wp:column {"width":"340px"} -->
-<div class="wp-block-column" style="flex-basis:340px">
-	<!-- wp:template-part {"slug":"sidebar-right","tagName":"aside","className":"armando-sidebar-right","backgroundColor":"silver"} /-->
 </div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

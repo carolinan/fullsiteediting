@@ -21,11 +21,24 @@ if ( version_compare( $GLOBALS['wp_version'], '5.5', '<' ) || version_compare( P
 	return;
 }
 
-// Theme support.
-require_once 'classes/class-theme-support.php';
-
-// About page.
-require_once 'classes/class-aboutpage.php';
+/**
+ * Adds theme-supports.
+ *
+ * @since 1.2.4
+ * @return void
+ */
+function armando_setup() {
+	// Add support for Block Styles.
+	add_theme_support( 'wp-block-styles' );
+	// Enqueue editor styles.
+	add_theme_support( 'editor-styles' );
+	add_editor_style(
+		array(
+			'./assets/css/style-shared.css',
+		)
+	);
+}
+add_action( 'after_setup_theme', 'armando_setup' );
 
 // Block styles.
 require_once 'inc/block-styles.php';
@@ -60,6 +73,7 @@ function armando_styles() {
 		'',
 		ARMANDO_VERSION
 	);
+	
 	wp_enqueue_style(
 		'armando-shared-stylez',
 		get_theme_file_uri( 'assets/css/style-shared.css' ),

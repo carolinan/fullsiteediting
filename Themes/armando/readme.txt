@@ -1,13 +1,13 @@
 === Armando ===
 Contributors: poena
-Tested up to: 5.8
+Tested up to: 5.9
 Requires at least: 5.5
 Requires PHP: 7.2
-Version: 1.2.3
+Version: 1.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-An experimental full site editing theme for blogs or sports teams.
+A full site editing theme for blogs or sports teams.
 
 == Description ==
 An experimental full site editing theme for blogs or sports teams.
@@ -20,6 +20,19 @@ Named after Diego Armando Maradona https://en.wikipedia.org/wiki/Diego_Maradona
 Handle the duplicate CSS smarter.
 
 == Changelog ==
+
+* January 13 2022 Version: 1.2.4.
+Update the theme for WordPress 5.9.
+
+Renamed the block templates and block template parts folders.
+Updated theme.json to version 2, removing invalid settings.
+Adjusted font sizes, adding extra small and removing normal.
+Use row blocks to place blocks horisontally instead of using custom css.
+
+Removed the add_theme_support that are added automatically for block themes. Replaced the reduced class with a function inside functions.php
+Registered block patterns with the init hook.
+Removed the about page.
+
 
 * July 3 2021 Version: 1.2.3.
 Update the theme for Gutenberg 10.7 - 11.

@@ -48,7 +48,7 @@ function jace_register_block_patterns() {
 		'footer-links',
 		'footer-links-basic',
 		'dual-images',
-		'header-featured-image',
+		'split-header-featured-image',
 		'circular-cover',
 		'circular-image',
 	);

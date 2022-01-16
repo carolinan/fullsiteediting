@@ -14,8 +14,11 @@ A full site editing theme.
 1.0.1
 Corrected some typos.
 Corrected the title of the circular cover block pattern.
+Simplified the "split header with featured image" block pattern.
 Removed an unnecesary folder and moved register-block-styles.php to the inc/ folder.
 Replaced a duotone color that was duplicated by mistake.
+Reduced the largest font size on smaller screens.
+
 Updated screenshot.
 
 1.0.0 Initial release

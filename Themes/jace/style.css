@@ -80,3 +80,11 @@ body {
 .home.paged .jace-header-pattern {
 	display: none;
 }
+
+/* Reduce the xxl font size on small screens */
+@media (max-width: 600px) {
+
+	body, h1, h2, h3, h4, h5, h6 {
+		--wp--preset--font-size--xx-large: 3rem;
+	}
+}

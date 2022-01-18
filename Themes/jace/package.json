@@ -11,11 +11,9 @@
 	"homepage": "https://fullsiteediting.com",
 	"devDependencies": {
 		"@wordpress/stylelint-config": "^19.1.0",
-		"@wordpress/eslint-plugin": "^9.3.0",
 		"@wordpress/babel-preset-default": "^6.4.1",
 		"@babel/core": "^7.16.7",
 		"stylelint": "^14.2.0",
-		"eslint": "^8.6.0",
 		"postcss": "^8.3.6",
 		"postcss-cli": "^8.3.1",
 		"cssnano": "^5.0.6",
@@ -28,8 +26,6 @@
 	},
 	"scripts": {
 		"lint:css": "stylelint **/*.css",
-		"lint-fix:css": "stylelint **/*.css --fix",
-		"lint:js": "eslint .",
-		"lint-fix:js": "eslint --fix ."
+		"lint-fix:css": "stylelint **/*.css --fix"
 	}
 }

@@ -15,8 +15,11 @@
  * @return string Search page title
  */
 function jace_search_title() {
-	/* translators: %s: Search term. */
-	return isset( $_GET['s'] ) ? sprintf( esc_html__( 'Search results for "%s"', 'jace' ), esc_html( $_GET['s'] ) ) : __( 'Search results', 'jace' );
+	if ( isset( $_GET['s'] ) ) {
+		$search_term = sanitize_text_field( wp_unslash( $_GET['s'] ) );
+		/* translators: %s: Search term. */
+		return isset( $search_term ) ? sprintf( esc_html__( 'Search results for "%s"', 'jace' ), esc_html( $search_term ) ) : __( 'Search results', 'jace' );
+	}
 }
 
 /**
@@ -51,6 +54,10 @@ function jace_register_block_patterns() {
 		'split-header-featured-image',
 		'circular-cover',
 		'circular-image',
+		'columns-with-images',
+		'service-sections',
+		'full-width-gallery',
+		'two-buttons',
 	);
 
 	foreach ( $block_patterns as $block_pattern ) {

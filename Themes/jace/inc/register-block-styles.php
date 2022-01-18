@@ -134,5 +134,13 @@ function jace_register_block_styles() {
 			'label' => __( 'Circular image. Works best without overlay.', 'jace' ),
 		)
 	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/gallery',
+		array(
+			'name'  => 'jace-no-gutter',
+			'label' => __( 'No space between images.', 'jace' ),
+		)
+	);
 }
 add_action( 'init', 'jace_register_block_styles' );

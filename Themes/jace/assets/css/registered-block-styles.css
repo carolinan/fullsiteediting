@@ -68,3 +68,7 @@
 		white-space: nowrap;
 	}
 }
+
+.is-style-jace-no-gutter.wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
+	margin: 0;
+}

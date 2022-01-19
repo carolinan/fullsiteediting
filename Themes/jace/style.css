@@ -4,9 +4,9 @@ Author: Carolina Nymark
 Author URI: https://fullsiteediting.com
 Theme URI:
 Description: A black and gold full site editing theme for blogging
-Tags: full-site-editing, editor-style, block-styles
+Tags: full-site-editing, editor-style, block-styles, block-patterns
 Text Domain: jace
-Version: 1.0.1
+Version: 1.0.2
 Requires at least: 5.8
 Requires PHP: 7.4
 Tested up to: 5.8
@@ -79,12 +79,4 @@ body {
 */
 .home.paged .jace-header-pattern {
 	display: none;
-}
-
-/* Reduce the xxl font size on small screens */
-@media (max-width: 600px) {
-
-	body, h1, h2, h3, h4, h5, h6 {
-		--wp--preset--font-size--xx-large: 3rem;
-	}
 }

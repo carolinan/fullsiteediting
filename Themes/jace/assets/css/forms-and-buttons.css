@@ -87,3 +87,31 @@ input[type="submit"]:visited {
 	width: 48px;
 	height: 48px;
 }
+
+/* Reduce the larger font sizes on small screens */
+@media (max-width: 600px) {
+
+	body,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	h2.wp-block-post-title,
+	h2.wp-block-query-title {
+		--wp--preset--font-size--xx-large: 2.75rem;
+		--wp--preset--font-size--x-large: 2.5rem;
+	}
+}
+
+@media (max-width: 740px) {
+
+	.is-style-jace-circular-cover {
+		max-height: 60vh;
+	}
+
+	.is-style-jace-circular-cover h2.has-xx-large-font-size {
+		font-size: var(--wp--preset--font-size--large) !important;
+	}
+}

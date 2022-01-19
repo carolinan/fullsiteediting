@@ -3,7 +3,7 @@
  * Service sections with circular images and buttons
  *
  * @package jace
- * @since 1.0.0
+ * @since 1.0.1
  */
 
 return array(

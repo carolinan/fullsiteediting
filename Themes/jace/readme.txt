@@ -3,7 +3,7 @@ Contributors: Carolina Nymark
 Tested up to: 5.8
 Requires at least: 5.8
 Requires PHP: 7.4
-Version: 1.0.2
+Version: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: Carolina Nymark
@@ -11,6 +11,10 @@ Copyright: Carolina Nymark
 A full site editing theme.
 
 == Changelog ==
+
+1.0.3
+Bug fix: Removed border.
+
 1.0.2
 Updated the default and responsive heights of the circular cover block.
 Moved the CSS for the responsive font sizes to forms-and-buttons.css

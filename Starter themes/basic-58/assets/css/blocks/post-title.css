@@ -1,0 +1,13 @@
+/*
+Prevent long post titles from causing horizontal scroll.
+This can be removed if this PR is merged into WordPress core:
+https://github.com/WordPress/gutenberg/pull/35703
+*/
+
+.wp-block-post-title {
+	word-wrap: break-word;
+}
+
+.wp-block-post-title a {
+	display: initial;
+}

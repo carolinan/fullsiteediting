@@ -1,0 +1,74 @@
+/*
+Theme Name: Full Site Editing
+Author: Carolina Nymark
+Author URI: https://fullsiteediting.com
+Theme URI:
+Description: A full site editing theme.
+Tags: full-site-editing, editor-style, block-styles, block-patterns
+Text Domain: full-site-editing
+Requires at least: 5.8
+Requires PHP: 7.4
+Tested up to: 5.9
+Version: 1.0.0
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+
+/* Styles intended only for the front.*/
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*
+Sticky button is experimental, only use it on the front for screens above 782px width.
+*/
+@media screen and (min-width: 782px) {
+
+	.is-style-full-site-editing-sticky .wp-block-navigation__responsive-container-open {
+		position: fixed;
+		top: 2em;
+		right: 2em;
+	}
+
+	/* Move the sticky position down to adjust for the WordPress admin bar */
+	.admin-bar .is-style-full-site-editing-sticky .wp-block-navigation__responsive-container-open {
+		top: calc(2em + 32px);
+	}
+}
+
+/*
+ * Increase horizontal padding on smaller screens.
+ * Temporary solution to avoid text content
+ * running up to the edge of the browser window,
+ * making the text difficult to read.
+*/
+@media ( max-width: 1024px ) {
+
+	main > :not(.alignfull),
+	main .wp-block-query > :not(.alignfull),
+	main .entry-content > :not(.alignfull):not(ul):not(ol),
+	main .entry-content .wp-block-columns.alignfull p {
+		padding-left: var(--wp--custom--h-spacing);
+		padding-right: var(--wp--custom--h-spacing);
+	}
+}

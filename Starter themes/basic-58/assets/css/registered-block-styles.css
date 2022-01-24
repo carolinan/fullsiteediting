@@ -1,0 +1,28 @@
+/*
+ * CSS for registered block styles.
+ * See styles/register-block-styles.php.
+ */
+
+/* Flat button */
+.is-style-full-site-editing-flat-button .wp-block-button__link,
+.is-style-full-site-editing-flat-button .wp-block-button__link:hover,
+.is-style-full-site-editing-flat-button .wp-block-button__link:focus,
+.is-style-full-site-editing-flat-button .wp-block-button__link:active,
+.is-style-full-site-editing-flat-button .wp-block-button__link:visited {
+	box-shadow: none;
+	border-radius: 0;
+	margin-top: initial;
+	margin-bottom: initial;
+}
+
+/* Button with shadow */
+.is-style-full-site-editing-shadow-button .wp-block-button__link,
+.is-style-full-site-editing-shadow-button .wp-block-button__link:hover,
+.is-style-full-site-editing-shadow-button .wp-block-button__link:focus,
+.is-style-full-site-editing-shadow-button .wp-block-button__link:visited {
+	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.is-style-full-site-editing-shadow-button .wp-block-button__link:active {
+	box-shadow: 0 0 0 #fff;
+}

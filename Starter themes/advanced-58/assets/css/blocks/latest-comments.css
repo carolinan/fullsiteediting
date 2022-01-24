@@ -1,0 +1,20 @@
+/* These are inner elements of blocks that can't be targetted using theme.json*/
+
+/* Override the default line height which is too small. */
+.wp-block-latest-comments__comment {
+	line-height: 1.5;
+}
+
+/* Match the default color of the post. */
+.wp-block-latest-comments__comment-date {
+	color: var(--wp--preset--color--primary);
+	font-size: var(--wp--preset--font-size--small);
+}
+
+/* Override the line height and font size which are too small. */
+.wp-block-latest-comments__comment-excerpt p {
+	font-size: var(--wp--preset--font-size--medium);
+	line-height: initial;
+	margin-top: calc(.5 * var(--wp--custom--v-spacing));
+	margin-bottom: var(--wp--custom--v-spacing);
+}

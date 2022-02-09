@@ -10,8 +10,8 @@ return array(
 	'title'       => esc_html__( 'Post header with featured image', 'full-site-editing' ),
 	'categories'  => array( 'text', 'featured' ),
 	'description' => esc_html__( 'Recommended for the "No title" template', 'full-site-editing' ),
-	'blockTypes' => array( 'core/post-featured-image' ),
-	'content'    => '
+	'blockTypes'  => array( 'core/post-featured-image' ),
+	'content'     => '
 		<!-- wp:cover {"dimRatio":0,"minHeight":470,"minHeightUnit":"px","contentPosition":"center center","isDark":false,"align":"wide"} -->
 		<div class="wp-block-cover alignwide is-light" style="min-height:470px"><span aria-hidden="true" class="has-background-dim-0 wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"style":{"spacing":{"margin":{"bottom":"0px"}}}} -->
 		<div class="wp-block-columns" style="margin-bottom:0px"><!-- wp:column {"verticalAlignment":"center"} -->

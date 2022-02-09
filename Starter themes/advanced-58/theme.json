@@ -17,12 +17,12 @@
 				{
 					"slug": "primary",
 					"color": "#5093D4",
-					"name": "WordPress blue"
+					"name": "Primary"
 				},
 				{
 					"slug": "secondary",
 					"color": "#153956",
-					"name": "Dark WordPress blue"
+					"name": "Secondary"
 				},
 				{
 					"slug": "transparent",
@@ -34,59 +34,59 @@
 				{
 					"slug": "d-transparent-primary",
 					"gradient": "linear-gradient(to bottom right,transparent 49.9%,#5093D4 50%)",
-					"name": "Diagonal transparent to blue"
+					"name": "Diagonal transparent to primary"
 				},
 				{
 					"slug": "d-primary-transparent",
 					"gradient": "linear-gradient(to bottom right, #5093D4 49.9%, transparent 50%)",
-					"name": "Diagonal blue to transparent"
+					"name": "Diagonal primary to transparent"
 				},
 				{
 					"slug": "d-white-primary",
 					"gradient": "linear-gradient(to bottom right,#fff 49.9%,#5093D4 50%)",
-					"name": "Diagonal white to blue"
+					"name": "Diagonal white to primary"
 				},
 				{
 					"slug": "d-primary-white",
 					"gradient": "linear-gradient(to bottom right,#5093D4 49.9%,#fff 50%)",
-					"name": "Diagonal blue to white"
+					"name": "Diagonal primary to white"
 				},
 				{
 					"slug": "h-primary-white",
 					"gradient": "linear-gradient(#5093D4 49.9%,#fff 50%)",
-					"name": "Horizontal blue to white"
+					"name": "Horizontal primary to white"
 				},
 				{
 					"slug": "h-white-primary",
 					"gradient": "linear-gradient(#fff 49.9%,#5093D4 50%)",
-					"name": "Horizontal white to blue"
+					"name": "Horizontal white to primary"
 				},
 				{
 					"slug": "v-primary-white",
 					"gradient": "linear-gradient(to right, #5093D4 49.9%,#fff 50%)",
-					"name": "Vertical blue to white"
+					"name": "Vertical primary to white"
 				},
 				{
 					"slug": "v-white-primary",
 					"gradient": "linear-gradient(to right, #fff 49.9%,#5093D4 50%)",
-					"name": "Vertical white to blue"
+					"name": "Vertical white to primary"
 				}
 			],
 			"duotone": [
 				{
-					"colors": [ "#3c434a","#5093D4" ],
+					"colors": [ "#153956","#5093D4" ],
 					"slug": "seconary-primary",
-					"name": "Dark Gray and blue"
+					"name": "Secondary and primary"
 				},
 				{
-					"colors": [ "#3c434a","#f0f0f1" ],
+					"colors": [ "#5093D4","#f0f0f1" ],
 					"slug": "primary-foreground",
-					"name": "Dark Gray and white"
+					"name": "Primary and foreground"
 				},
 				{
-					"colors": [ "#9b8b6d","#f0f0f1" ],
-					"slug": "primary-foreground",
-					"name": "Blue and white"
+					"colors": [ "#1d2327","#f0f0f1" ],
+					"slug": "background-foreground",
+					"name": "background and foreground"
 				}
 			]
 		},

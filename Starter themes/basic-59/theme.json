@@ -17,12 +17,12 @@
 				{
 					"slug": "primary",
 					"color": "#5093D4",
-					"name": "WordPress blue"
+					"name": "Primary"
 				},
 				{
 					"slug": "secondary",
 					"color": "#153956",
-					"name": "Dark WordPress blue"
+					"name": "Secondary"
 				},
 				{
 					"slug": "transparent",
@@ -44,19 +44,19 @@
 			],
 			"duotone": [
 				{
-					"colors": [ "#3c434a", "#d3bc8e"],
+					"colors": [ "#153956", "#5093D4"],
 					"slug": "secondary-primary",
 					"name": "Secondary and primary"
 				},
 				{
-					"colors": ["#3c434a","#f0f0f1"],
+					"colors": ["#5093D4","#f0f0f1"],
 					"slug": "primary-foreground",
 					"name": "Primary and foreground"
 				}
 			]
 		},
 		"spacing": {
-			"units": [ "px", "em", "rem", "vh", "vw" ]
+			"units": [ "px", "em", "rem", "vh", "vw", "%" ]
 		},
 		"layout": {
 			"contentSize": "760px",

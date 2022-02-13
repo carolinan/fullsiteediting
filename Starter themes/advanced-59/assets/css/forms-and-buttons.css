@@ -38,12 +38,12 @@ input[type="week"] {
 button:not(.components-button):not(.wp-block-navigation *),
 input[type="reset"],
 input[type="submit"] {
-	border: 2px solid rgba(0, 0, 0, 0.05);
-	padding: .3rem 1rem;
-	border-radius: 4px;
+	border: 2px solid var(--wp--custom--button-border-color);
+	padding: var(--wp--custom--button-padding);
+	border-radius: var(--wp--custom--button-border-radius);
 	background: var(--wp--preset--color--secondary);
 	color: var(--wp--preset--color--foreground);
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
 button:not(.components-button):not(.wp-block-navigation *):focus,
@@ -54,14 +54,14 @@ input[type="submit"]:focus,
 input[type="submit"]:hover {
 	color: var(--wp--preset--color--foreground);
 	filter: brightness(94%) !important;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
 button:not(.components-button):not(.wp-block-navigation *):active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	border-color: rgba(0, 0, 0, 0.05);
-	box-shadow: 0 0 0 #fff;
+	border-color: var(--wp--custom--button-border-color);
+	box-shadow: var(--wp--custom--button-highlight);
 	color: var(--wp--preset--color--foreground);
 	filter: brightness(93%) !important;
 	margin-top: 1px;
@@ -72,9 +72,9 @@ button:not(.components-button):not(.wp-block-navigation *):visited,
 input[type="reset"]:visited,
 input[type="submit"]:visited {
 	background-color: initial;
-	border-color: rgba(0, 0, 0, 0.05);
+	border-color: var(--wp--custom--button-border-color);
 	color: var(--wp--preset--color--foreground);
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
 .post-password-form input[type="password"] {

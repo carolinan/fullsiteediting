@@ -1,0 +1,37 @@
+{
+	"version": 2,
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "background",
+					"color": "#ffffff",
+					"name": "Background"
+				},
+				{
+					"slug": "foreground",
+					"color": "#1d2327",
+					"name": "Foreground"
+				},
+				{
+					"slug": "primary",
+					"color": "#153956",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#eee",
+					"name": "Secondary"
+				},
+				{
+					"slug": "transparent",
+					"color": "transparent",
+					"name": "Transparent"
+				}
+			]
+		},
+		"custom": {
+			"text-shadow": "0 2px 5px rgba(0, 0, 0, 0.2);"
+		}
+	}
+}

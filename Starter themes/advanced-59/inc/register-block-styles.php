@@ -34,7 +34,7 @@ function full_site_editing_register_block_styles() {
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/button',
 		array(
-			'name'  => 'full-site-editing-shadow-button',
+			'name'  => 'full-site-editing-button-shadow',
 			'label' => __( 'Button with shadow', 'full-site-editing' ),
 		)
 	);

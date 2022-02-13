@@ -15,10 +15,10 @@ A full site editing theme.
 === Folder structure ===
 
 - Assets. Images, JavaScript, and CSS files.
-- Inc. Filters, fonts, block variations.
+- Inc. Filters, fonts, block variations, registered block styles.
 - Parts. HTML template parts.
 - Patterns. Block pattern examples (register and unregister patterns and pattern categories.)
-- Styles. Block style examples ( register and unregister block styles. )
+- Styles. Global style variations.
 - Templates. HTML block templates.
 
 functions.php -Used to enqueue styles and add theme support.

@@ -74,24 +74,24 @@
 			],
 			"duotone": [
 				{
-					"colors": [ "#153956","#5093D4" ],
-					"slug": "seconary-primary",
+					"colors": [ "#153956", "#5093D4" ],
+					"slug": "secondary-primary",
 					"name": "Secondary and primary"
 				},
 				{
-					"colors": [ "#5093D4","#f0f0f1" ],
+					"colors": [ "#5093D4", "#f0f0f1" ],
 					"slug": "primary-foreground",
 					"name": "Primary and foreground"
 				},
 				{
-					"colors": [ "#1d2327","#f0f0f1" ],
+					"colors": [ "#1d2327", "#f0f0f1" ],
 					"slug": "background-foreground",
 					"name": "background and foreground"
 				}
 			]
 		},
 		"spacing": {
-			"units": [ "px", "em", "rem", "vh", "vw" ]
+			"units": [ "px", "em", "rem", "vh", "vw", "%" ]
 		},
 		"layout": {
 			"contentSize": "760px",
@@ -146,7 +146,14 @@
 		},
 		"custom": {
 			"h-spacing": "2.375rem",
-			"v-spacing": "1.25rem"
+			"v-spacing": "1.25rem",
+			"text-shadow": "0 2px 8px rgba(0, 0, 0, 0.9)",
+			"button-shadow": "0 8px 8px 0 rgba(0, 0, 0, 0.2)",
+			"small-button-shadow": "0 1px 1px 0 rgba(0, 0, 0, 0.2)",
+			"button-highlight": "0 0 0 #fff",
+			"button-border-color": "rgba(0, 0, 0, 0.05)",
+			"button-border-radius": "4px",
+			"button-padding": ".3rem 1rem"
 		},
 		"blocks": {
 			"core/site-title": {
@@ -406,7 +413,7 @@
 					"radius": "4px",
 					"width": "2px",
 					"style": "solid",
-					"color": "rgba(0, 0, 0, 0.05);"
+					"color": "var(--wp--custom--button-border-color)"
 				},
 				"spacing": {
 					"padding": {

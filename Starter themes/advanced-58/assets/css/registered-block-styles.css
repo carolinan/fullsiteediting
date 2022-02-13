@@ -16,15 +16,15 @@
 }
 
 /* Button with shadow */
-.is-style-full-site-editing-shadow-button .wp-block-button__link,
-.is-style-full-site-editing-shadow-button .wp-block-button__link:hover,
-.is-style-full-site-editing-shadow-button .wp-block-button__link:focus,
-.is-style-full-site-editing-shadow-button .wp-block-button__link:visited {
-	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+.is-style-full-site-editing-button-shadow .wp-block-button__link,
+.is-style-full-site-editing-button-shadow .wp-block-button__link:hover,
+.is-style-full-site-editing-button-shadow .wp-block-button__link:focus,
+.is-style-full-site-editing-button-shadow .wp-block-button__link:visited {
+	box-shadow: var(--wp--custom--button-shadow);
 }
 
-.is-style-full-site-editing-shadow-button .wp-block-button__link:active {
-	box-shadow: 0 0 0 #fff;
+.is-style-full-site-editing-button-shadow .wp-block-button__link:active {
+	box-shadow: var(--wp--custom--button-highlight);
 }
 
 /* Menu button style */
@@ -34,11 +34,11 @@
 	font-family: var(--wp--preset--font-family--system);
 	line-height: 1.7;
 	padding: 0;
-	border: 2px solid rgba(0, 0, 0, 0.05);
-	border-radius: 4px;
+	border: 2px solid var(--wp--custom--button-border-color);
+	border-radius: var(--wp--custom--button-border-radius);
 	background: var(--wp--preset--color--secondary);
 	color: var(--wp--preset--color--foreground);
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
 .is-style-full-site-editing-navigation-button button.wp-block-navigation__responsive-container-close:hover,
@@ -47,13 +47,13 @@
 .is-style-full-site-editing-navigation-button button.wp-block-navigation__responsive-container-open:focus {
 	color: var(--wp--preset--color--foreground);
 	filter: brightness(94%) !important;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
 .is-style-full-site-editing-navigation-button button.wp-block-navigation__responsive-container-close:active,
 .is-style-full-site-editing-navigation-button button.wp-block-navigation__responsive-container-open:active {
-	border-color: rgba(0, 0, 0, 0.05);
-	box-shadow: 0 0 0 #fff;
+	border-color: var(--wp--custom--button-border-color);
+	box-shadow: var(--wp--custom--button-highlight);
 	color: var(--wp--preset--color--foreground);
 	filter: brightness(93%) !important;
 	margin-top: 1px;
@@ -63,9 +63,9 @@
 .is-style-full-site-editing-navigation-button button.wp-block-navigation__responsive-container-close:visited,
 .is-style-full-site-editing-navigation-button button.wp-block-navigation__responsive-container-open:visited {
 	background-color: initial;
-	border-color: rgba(0, 0, 0, 0.05);
+	border-color: var(--wp--custom--button-border-color);
 	color: var(--wp--preset--color--foreground);
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
 /* Menu button with shadow */
@@ -75,11 +75,11 @@
 	font-family: var(--wp--preset--font-family--system);
 	line-height: 1.7;
 	padding: 0;
-	border: 2px solid rgba(0, 0, 0, 0.05);
-	border-radius: 4px;
+	border: 2px solid var(--wp--custom--button-border-color);
+	border-radius: var(--wp--custom--button-border-radius);
 	background: var(--wp--preset--color--secondary);
 	color: var(--wp--preset--color--foreground);
-	box-shadow: 0 8px 8px 0 rgb(0 0 0 / 20%);
+	box-shadow: var(--wp--custom--button-shadow);
 }
 
 .is-style-full-site-editing-navigation-button-shadow button.wp-block-navigation__responsive-container-close:hover,
@@ -88,13 +88,13 @@
 .is-style-full-site-editing-navigation-button-shadow button.wp-block-navigation__responsive-container-open:focus {
 	color: var(--wp--preset--color--foreground);
 	filter: brightness(94%) !important;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
 .is-style-full-site-editing-navigation-button-shadow button.wp-block-navigation__responsive-container-close:active,
 .is-style-full-site-editing-navigation-button-shadow button.wp-block-navigation__responsive-container-open:active {
-	border-color: rgba(0, 0, 0, 0.05);
-	box-shadow: 0 0 0 #fff;
+	border-color: var(--wp--custom--button-border-color);
+	box-shadow: var(--wp--custom--button-highlight);
 	color: var(--wp--preset--color--foreground);
 	filter: brightness(93%) !important;
 	margin-top: 1px;
@@ -104,14 +104,14 @@
 .is-style-full-site-editing-navigation-button-shadow button.wp-block-navigation__responsive-container-close:visited,
 .is-style-full-site-editing-navigation-button-shadow button.wp-block-navigation__responsive-container-open:visited {
 	background-color: initial;
-	border-color: rgba(0, 0, 0, 0.05);
+	border-color: var(--wp--custom--button-border-color);
 	color: var(--wp--preset--color--foreground);
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
 /* Text shadow */
 .is-style-full-site-editing-text-shadow {
-	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+	text-shadow: var(--wp--custom--text-shadow);
 }
 
 /* Box shadow */
@@ -121,11 +121,11 @@
 
 /* Lists*/
 .is-style-full-site-editing-list-underline li {
-	border-bottom: 1px solid currentColor;
+	border-bottom: 1px solid currentcolor;
 }
 
 .is-style-full-site-editing-list-underline ul {
-	border-top: 1px solid currentColor;
+	border-top: 1px solid currentcolor;
 }
 
 .is-style-full-site-editing-list-underline ul li {

@@ -1,17 +1,17 @@
 .wp-block-button__link {
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
 .wp-block-button__link:focus,
 .wp-block-button__link:hover {
 	color: var(--wp--preset--color--foreground);
 	filter: brightness(94%) !important;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
 .wp-block-button__link:active {
 	border-color: rgba(0, 0, 0, 0.05);
-	box-shadow: 0 0 0 #fff;
+	box-shadow: var(--wp--custom--button-highlight);
 	color: var(--wp--preset--color--foreground);
 	filter: brightness(93%) !important;
 	margin-top: 1px;
@@ -22,12 +22,12 @@
 	background-color: initial;
 	border-color: rgba(0, 0, 0, 0.05);
 	color: var(--wp--preset--color--foreground);
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
 .is-style-outline > .wp-block-button__link,
 .wp-block-button__link.is-style-outline {
-	padding: .3rem 1rem;
+	padding: var(--wp--custom--button-border-padding);
 }
 
 /* Match the editor */

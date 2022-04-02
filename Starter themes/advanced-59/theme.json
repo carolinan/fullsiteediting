@@ -101,6 +101,11 @@
 			"dropCap": false,
 			"fontFamilies": [
 				{
+					"name": "Lora",
+					"slug": "lora",
+					"fontFamily": "Lora, serif"
+				},
+				{
 					"name": "System",
 					"slug": "system",
 					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif"

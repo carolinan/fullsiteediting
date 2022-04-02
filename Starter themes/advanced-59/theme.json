@@ -386,7 +386,7 @@
 		},
 		"color": {
 			"background": "var(--wp--preset--color--background)",
-			"text": "var(--wp--preset--color--foreground)"
+			"text": "var(--wp--preset--color--primary)"
 		},
 		"typography": {
 			"fontSize": "var(--wp--preset--font-size--medium)",

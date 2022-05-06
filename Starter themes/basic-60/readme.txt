@@ -1,6 +1,6 @@
 === Full Site Editing ===
 Contributors: poena
-Tested up to: 5.9
+Tested up to: 6.0
 Requires at least: 5.9
 Requires PHP: 7.2
 Version: 1.0.0
@@ -17,7 +17,7 @@ A full site editing theme.
 - Assets. Images and CSS files.
 - Inc. Backwards compatibility, block styles.
 - Parts. HTML template parts.
-- Block-patterns. Block patterns.
+- Patterns. Block patterns.
 - Templates. HTML block templates.
 
 functions.php -Used to enqueue styles and add theme support.
@@ -67,6 +67,7 @@ To compare your code against the JavasCript coding standards,
 use the command: npm run lint:js
 
 == Changelog ==
+For changelogs please see the Github repository.
 1.0.0 Initial release
 
 == Licence ==

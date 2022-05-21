@@ -1,0 +1,89 @@
+/*
+Styles for form elements and buttons.
+*/
+
+textarea {
+	padding: 1rem;
+	width: 100%;
+}
+
+select {
+	padding: 3px;
+}
+
+textarea,
+select,
+button:not(.components-button):not(.wp-block-navigation *),
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="datetime"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="reset"],
+input[type="search"],
+input[type="submit"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+	font-size: var(--wp--preset--font-size--small);
+	font-family: var(--wp--preset--font-family--system);
+	line-height: 1.7;
+}
+
+button:not(.components-button):not(.wp-block-navigation *),
+input[type="reset"],
+input[type="submit"] {
+	border: 2px solid var(--wp--custom--button-border-color);
+	padding: var(--wp--custom--button-padding);
+	border-radius: var(--wp--custom--button-border-radius);
+	background: var(--wp--preset--color--secondary);
+	color: var(--wp--preset--color--foreground);
+	box-shadow: var(--wp--custom--small-button-shadow);
+}
+
+button:not(.components-button):not(.wp-block-navigation *):focus,
+button:not(.components-button):not(.wp-block-navigation *):hover,
+input[type="reset"]:focus,
+input[type="reset"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+	color: var(--wp--preset--color--foreground);
+	filter: brightness(94%) !important;
+	box-shadow: var(--wp--custom--small-button-shadow);
+}
+
+button:not(.components-button):not(.wp-block-navigation *):active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	border-color: var(--wp--custom--button-border-color);
+	box-shadow: var(--wp--custom--button-highlight);
+	color: var(--wp--preset--color--foreground);
+	filter: brightness(93%) !important;
+	margin-top: 1px;
+	margin-bottom: -1px;
+}
+
+button:not(.components-button):not(.wp-block-navigation *):visited,
+input[type="reset"]:visited,
+input[type="submit"]:visited {
+	background-color: initial;
+	border-color: var(--wp--custom--button-border-color);
+	color: var(--wp--preset--color--foreground);
+	box-shadow: var(--wp--custom--small-button-shadow);
+}
+
+.post-password-form input[type="password"] {
+	min-height: 46px;
+}
+
+/* Accessibility: Increase icon size so that the button is easier to click */
+.wp-block-navigation__responsive-container-close svg,
+.wp-block-navigation__responsive-container-open svg {
+	width: 48px;
+	height: 48px;
+}

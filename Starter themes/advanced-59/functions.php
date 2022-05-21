@@ -80,4 +80,4 @@ require_once get_theme_file_path( 'inc/register-block-variations.php' );
 require_once get_theme_file_path( 'inc/register-block-styles.php' );
 
 // Block pattern and block category examples.
-require_once get_theme_file_path( 'patterns/register-block-patterns.php' );
+require_once get_theme_file_path( 'block-patterns/register-block-patterns.php' );

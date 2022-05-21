@@ -67,6 +67,7 @@ To compare your code against the JavasCript coding standards,
 use the command: npm run lint:js
 
 == Changelog ==
+For changelogs please see the Github repository.
 1.0.0 Initial release
 
 == Licence ==

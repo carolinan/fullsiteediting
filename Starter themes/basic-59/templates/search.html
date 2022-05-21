@@ -1,26 +1,19 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header"} /-->
 
-<!-- wp:group {"tagName":"main","align":"full","style":{"spacing":{"padding":{"top":"calc(var(--wp--custom--v-spacing, 1.25rem) *3)","bottom":"calc(var(--wp--custom--v-spacing, 1.25rem) *2)"}}},"layout":{"inherit":true}} -->
-<main class="wp-block-group alignfull" style="padding-top:calc(var(--wp--custom--v-spacing, 1.25rem) *3);padding-bottom:calc(var(--wp--custom--v-spacing, 1.25rem) *2)">
-
+<!-- wp:group {"tagName":"main","align":"full","layout":{"inherit":true}} -->
+<main class="wp-block-group alignfull">
 	<!-- wp:heading {"fontSize":"x-large"} -->
-	<h2 class="has-x-large-font-size">Search</h2>
+	<h2 class="has-x-large-font-size">Search results</h2>
 	<!-- /wp:heading -->
 
-	<!-- wp:spacer {"height":"40px"} -->
-	<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
-	<!-- /wp:spacer -->
-
-	<!-- wp:search {"label":"Search","showLabel":false,"buttonText":"Search"} /-->
-
-	<!-- wp:spacer {"height":"40px"} -->
-	<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- wp:spacer {"height":"20px"} -->
+	<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
 
 	<!-- wp:query {"query":{"perPage":5,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"align":"full","layout":{"inherit":true}} -->
 	<div class="wp-block-query alignfull">
 		<!-- wp:post-template -->
-		<!-- wp:post-title {"fontSize":"x-large","isLink":true} /-->
+		<!-- wp:post-title {"level":3,"isLink":true,"fontSize":"x-large"} /-->
 		<!-- wp:post-featured-image {"isLink":true} /-->
 		<!-- wp:group {"layout":{"type":"flex","allowOrientation":false}} -->
 		<div class="wp-block-group">
@@ -31,6 +24,7 @@
 		<!-- /wp:group -->
 
 		<!-- wp:post-excerpt {"moreText":"Read more","showMoreOnNewLine":false} /-->
+
 		<!-- wp:spacer {"height":"40px"} -->
 		<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
@@ -40,6 +34,20 @@
 		<!-- wp:query-pagination-previous {"label":"Previous"} /-->
 		<!-- wp:query-pagination-next {"label":"Next"} /-->
 		<!-- /wp:query-pagination -->
+
+		<!-- wp:separator {"color":"secondary","className":"is-style-wide"} -->
+		<hr class="wp-block-separator has-text-color has-background has-secondary-background-color has-secondary-color is-style-wide" />
+		<!-- /wp:separator -->
+
+		<!-- wp:spacer {"height":"20px"} -->
+		<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- /wp:spacer -->
+
+		<!-- wp:search {"label":"Search","showLabel":false,"buttonText":"Search"} /-->
+
+		<!-- wp:spacer {"height":"20px"} -->
+		<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- /wp:spacer -->
 
 	</div><!-- /wp:query -->
 </main>

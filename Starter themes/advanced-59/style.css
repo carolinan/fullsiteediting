@@ -40,19 +40,19 @@ body {
 }
 
 /*
-Sticky button is experimental, only use it on the front for screens above 782px width.
+Sticky header is experimental, only use it on the front for screens above 782px width.
 */
 @media screen and (min-width: 782px) {
 
-	.is-style-full-site-editing-sticky .wp-block-navigation__responsive-container-open {
-		position: fixed;
-		top: 2em;
-		right: 2em;
+	.is-style-full-site-editing-sticky {
+		position: sticky;
+		top: 0;
+		z-index: 999;
 	}
 
 	/* Move the sticky position down to adjust for the WordPress admin bar */
-	.admin-bar .is-style-full-site-editing-sticky .wp-block-navigation__responsive-container-open {
-		top: calc(2em + 32px);
+	.admin-bar .is-style-full-site-editing-sticky {
+		top: 32px;
 	}
 }
 

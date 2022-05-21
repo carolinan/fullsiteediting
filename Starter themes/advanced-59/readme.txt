@@ -17,7 +17,7 @@ A full site editing theme.
 - Assets. Images, JavaScript, and CSS files.
 - Inc. Filters, fonts, block variations, registered block styles.
 - Parts. HTML template parts.
-- Patterns. Block pattern examples (register and unregister patterns and pattern categories.)
+- Block-patterns. Block pattern examples (register and unregister patterns and pattern categories.)
 - Styles. Global style variations.
 - Templates. HTML block templates.
 

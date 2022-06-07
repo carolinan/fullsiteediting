@@ -35,7 +35,7 @@ function full_site_editing_setup() {
 		$args = array(
 			'handle' => "full-site-editing-$block_name",
 			'src'    => get_theme_file_uri( "assets/css/blocks/$block_name.min.css" ),
-			$args['path'] = get_theme_file_path( "assets/css/blocks/$block_name.min.css" ),
+			'path'   => get_theme_file_path( "assets/css/blocks/$block_name.min.css" ),
 		);
 		// Replace the "core" prefix if you are styling blocks from plugins.
 		wp_enqueue_block_style( "core/$block_name", $args );

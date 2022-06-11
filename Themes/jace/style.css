@@ -3,13 +3,13 @@ Theme Name: Jace
 Author: Carolina Nymark
 Author URI: https://fullsiteediting.com
 Theme URI:
-Description: A black and gold full site editing theme for blogging
-Tags: full-site-editing, editor-style, block-styles, block-patterns
+Description: The main purpose of this theme is to showcase the features of full site editing. You can use the theme for blogging, for your portfolio, business, or store. To use the e-commerce features, you need to install both WooCommerce and WooCommerce blocks. It is also recommended to install Gutenberg and Contact Form 7. The theme has over 60 patterns + all patterns from the WordPress pattern directory. Jace includes an optional light color scheme, blog layouts, about pages, contact pages, sticky header, social sharing, full-screen headers, buttons and list styles.
+Tags: full-site-editing, editor-style, block-styles, block-patterns, accessibility-ready
 Text Domain: jace
-Version: 1.0.3
-Requires at least: 5.8
+Version: 1.0.6
+Requires at least: 6.0
 Requires PHP: 7.4
-Tested up to: 5.8
+Tested up to: 6.0
 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -45,16 +45,28 @@ body {
 */
 @media screen and (min-width: 782px) {
 
-	.is-style-jace-sticky .wp-block-navigation__responsive-container-open {
+	.is-style-jace-sticky {
 		position: fixed;
 		top: 2em;
 		right: 2em;
 	}
 
-	/* Move the sticky position down to adjust for the WordPress admin bar */
-	.admin-bar .is-style-jace-sticky .wp-block-navigation__responsive-container-open {
+	/* Move the fixed position down to adjust for the WordPress admin bar */
+	.admin-bar .is-style-jace-sticky {
 		top: calc(2em + 32px);
 	}
+
+	.is-style-jace-sticky-header {
+		position: sticky;
+		top: 0;
+		z-index: 999;
+	}
+
+	/* Move the sticky position down to adjust for the WordPress admin bar */
+	.admin-bar .is-style-jace-sticky-header {
+		top: 32px;
+	}
+
 }
 
 /*
@@ -66,17 +78,30 @@ body {
 @media ( max-width: 1024px ) {
 
 	main > :not(.alignfull),
-	main .wp-block-query > :not(.alignfull),
-	main .entry-content > :not(.alignfull):not(ul):not(ol),
-	main .entry-content .wp-block-columns.alignfull p {
+	.sidebar > :not(.alignfull),
+	main > .wp-block-query > :not(.alignfull),
+	main .entry-content > :not(.alignfull),
+	main .entry-content .wp-block-columns.alignfull p,
+	.woocommerce .woocommerce-breadcrumb,
+	.woocommerce :not(.related) > ul.products,
+	.sidebar .wp-block-query > :not(.alignfull),
+	.sidebar .entry-content > :not(.alignfull),
+	.sidebar .entry-content .wp-block-columns.alignfull p {
 		padding-left: var(--wp--custom--h-spacing);
 		padding-right: var(--wp--custom--h-spacing);
 	}
 }
 
-/*
-* Hide the header block patterns on the paginated results.
-*/
-.home.paged .jace-header-pattern {
+/* Hide the header block patterns on the paginated results. */
+.home.paged .jace-pattern-header-image {
 	display: none;
+}
+
+/* Hide selected sticky posts and paginated results. */
+body.query-block-paged .wp-block-query.jace-hide-sticky {
+	display: none;
+}
+
+.jace-blog-layout .wp-block-post-template li .wp-block-group:not(.jace-post-meta) {
+	height: 100%;
 }

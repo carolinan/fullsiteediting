@@ -5,7 +5,7 @@ const gulp = require('gulp'),
 	rename = require('gulp-rename');
 
 gulp.task('watch', function () {
-	gulp.watch(['assets/css/**/*.css']).on(
+	gulp.watch(['assets/css/src/**/*.css']).on(
 		'change',
 		gulp.series(
 			'clean-shared',
@@ -17,7 +17,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('clean-shared', function () {
-	return gulp.src('assets/css/style-shared.min.css', {
+	return gulp.src('assets/css/min/style-shared.min.css', {
 			read: false,
 			allowEmpty: true,
 		})
@@ -25,7 +25,7 @@ gulp.task('clean-shared', function () {
 });
 
 gulp.task('clean-blocks', function () {
-	return gulp.src('assets/css/blocks/*.min.css', {
+	return gulp.src('assets/css/min/blocks/*.min.css', {
 			read: false,
 			allowEmpty: true,
 		})
@@ -33,17 +33,17 @@ gulp.task('clean-blocks', function () {
 });
 
 gulp.task('minify-shared', function () {
-	return gulp.src('assets/css/*.css')
+	return gulp.src('assets/css/src/*.css')
 		.pipe(concatCss('style-shared.min.css'))
 		.pipe(cssnano())
-		.pipe(gulp.dest('assets/css/'));
+		.pipe(gulp.dest('assets/css/min/'));
 });
 
 gulp.task('minify-blocks', function () {
-	return gulp.src('assets/css/blocks/*.css')
+	return gulp.src('assets/css/src/blocks/*.css')
 		.pipe(cssnano())
 		.pipe(rename({ suffix: '.min' }))
-		.pipe(gulp.dest('assets/css/blocks'));
+		.pipe(gulp.dest('assets/css/min/blocks/'));
 });
 
 gulp.task(

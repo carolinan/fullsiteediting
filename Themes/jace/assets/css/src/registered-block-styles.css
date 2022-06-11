@@ -1,0 +1,253 @@
+/*
+ * CSS for registered block styles.
+ * See styles/register-block-styles.php.
+ */
+
+.is-style-jace-no-bg .wp-block-navigation__responsive-container-open,
+.is-style-jace-no-bg .wp-block-navigation__responsive-container-close,
+.is-style-jace-no-bg .wp-block-navigation__responsive-container-open:hover,
+.is-style-jace-no-bg .wp-block-navigation__responsive-container-close:hover,
+.is-style-jace-no-bg .wp-block-navigation__responsive-container-open:focus,
+.is-style-jace-no-bg .wp-block-navigation__responsive-container-close:focus
+.is-style-jace-no-bg .wp-block-navigation__responsive-container-open:visited,
+.is-style-jace-no-bg .wp-block-navigation__responsive-container-close:visited {
+	box-shadow: none;
+	border-radius: 0;
+	margin-top: initial;
+	margin-bottom: initial;
+	background: none;
+	border: none;
+}
+
+/* Flat button */
+.is-style-jace-flat-button .wp-block-button__link,
+.is-style-jace-flat-button .wp-block-button__link:hover,
+.is-style-jace-flat-button .wp-block-button__link:focus,
+.is-style-jace-flat-button .wp-block-button__link:active,
+.is-style-jace-flat-button .wp-block-button__link:visited,
+.is-style-jace-flat-button .wp-block-navigation__responsive-container-open,
+.is-style-jace-flat-button .wp-block-navigation__responsive-container-close,
+.is-style-jace-flat-button .wp-block-navigation__responsive-container-open:hover,
+.is-style-jace-flat-button .wp-block-navigation__responsive-container-close:hover,
+.is-style-jace-flat-button .wp-block-navigation__responsive-container-open:focus,
+.is-style-jace-flat-button .wp-block-navigation__responsive-container-close:focus
+.is-style-jace-flat-button .wp-block-navigation__responsive-container-open:visited,
+.is-style-jace-flat-button .wp-block-navigation__responsive-container-close:visited {
+	box-shadow: none;
+	border-radius: 0;
+	margin-top: initial;
+	margin-bottom: initial;
+}
+
+/* Button with shadow */
+.is-style-jace-shadow-button .wp-block-button__link,
+.is-style-jace-shadow-button .wp-block-button__link:hover,
+.is-style-jace-shadow-button .wp-block-button__link:focus,
+.is-style-jace-shadow-button .wp-block-button__link:visited {
+	box-shadow: var(--wp--custom--button-shadow);
+}
+
+.is-style-jace-shadow-button .wp-block-button__link:active {
+	box-shadow: var(--wp--custom--button-highlight);
+}
+
+/* Transparent button */
+.is-style-jace-no-bg .wp-block-button__link,
+.is-style-jace-no-bg .wp-block-button__link:hover,
+.is-style-jace-no-bg .wp-block-button__link:focus,
+.is-style-jace-no-bg .wp-block-button__link:active,
+.is-style-jace-no-bg .wp-block-button__link:visited,
+.is-style-jace-no-bg .wc-block-mini-cart__button {
+	box-shadow: none;
+	border-radius: 0;
+	margin-top: initial;
+	margin-bottom: initial;
+	background: none;
+	border: none;
+}
+
+/* Match the button border radius for consistency. */
+.is-style-jace-image-border-radius {
+	border-radius: var(--wp--custom--button-border-radius);
+}
+
+/* Do not show animations if the user prefers reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+
+	.is-style-jace-grow-button .wp-block-button__link,
+	.is-style-jace-pulse-button .wp-block-button__link {
+		transition: all .3s ease-in-out;
+	}
+
+	.is-style-jace-grow-button .wp-block-button__link:hover,
+	.is-style-jace-grow-button .wp-block-button__link:focus {
+		padding: 0.4rem 1rem;
+		font-size: 110%;
+	}
+
+	/* This animation works best if the border radius and width is unchanged.
+	* The pulse is the same color as the button text but with lower opacity.
+	*/
+	.is-style-jace-pulse-button .wp-block-button__link:hover::before,
+	.is-style-jace-pulse-button .wp-block-button__link:focus::before {
+		content: "";
+		position: absolute;
+		border: currentcolor solid 4px;
+		border-radius: var(--wp--custom--button-border-radius);
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		animation-duration: 1.6s;
+		opacity: 0;
+		animation-name: jace-pulse-button-border;
+	}
+
+	@keyframes jace-pulse-button-border {
+
+		0% {
+			top: -8px;
+			right: -8px;
+			bottom: -8px;
+			left: -8px;
+			opacity: 0.1;
+		}
+
+		100% {
+			top: -16px;
+			right: -16px;
+			bottom: -16px;
+			left: -16px;
+			opacity: 0;
+		}
+	}
+
+	.wp-block-image.is-style-jace-zoom-image,
+	.wp-block-image.is-style-jace-zoom-image div,
+	.wp-block-post-featured-image.is-style-jace-zoom-image,
+	.wp-block-post-featured-image.is-style-jace-zoom-image div {
+		overflow: hidden;
+	}
+
+	.wp-block-image.is-style-jace-zoom-image img,
+	.wp-block-post-featured-image.is-style-jace-zoom-image img {
+		transition: all .2s ease-in-out;
+	}
+
+	.wp-block-image.is-style-jace-zoom-image img:hover,
+	.wp-block-image.is-style-jace-zoom-image img:focus,
+	.wp-block-post-featured-image.is-style-jace-zoom-image img:hover,
+	.wp-block-post-featured-image.is-style-jace-zoom-image img:focus {
+		transform: scale(1.1);
+	}
+
+	.is-style-jace-slide-up {
+		animation-duration: 1.6s;
+		animation-name: jace-slide-up;
+	}
+
+	.block-editor-block-list__block.is-style-jace-slide-up {
+		animation-name: none;
+	}
+
+	@keyframes jace-slide-up {
+
+		from {
+			transform: translateY(2em);
+		}
+
+		to {
+			transform: translateY(0);
+		}
+	}
+}
+
+/* Text shadow */
+.is-style-jace-text-shadow {
+	text-shadow: var(--wp--custom--text-shadow);
+}
+
+/* Box shadow */
+.is-style-jace-box-shadow {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Lists*/
+.is-style-jace-list-underline li {
+	border-bottom: 1px solid currentcolor;
+}
+
+.is-style-jace-list-underline ul,
+.is-style-jace-list-underline ol {
+	border-top: 1px solid currentcolor;
+}
+
+.is-style-jace-list-underline ul li,
+.is-style-jace-list-underline ol li {
+	border: none;
+}
+
+/* Checklist */
+.is-style-jace-checklist,
+.is-style-jace-checklist li ul,
+.is-style-jace-checklist li ol {
+	list-style-type: none;
+}
+
+.is-style-jace-checklist li {
+	position: relative;
+}
+
+.is-style-jace-checklist li::before,
+.is-style-jace-checklist li ol li::before {
+	content: "\2713";
+	position: absolute;
+	top: 0;
+	left: -1.2em;
+}
+
+/* Shadow */
+.is-style-jace-list-shadow {
+	padding-left: 0;
+}
+
+.is-style-jace-list-shadow > li:not(.wp-block-navigation-item) {
+	list-style-type: none;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+	margin-bottom: 1rem;
+	padding: 0.4rem 1rem;
+	border-radius: var(--wp--custom--button-border-radius);
+}
+
+.is-style-jace-vertical-text {
+	writing-mode: vertical-lr;
+}
+
+.is-style-jace-skewed {
+	transform: rotate(-0.9deg);
+}
+
+.is-jace-overlay {
+	position: relative;
+}
+
+.jace-scroll-to-top {
+	transform: rotate(180deg);
+	filter: invert(100%);
+}
+
+/* Kept for backwards compatibility */
+.is-style-jace-no-gutter.wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
+	margin: 0;
+}
+
+/** Add a border to the header pattern for the black and white variation */
+.jace-pattern-header-image figure img {
+	border: var(--wp--custom--jace-pattern-header-image);
+}
+
+@media ( max-width: 1024px ) {
+	.jace-pattern-circular-image-overlay .is-jace-overlay {
+		margin-top: -3rem;
+	}
+}

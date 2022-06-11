@@ -1,0 +1,4 @@
+ol li,
+ul li:not(.wp-block-navigation-item) {
+	margin-bottom: .5rem;
+}

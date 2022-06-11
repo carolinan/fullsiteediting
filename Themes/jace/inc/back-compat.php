@@ -33,7 +33,7 @@ add_action( 'after_switch_theme', 'jace_switch_theme' );
  */
 function jace_upgrade_notice() {
 	/* translators: %1$s: WordPress version. %2$s PHP version.*/
-	$message = sprintf( esc_html__( 'This theme requires at least WordPress version 5.8 and PHP version 7.4. You are running WordPress version %1$s and PHP version %2$s. Please upgrade and try again.', 'jace' ), $GLOBALS['wp_version'], PHP_VERSION );
+	$message = sprintf( esc_html__( 'This theme requires at least WordPress version 6.0 and PHP version 7.4. You are running WordPress version %1$s and PHP version %2$s. Please upgrade and try again.', 'jace' ), $GLOBALS['wp_version'], PHP_VERSION );
 	printf( '<div class="error"><p>%s</p></div>', $message ); // phpcs:ignore WordPress.Security.EscapeOutput
 }
 
@@ -49,7 +49,7 @@ function jace_customize() {
 	wp_die(
 		sprintf(
 			/* translators: %1$s: WordPress version. %2$s PHP version.*/
-			esc_html__( 'This theme requires at least WordPress version 5.8 and PHP version 7.4. You are running WordPress version %1$s and PHP version %2$s. Please upgrade and try again.', 'jace' ),
+			esc_html__( 'This theme requires at least WordPress version 6.0 and PHP version 7.4. You are running WordPress version %1$s and PHP version %2$s. Please upgrade and try again.', 'jace' ),
 			esc_html( $GLOBALS['wp_version'] ),
 			esc_html( PHP_VERSION )
 		),
@@ -74,7 +74,7 @@ function jace_preview() {
 		wp_die(
 			sprintf(
 				/* translators: %1$s: WordPress version. %2$s PHP version.*/
-				esc_html__( 'This theme requires at least WordPress version 5.8 and PHP version 7.4. You are running WordPress version %1$s and PHP version %2$s. Please upgrade and try again.', 'jace' ),
+				esc_html__( 'This theme requires at least WordPress version 6.0 and PHP version 7.4. You are running WordPress version %1$s and PHP version %2$s. Please upgrade and try again.', 'jace' ),
 				esc_html( $GLOBALS['wp_version'] ),
 				esc_html( PHP_VERSION )
 			)

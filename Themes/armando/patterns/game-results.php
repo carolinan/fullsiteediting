@@ -10,7 +10,6 @@
  */
 
 ?>
-
 <!-- wp:group {"layout":{"inherit":false,"contentSize":"400px"}} -->
 <div class="wp-block-group">
 	<!-- wp:columns -->
@@ -38,10 +37,12 @@
 		<!-- /wp:column -->
 	</div>
 	<!-- /wp:columns -->
-	<!-- wp:buttons {"contentJustification":"center"} -->
-	<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue","textColor":"white"} -->
-	<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-dark-blue-background-color has-text-color has-background"><strong><?php echo esc_html_x( 'Read more', 'sample content', 'armando' ); ?></strong></a></div>
+
+	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+	<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"dark-blue","textColor":"white"} -->
+	<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-dark-blue-background-color has-text-color has-background" href="#"><strong><?php echo esc_html_x( 'Read more', 'sample content', 'armando' ); ?></strong></a></div>
 	<!-- /wp:button --></div>
 	<!-- /wp:buttons -->
+
 </div>
 <!-- /wp:group -->

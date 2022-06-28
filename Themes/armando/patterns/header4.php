@@ -23,21 +23,21 @@
 
 <!-- wp:cover {"url":"","id":63,"contentPosition":"top center","isDark":false,"align":"full"} -->
 <div class="wp-block-cover alignfull is-light has-custom-content-position is-position-top-center"><span aria-hidden="true" class="has-background-dim-100 wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container">
-	<!-- wp:heading {"textAlign":"center","align":"full","textColor":"white","fontSize":"x-large"} -->
-<h2 class="alignfull has-text-align-center has-white-color has-text-color has-x-large-font-size" id="headline-1">
-<?php echo _x( 'HEADLINE', 'sample content', 'armando' ); ?></h2>
-<!-- /wp:heading -->
+	<!-- wp:heading {"textAlign":"center","align":"full","textColor":"white","fontSize":"x-large"} --><h2 class="alignfull has-text-align-center has-white-color has-text-color has-x-large-font-size" id="headline-1">
+	<?php echo _x( 'HEADLINE', 'sample content', 'armando' ); ?></h2>
+	<!-- /wp:heading -->
 
-<!-- wp:spacer {"height":"20px"} -->
-<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
+	<!-- wp:spacer {"height":"20px"} -->
+	<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- /wp:spacer -->
 
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
-<div class="wp-block-buttons">
-<!-- wp:button {"backgroundColor":"dark-blue","textColor":"white","width":100,"className":"is-style-fill"} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-fill"><a class="wp-block-button__link has-white-color has-dark-blue-background-color has-text-color has-background"><strong><?php echo _x( 'CUSTOMIZE YOUR CALL TO ACTION', 'sample content', 'armando' ); ?></strong></a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div></div>
+	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+	<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"dark-blue","textColor":"white","style":{"typography":{"textTransform":"uppercase"}}} -->
+	<div class="wp-block-button" style="text-transform:uppercase"><a class="wp-block-button__link has-white-color has-dark-blue-background-color has-text-color has-background" href="#"><strong><?php echo _x( 'CUSTOMIZE YOUR CALL TO ACTION', 'sample content', 'armando' ); ?></strong></a></div>
+	<!-- /wp:button --></div>
+	<!-- /wp:buttons -->
+</div>
+</div>
 <!-- /wp:cover -->
 
 </div>

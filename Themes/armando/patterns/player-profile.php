@@ -30,14 +30,11 @@
 	<!-- /wp:column -->
 	<!-- wp:column -->
 	<div class="wp-block-column">
-
-	
-		<!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder.png' ) ); ?>","id":56,"contentPosition":"bottom left"} -->
-		<div class="wp-block-cover has-background-dim has-custom-content-position is-position-bottom-left"><img class="wp-block-cover__image-background wp-image-56" alt="" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder.png' ) ); ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+		<!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder.png' ) ); ?>","dimRatio":50,"contentPosition":"bottom left"} -->
+		<div class="wp-block-cover has-custom-content-position is-position-bottom-left"><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/placeholder.png' ) ); ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
 		<p class="has-text-align-center has-large-font-size"><?php echo esc_html_x( '#1 (Replace with shirt number)', 'sample content', 'armando' ); ?></p>
 		<!-- /wp:paragraph --></div></div>
 		<!-- /wp:cover -->
-
 	</div>
 	<!-- /wp:column -->
 </div>

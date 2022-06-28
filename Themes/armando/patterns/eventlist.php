@@ -51,8 +51,9 @@
 	<!-- /wp:column -->
 	<!-- wp:column {"verticalAlignment":"center"} -->
 	<div class="wp-block-column is-vertically-aligned-center">
-		<!-- wp:buttons {"contentJustification":"center"} --><div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue","className":"has-custom-font-size has-small-font-size"} -->
-		<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link has-dark-blue-background-color has-background"><strong><?php echo esc_html_x( 'Read more', 'sample content', 'armando' ); ?></strong></a></div><!-- /wp:button --></div>
+		<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
+		<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"dark-blue","textColor":"white","className":"has-custom-font-size has-small-font-size"} -->
+		<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link has-white-color has-dark-blue-background-color has-text-color has-background"><strong><?php echo esc_html_x( 'Read more', 'sample content', 'armando' ); ?></strong></a></div><!-- /wp:button --></div>
 		<!-- /wp:buttons -->
 	</div>
 	<!-- /wp:column -->
@@ -101,9 +102,9 @@
 	<!-- /wp:column -->
 	<!-- wp:column {"verticalAlignment":"center"} -->
 	<div class="wp-block-column is-vertically-aligned-center">
-		<!-- wp:buttons {"contentJustification":"center"} -->
-		<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue","className":"has-custom-font-size has-small-font-size"} -->
-		<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link has-dark-blue-background-color has-background"><strong><?php echo esc_html_x( 'Read more', 'sample content', 'armando' ); ?></strong></a></div>
+	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
+	<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"dark-blue","textColor":"white","className":"has-custom-font-size has-small-font-size"} -->
+	<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link has-white-color has-dark-blue-background-color has-text-color has-background"><strong><?php echo esc_html_x( 'Read more', 'sample content', 'armando' ); ?></strong></a></div>
 		<!-- /wp:button --></div>
 		<!-- /wp:buttons -->
 	</div>
@@ -152,9 +153,9 @@
 	<!-- /wp:column -->
 	<!-- wp:column {"verticalAlignment":"center"} -->
 	<div class="wp-block-column is-vertically-aligned-center">
-		<!-- wp:buttons {"contentJustification":"center"} -->
-		<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue", "className":"has-custom-font-size has-small-font-size"} -->
-		<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link has-dark-blue-background-color has-background"><strong><?php echo esc_html_x( 'Read more', 'sample content', 'armando' ); ?></strong></a></div>
+	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
+	<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"dark-blue","textColor":"white","className":"has-custom-font-size has-small-font-size"} -->
+	<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link has-white-color has-dark-blue-background-color has-text-color has-background"><strong><?php echo esc_html_x( 'Read more', 'sample content', 'armando' ); ?></strong></a></div>
 		<!-- /wp:button --></div>
 		<!-- /wp:buttons -->
 	</div>

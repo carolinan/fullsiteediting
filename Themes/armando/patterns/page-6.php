@@ -29,8 +29,8 @@
 <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"dark-blue","className":"has-custom-font-size has-small-font-size"} -->
-<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link has-dark-blue-background-color has-background"><?php echo esc_html_x( 'Contact', 'sample content', 'armando' ); ?></a></div>
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"dark-blue","textColor":"white","className":"has-custom-font-size has-small-font-size"} -->
+<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link has-white-color has-dark-blue-background-color has-text-color has-background"><?php echo esc_html_x( 'Contact', 'sample content', 'armando' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 <!-- wp:social-links {"iconColor":"black","iconColorValue":"#000","className":"is-style-logos-only"} -->

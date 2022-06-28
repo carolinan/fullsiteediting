@@ -39,8 +39,8 @@
 	</div>
 	<!-- /wp:columns -->
 	<!-- wp:buttons {"contentJustification":"center"} -->
-	<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue"} -->
-	<div class="wp-block-button"><a class="wp-block-button__link has-dark-blue-background-color has-background"><strong><?php echo esc_html_x( 'Read more', 'sample content', 'armando' ); ?></strong></a></div>
+	<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue","textColor":"white"} -->
+	<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-dark-blue-background-color has-text-color has-background"><strong><?php echo esc_html_x( 'Read more', 'sample content', 'armando' ); ?></strong></a></div>
 	<!-- /wp:button --></div>
 	<!-- /wp:buttons -->
 </div>

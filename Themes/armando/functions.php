@@ -15,8 +15,11 @@
  */
 define( 'ARMANDO_VERSION', wp_get_theme()->get( 'Version' ) );
 
-/** Check if the WordPress version is 5.5 or higher, and if the PHP version is at least 7.2. If not, do not activate. */
-if ( version_compare( $GLOBALS['wp_version'], '5.5', '<' ) || version_compare( PHP_VERSION_ID, '70200', '<' ) ) {
+/*
+ * Check if the WordPress version is 6.0 or higher, and if the PHP version is at least 7.2.
+ * If not, do not activate.
+ */
+if ( version_compare( $GLOBALS['wp_version'], '6.0', '<' ) || version_compare( PHP_VERSION_ID, '70200', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
 	return;
 }
@@ -43,41 +46,27 @@ add_action( 'after_setup_theme', 'armando_setup' );
 // Block styles.
 require_once 'inc/block-styles.php';
 
-// Block patterns.
-require_once 'inc/block-patterns.php';
-
-// Header block patterns.
-require_once 'inc/header-block-patterns.php';
-
-// Footer block patterns.
-require_once 'inc/footer-block-patterns.php';
-
-// Page layout block patterns.
-require_once 'inc/page-layout-block-patterns.php';
-
-// Sport block patterns.
-require_once 'inc/sport-block-patterns.php';
-
-// Query block patterns.
-require_once 'inc/query-block-patterns.php';
+// Block categories.
+require_once 'inc/block-pattern-categories.php';
 
 /**
  * Enqueue the style.css file.
  *
+ * @return void
  * @since 1.0.0
  */
 function armando_styles() {
 	wp_enqueue_style(
 		'armando-style',
 		get_stylesheet_uri(),
-		'',
+		[],
 		ARMANDO_VERSION
 	);
-	
+
 	wp_enqueue_style(
-		'armando-shared-stylez',
+		'armando-shared-styles',
 		get_theme_file_uri( 'assets/css/style-shared.css' ),
-		'',
+		[],
 		ARMANDO_VERSION
 	);
 }

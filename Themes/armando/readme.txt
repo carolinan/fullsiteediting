@@ -1,25 +1,36 @@
 === Armando ===
 Contributors: poena
-Tested up to: 5.9
-Requires at least: 5.5
+Tested up to: 6.0
+Requires at least: 6.0
 Requires PHP: 7.2
-Version: 1.2.4
+Version: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 A full site editing theme for blogs or sports teams.
 
 == Description ==
-An experimental full site editing theme for blogs or sports teams.
-This theme requires Gutenberg version 10.6 or newer.
+A full site editing theme for blogs or sports teams.
 Armando includes multiple block styles and block patterns including site headers, site footers and page layouts.
 
 Named after Diego Armando Maradona https://en.wikipedia.org/wiki/Diego_Maradona
 
-== To do ==
-Handle the duplicate CSS smarter.
 
 == Changelog ==
+
+* June 26 2022 Version: 2.0.0.
+Updated the theme for WordPress 6.0. This is a large structural update.
+Removed the colors from the template parts since this is no longer supported by WordPress.
+Removed CSS that is no longer needed.
+Reduced the styles and markup needed for the sidebars.
+Replaced the old comments area with the new blocks.
+Fixed an issue with the main content width.
+Adjusted spacing.
+Repositioned the post meta.
+Moved patterns into the patterns folder.
+Solved bugs with the custom block styles that were not loading in the editors.
+Removed the beige color.
+Remove the composer.lock file that was included for WordPress.org by mistake.
 
 * January 13 2022 Version: 1.2.4.
 Update the theme for WordPress 5.9.

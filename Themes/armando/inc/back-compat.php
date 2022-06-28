@@ -28,12 +28,12 @@ add_action( 'after_switch_theme', 'armando_switch_theme' );
  *
  * @since 1.0.0
  *
- * @global string $wp_version WordPress version.
+ * @global mixed $wp_version WordPress version.
  * @return void
  */
 function armando_upgrade_notice() {
 	/* translators: %1$s: WordPress version. %2$s PHP version.*/
-	$message = sprintf( esc_html__( 'This theme requires at least WordPress version 5.5 and PHP version 7.2. You are running WordPress version %1$s and PHP version %2$s. Please upgrade and try again.', 'armando' ), $GLOBALS['wp_version'], PHP_VERSION );
+	$message = sprintf( esc_html__( 'This theme requires at least WordPress version 6.0 and PHP version 7.2. You are running WordPress version %1$s and PHP version %2$s. Please upgrade and try again.', 'armando' ), $GLOBALS['wp_version'], PHP_VERSION );
 	printf( '<div class="error"><p>%s</p></div>', $message ); // phpcs:ignore WordPress.Security.EscapeOutput
 }
 
@@ -49,7 +49,7 @@ function armando_customize() {
 	wp_die(
 		sprintf(
 			/* translators: %1$s: WordPress version. %2$s PHP version.*/
-			esc_html__( 'This theme requires at least WordPress version 5.5 and PHP version 7.2. You are running WordPress version %1$s and PHP version %2$s. Please upgrade and try again.', 'armando' ),
+			esc_html__( 'This theme requires at least WordPress version 6.0 and PHP version 7.2. You are running WordPress version %1$s and PHP version %2$s. Please upgrade and try again.', 'armando' ),
 			esc_html( $GLOBALS['wp_version'] ),
 			esc_html( PHP_VERSION )
 		),
@@ -74,7 +74,7 @@ function armando_preview() {
 		wp_die(
 			sprintf(
 				/* translators: %1$s: WordPress version. %2$s PHP version.*/
-				esc_html__( 'This theme requires at least WordPress version 5.5 and PHP version 7.2. You are running WordPress version %1$s and PHP version %2$s. Please upgrade and try again.', 'armando' ),
+				esc_html__( 'This theme requires at least WordPress version 6.0 and PHP version 7.2. You are running WordPress version %1$s and PHP version %2$s. Please upgrade and try again.', 'armando' ),
 				esc_html( $GLOBALS['wp_version'] ),
 				esc_html( PHP_VERSION )
 			)

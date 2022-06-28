@@ -1,6 +1,6 @@
 <?php
 /**
- * Without this file, WordPress will consider the theme broken.
+ * This file has been left empty on purpose.
  *
  * @package armando
  */

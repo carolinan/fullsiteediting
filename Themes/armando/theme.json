@@ -25,11 +25,6 @@
 					"name": "Light blue"
 				},
 				{
-					"slug": "beige",
-					"color": "#c7c0af",
-					"name": "Beige"
-				},
-				{
 					"slug": "silver",
 					"color": "#ececec",
 					"name": "Silver"
@@ -45,11 +40,6 @@
 					"colors": [ "#1d1f35", "#6cace4" ],
 					"slug": "dark-blue-and-light-blue",
 					"name": "Dark blue and light blue"
-				},
-				{
-					"colors": [ "#1d1f35", "#c7c0af" ],
-					"slug": "dark-blue-and-beige",
-					"name": "Dark blue and beige"
 				}
 			],
 			"gradients": []
@@ -117,6 +107,9 @@
 		"layout": {
 			"contentSize": "840px",
 			"wideSize": "1100px"
+		},
+		"custom": {
+			"box-shadow": "0 2px 5px rgb(0 0 0 / 2%), 0 4px 10px rgb(0 0 0 / 4%)"
 		}
 	},
 	"styles": {
@@ -128,14 +121,6 @@
 			"fontSize": "20px",
 			"fontFamily": "var(--wp--preset--font-family--system-fonts)",
 			"lineHeight": "1.7"
-		},
-		"spacing": {
-			"margin": {
-				"top": "0px",
-				"right": "0px",
-				"bottom": "0px",
-				"left": "0px"
-			}
 		},
 		"elements": {
 			"link": {
@@ -178,12 +163,24 @@
 				"color": {
 					"text": "var(--wp--preset--color--dark-blue)"
 				}
+			},
+			"button": {
+				"border": {
+					"width": "0px",
+					"radius": "4px"
+				}
 			}
 		},
 		"blocks": {
 			"core/post-title": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--x-large)"
+				},
+				"spacing": {
+					"margin": {
+						"top": "0px",
+						"bottom":"0.5em"
+					}
 				}
 			},
 			"core/paragraph": {
@@ -288,10 +285,9 @@
 					}
 				}
 			},
-			"core/template-part": {
+			"core/columns": {
 				"spacing": {
 					"margin": {
-						"top": "0px",
 						"bottom": "0px"
 					}
 				}
@@ -313,22 +309,22 @@
 	"customTemplates": [
 		{
 			"name": "post-sidebar-right",
-			"title": "Two columns, right sidebar",
+			"title": "Post: Two columns, right sidebar",
 			"postTypes": [ "post" ]
 		},
 		{
 			"name": "post-sidebar-left",
-			"title": "Two columns, left sidebar",
+			"title": "Post: Two columns, left sidebar",
 			"postTypes": [ "post" ]
 		},
 		{
 			"name": "page-sidebar-right",
-			"title": "Two columns, right sidebar",
+			"title": "Page: Two columns, right sidebar",
 			"postTypes": [ "page" ]
 		},
 		{
 			"name": "page-sidebar-left",
-			"title": "Two columns, left sidebar",
+			"title": "Page: Two columns, left sidebar",
 			"postTypes": [ "page" ]
 		},
 		{
@@ -336,5 +332,6 @@
 			"title": "Template for block pattern layouts",
 			"postTypes": [ "page", "post" ]
 		}
-	]
+	],
+	"patterns": [ "heading-with-two-font-sizes-and-separators" ]
 }

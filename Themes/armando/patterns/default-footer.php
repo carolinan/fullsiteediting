@@ -25,7 +25,7 @@
 		<!-- wp:paragraph {"align":"center"} -->
 		<p class="has-text-align-center"><strong><?php echo esc_html_x( 'Never miss the latest news', 'sample content', 'armando' ); ?></strong></p>
 		<!-- /wp:paragraph -->
-		
+
 		<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 		<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"light-blue","textColor":"dark-blue"} -->
 		<div class="wp-block-button"><a class="wp-block-button__link has-dark-blue-color has-light-blue-background-color has-text-color has-background" href="#"><?php echo esc_html_x( 'Join our mailing list', 'sample content', 'armando' ); ?></a></div>

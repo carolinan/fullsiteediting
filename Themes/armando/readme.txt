@@ -18,7 +18,7 @@ Named after Diego Armando Maradona https://en.wikipedia.org/wiki/Diego_Maradona
 
 == Changelog ==
 
-* June 26 2022 Version: 2.0.0.
+* June 29 2022 Version: 2.0.0.
 Updated the theme for WordPress 6.0. This is a large structural update.
 Removed the colors from the template parts since this is no longer supported by WordPress.
 Removed CSS that is no longer needed.
@@ -27,7 +27,7 @@ Replaced the old comments area with the new blocks.
 Fixed an issue with the main content width.
 Adjusted spacing.
 Repositioned the post meta.
-Moved patterns into the patterns folder.
+Moved patterns into the patterns folder. One pattern was removed from the theme and submitted to the pattern directory, awaiting approval.
 Solved bugs with the custom block styles that were not loading in the editors.
 Removed the beige color.
 Remove the composer.lock file that was included for WordPress.org by mistake.

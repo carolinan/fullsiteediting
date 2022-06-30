@@ -5,9 +5,24 @@
 		"color": {
 			"palette": [
 				{
-					"slug": "",
-					"color": "",
-					"name": ""
+					"slug": "background",
+					"color": "#1d2327",
+					"name": "Background"
+				},
+				{
+					"slug": "foreground",
+					"color": "#f0f0f1",
+					"name": "Foreground"
+				},
+				{
+					"slug": "primary",
+					"color": "#5093D4",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#153956",
+					"name": "Secondary"
 				}
 			],
 			"gradients": [
@@ -22,8 +37,8 @@
 			"units": []
 		},
 		"layout": {
-			"contentSize": "",
-			"wideSize": ""
+			"contentSize": "700px",
+			"wideSize": "1100px"
 		},
 		"typography": {
 			"fontFamilies": [

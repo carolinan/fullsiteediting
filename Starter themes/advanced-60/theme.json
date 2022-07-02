@@ -348,6 +348,14 @@
 			"name": "sidebar-post-template",
 			"title": "Post with sidebar",
 			"postTypes": [ "post" ]
+		},
+		{
+			"name": "single-product",
+			"title": "WooCommerce single product (Requires WooCommerce)"
+		},
+		{
+			"name": "archive-product",
+			"title": "WooCommerce product archive (Requires WooCommerce)"
 		}
 	]
 }

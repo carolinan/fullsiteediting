@@ -16,7 +16,7 @@
 <!-- /wp:heading -->
 <!-- wp:paragraph --><p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'full-site-editing' ); ?></p><!-- /wp:paragraph -->
 <!-- wp:search {"label":"Search","showLabel":false,"buttonText":"Search"} /-->
-<!-- wp:spacer {"height":40} -->
+<!-- wp:spacer {"height":"40px"} -->
 <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 <!-- wp:group {"style":{"border":{"style":"solid","radius":"4px"}},"borderColor":"transparent","backgroundColor":"secondary","layout":{"inherit":true}} -->

@@ -1,6 +1,7 @@
 <?php
 /**
  * Title: Search page block pattern
+ * Slug: full-site-editing/search
  * Categories: featured
  * inserter: no
  *

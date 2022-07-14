@@ -1,6 +1,7 @@
 <?php
 /**
  * Title: Post header with featured image
+ * Slug: full-site-editing/post-header-featured-image
  * Categories: featured
  * Block Types: core/post-title, core/post-featured-image
 

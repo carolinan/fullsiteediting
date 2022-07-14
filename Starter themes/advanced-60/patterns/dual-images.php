@@ -1,6 +1,7 @@
 <?php
 /**
  * Title: Dual images block pattern example
+ * Slug: full-site-editing/dual-images
  * Categories: featured
  * Block Types: core/media-text
  *

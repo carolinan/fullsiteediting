@@ -13,7 +13,7 @@ select {
 
 textarea,
 select,
-button:not(.components-button):not(.wp-block-navigation *),
+button:not(.components-button):not(.wp-block-navigation *):not(.pswp__button),
 input[type="color"],
 input[type="date"],
 input[type="datetime-local"],
@@ -35,7 +35,7 @@ input[type="week"] {
 	line-height: 1.7;
 }
 
-button:not(.components-button):not(.wp-block-navigation *),
+button:not(.components-button):not(.wp-block-navigation *):not(.pswp__button),
 input[type="reset"],
 input[type="submit"] {
 	border: 2px solid var(--wp--custom--button-border-color);
@@ -46,8 +46,8 @@ input[type="submit"] {
 	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
-button:not(.components-button):not(.wp-block-navigation *):focus,
-button:not(.components-button):not(.wp-block-navigation *):hover,
+button:not(.components-button):not(.wp-block-navigation *):not(.pswp__button):focus,
+button:not(.components-button):not(.wp-block-navigation *):not(.pswp__button):hover,
 input[type="reset"]:focus,
 input[type="reset"]:hover,
 input[type="submit"]:focus,
@@ -57,7 +57,7 @@ input[type="submit"]:hover {
 	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
-button:not(.components-button):not(.wp-block-navigation *):active,
+button:not(.components-button):not(.wp-block-navigation *):not(.pswp__button):active,
 input[type="reset"]:active,
 input[type="submit"]:active {
 	border-color: var(--wp--custom--button-border-color);
@@ -66,15 +66,6 @@ input[type="submit"]:active {
 	filter: brightness(93%) !important;
 	margin-top: 1px;
 	margin-bottom: -1px;
-}
-
-button:not(.components-button):not(.wp-block-navigation *):visited,
-input[type="reset"]:visited,
-input[type="submit"]:visited {
-	background-color: initial;
-	border-color: var(--wp--custom--button-border-color);
-	color: var(--wp--preset--color--foreground);
-	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
 .post-password-form input[type="password"] {

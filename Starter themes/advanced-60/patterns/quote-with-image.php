@@ -1,6 +1,7 @@
 <?php
 /**
- * Title Quote and image
+ * Title: Quote and image
+ * Slug: full-site-editing/quote-with-image
  * Categories: featured
  * Block Types: core/image, core/quote
  *

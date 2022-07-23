@@ -19,6 +19,8 @@ function full_site_editing_search_title() {
 		$search_term = sanitize_text_field( wp_unslash( $_GET['s'] ) );
 		/* translators: %s: Search term. */
 		return isset( $search_term ) ? sprintf( esc_html__( 'Search results for "%s"', 'full-site-editing' ), esc_html( $search_term ) ) : __( 'Search results', 'full-site-editing' );
+	} else {
+		return __( 'Search results placeholder title', 'full-site-editing' );
 	}
 }
 

@@ -125,14 +125,6 @@
 		}
 	},
 	"styles": {
-		"spacing":{
-			"margin": {
-				"top": "0px",
-				"right": "0px",
-				"bottom": "0px",
-				"left": "0px"
-			}
-		},
 		"color": {
 			"background": "var(--wp--preset--color--background)",
 			"text": "var(--wp--preset--color--foreground)"

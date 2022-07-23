@@ -179,13 +179,7 @@
 	},
 	"styles": {
 		"spacing":{
-			"blockGap": "var(--wp--custom--v-spacing)",
-			"margin": {
-				"top": "0px",
-				"right": "0px",
-				"bottom": "0px",
-				"left": "0px"
-			}
+			"blockGap": "var(--wp--custom--v-spacing)"
 		},
 		"color": {
 			"background": "var(--wp--preset--color--background)",

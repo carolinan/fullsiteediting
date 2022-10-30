@@ -1,0 +1,43 @@
+.wp-block-button__link {
+	box-shadow: var(--wp--custom--small-button-shadow);
+}
+
+.wp-block-button__link:focus,
+.wp-block-button__link:hover {
+	color: var(--wp--preset--color--foreground);
+	filter: brightness(94%) !important;
+	box-shadow: var(--wp--custom--small-button-shadow);
+}
+
+.wp-block-button__link:active {
+	border-color: var(--wp--custom--button-border-color);
+	box-shadow: var(--wp--custom--button-highlight);
+	color: var(--wp--preset--color--foreground);
+	filter: brightness(93%) !important;
+	margin-top: 1px;
+	margin-bottom: -1px;
+}
+
+.wp-block-button__link:visited {
+	background-color: initial;
+	border-color: var(--wp--custom--button-border-color);
+	color: var(--wp--preset--color--foreground);
+	box-shadow: var(--wp--custom--small-button-shadow);
+}
+
+/* The padding in theme.json is not applied to the outlined button,
+ so it is added manually */
+.is-style-outline > .wp-block-button__link,
+.wp-block-button__link.is-style-outline {
+	padding: var(--wp--custom--button-padding);
+}
+
+/* Match the editor */
+.wp-block-buttons > .wp-block-button {
+	margin-top: .5em;
+}
+
+.wp-block-button__link svg {
+	vertical-align: middle;
+	fill: currentcolor;
+}

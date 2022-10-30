@@ -1,0 +1,16 @@
+/* These are inner elements of blocks that can't be targetted using theme.json*/
+
+/*
+* Without this spacing, the list items are very close if there is no excerpt,
+* which makes them more difficult to read.
+*/
+.wp-block-latest-posts.wp-block-latest-posts__list li {
+	margin-bottom: var(--wp--custom--v-spacing);
+}
+
+/* Match the default color and font size of the posts */
+.wp-block-latest-posts__post-author,
+.wp-block-latest-posts__post-date {
+	color: var(--wp--preset--color--primary);
+	font-size: var(--wp--preset--font-size--extra-small);
+}

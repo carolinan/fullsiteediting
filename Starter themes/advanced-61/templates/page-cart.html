@@ -1,0 +1,52 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header is-style-full-site-editing-sticky"} /-->
+
+<!-- wp:group {"tagName":"main","align":"full","style":{"spacing":{"padding":{"top":"calc(var(--wp--custom--v-spacing, 1.25rem) *3)","bottom":"calc(var(--wp--custom--v-spacing, 1.25rem) *2)"}}},"layout":{"inherit":true}} -->
+<main class="wp-block-group alignfull" style="padding-top:calc(var(--wp--custom--v-spacing, 1.25rem) *3);padding-bottom:calc(var(--wp--custom--v-spacing, 1.25rem) *2)">
+
+	<!-- wp:spacer -->
+	<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- /wp:spacer -->
+
+	<!-- wp:woocommerce/cart {"align":"wide"} -->
+	<div class="wp-block-woocommerce-cart alignwide is-loading"><!-- wp:woocommerce/filled-cart-block -->
+	<div class="wp-block-woocommerce-filled-cart-block"><!-- wp:woocommerce/cart-items-block -->
+	<div class="wp-block-woocommerce-cart-items-block"><!-- wp:woocommerce/cart-line-items-block -->
+	<div class="wp-block-woocommerce-cart-line-items-block"></div>
+	<!-- /wp:woocommerce/cart-line-items-block --></div>
+	<!-- /wp:woocommerce/cart-items-block -->
+
+	<!-- wp:woocommerce/cart-totals-block -->
+	<div class="wp-block-woocommerce-cart-totals-block"><!-- wp:woocommerce/cart-order-summary-block -->
+	<div class="wp-block-woocommerce-cart-order-summary-block"></div>
+	<!-- /wp:woocommerce/cart-order-summary-block -->
+
+	<!-- wp:woocommerce/cart-express-payment-block -->
+	<div class="wp-block-woocommerce-cart-express-payment-block"></div>
+	<!-- /wp:woocommerce/cart-express-payment-block -->
+
+	<!-- wp:woocommerce/proceed-to-checkout-block -->
+	<div class="wp-block-woocommerce-proceed-to-checkout-block"></div>
+	<!-- /wp:woocommerce/proceed-to-checkout-block -->
+
+	<!-- wp:woocommerce/cart-accepted-payment-methods-block -->
+	<div class="wp-block-woocommerce-cart-accepted-payment-methods-block"></div>
+	<!-- /wp:woocommerce/cart-accepted-payment-methods-block --></div>
+	<!-- /wp:woocommerce/cart-totals-block --></div>
+	<!-- /wp:woocommerce/filled-cart-block -->
+
+	<!-- wp:woocommerce/empty-cart-block -->
+	<div class="wp-block-woocommerce-empty-cart-block">
+	<!-- wp:heading {"textAlign":"center"} -->
+	<h2 class="has-text-align-center">Your cart is empty. See what's new in store:</h2>
+	<!-- /wp:heading -->
+	<!-- wp:woocommerce/product-new {"rows":1} /--></div>
+	<!-- /wp:woocommerce/empty-cart-block --></div>
+	<!-- /wp:woocommerce/cart -->
+	<!-- wp:spacer -->
+	<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- /wp:spacer -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

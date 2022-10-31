@@ -2,6 +2,7 @@
 	"version": 2,
 	"settings": {
 		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": true,
 		"color": {
 			"palette": [
 				{
@@ -166,8 +167,6 @@
 			]
 		},
 		"custom": {
-			"h-spacing": "2.375rem",
-			"v-spacing": "1.25rem",
 			"text-shadow": "0 2px 8px rgba(0, 0, 0, 0.9)",
 			"button-shadow": "0 8px 8px 0 rgba(0, 0, 0, 0.2)",
 			"small-button-shadow": "0 1px 1px 0 rgba(0, 0, 0, 0.2)",
@@ -179,7 +178,13 @@
 	},
 	"styles": {
 		"spacing":{
-			"blockGap": "var(--wp--custom--v-spacing)"
+			"blockGap": "1rem",
+			"padding": {
+				"top": "2rem",
+				"right": "2rem",
+				"bottom": "2rem",
+				"left": "2rem"
+			}
 		},
 		"color": {
 			"background": "var(--wp--preset--color--background)",
@@ -229,15 +234,15 @@
 			"core/post-navigation-link": {
 				"spacing": {
 					"margin": {
-						"top": "calc(var(--wp--custom--v-spacing) * 3)",
-						"bottom": "var(--wp--custom--v-spacing)"
+						"top": "var(--wp--preset--spacing--50)",
+						"bottom": "var(--wp--preset--spacing--20)"
 					}
 				}
 			},
 			"core/query-pagination": {
 				"spacing": {
 					"margin": {
-						"top": "calc(var(--wp--custom--v-spacing) * 3) !important"
+						"top": "var(--wp--preset--spacing--50)"
 					}
 				}
 			},

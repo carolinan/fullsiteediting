@@ -1,7 +1,7 @@
 === Full Site Editing ===
 Contributors: poena
-Tested up to: 6.0
-Requires at least: 6.0
+Tested up to: 6.1
+Requires at least: 6.1
 Requires PHP: 7.4
 Version: 1.0.0
 License: GPLv2 or later

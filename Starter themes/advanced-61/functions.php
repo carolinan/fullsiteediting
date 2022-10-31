@@ -23,7 +23,6 @@ define( 'FULL_SITE_EDITING_VERSION', wp_get_theme()->get( 'Version' ) );
  * @return void
  */
 function full_site_editing_setup() {
-	add_theme_support( 'wp-block-styles' );
 	add_editor_style( './assets/css/style-shared.min.css' );
 
 	/*

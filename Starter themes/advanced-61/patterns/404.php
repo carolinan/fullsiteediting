@@ -19,8 +19,8 @@
 <!-- wp:spacer {"height":"40px"} -->
 <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
-<!-- wp:group {"style":{"border":{"style":"solid","radius":"4px"}},"borderColor":"transparent","backgroundColor":"secondary","layout":{"inherit":true}} -->
-<div class="wp-block-group has-border-color has-transparent-border-color has-secondary-background-color has-background" style="border-radius:4px;border-style:solid">
+<!-- wp:group {"style":{"border":{"style":"solid","radius":"4px"},"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"borderColor":"transparent","backgroundColor":"secondary","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-transparent-border-color has-secondary-background-color has-background" style="border-style:solid;border-radius:4px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
 <!-- wp:heading {"textAlign":"left"} -->
 <h2 class="has-text-align-left"><?php esc_html_e( 'Latest posts', 'full-site-editing' ); ?></h2>
 <!-- /wp:heading -->

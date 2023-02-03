@@ -15,7 +15,7 @@
 	<!-- wp:group {"layout":{"type":"flex","allowOrientation":false}} -->
 	<div class="wp-block-group">
 		<!-- wp:paragraph {"fontSize":"extra-small"} --><p class="has-extra-small-font-size">
-		<?php esc_html_e( 'Copyright', 'full-site-editing' ) . ' ' . date_i18n( _x( 'Y', 'copyright date format', 'full-site-editing' ) ); ?></p>
+		<?php echo esc_html__( 'Copyright', 'full-site-editing' ) . ' ' . date_i18n( _x( 'Y', 'copyright date format', 'full-site-editing' ) ); ?></p>
 		<!-- /wp:paragraph -->
 		<!-- wp:site-title {"level":0, "fontSize":"extra-small"} /-->
 	</div><!-- /wp:group -->

@@ -29,7 +29,7 @@ function full_site_editing_setup() {
 	 * Load additional block styles.
 	 * See details on how to add more styles in the readme.txt.
 	 */
-	$styled_blocks = [ 'button', 'file', 'latest-comments', 'latest-posts', 'quote', 'search' ];
+	$styled_blocks = [ 'button', 'latest-comments', 'latest-posts', 'quote' ];
 	foreach ( $styled_blocks as $block_name ) {
 		$args = array(
 			'handle' => "full-site-editing-$block_name",

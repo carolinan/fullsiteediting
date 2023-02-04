@@ -3,6 +3,7 @@
 	"rules": {
 		"number-leading-zero": null,
 		"selector-class-pattern": null,
-		"selector-id-pattern": null
+		"selector-id-pattern": null,
+		"no-descending-specificity": null
 	}
 }

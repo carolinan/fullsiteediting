@@ -10,7 +10,7 @@
  */
 
 ?>
-<!-- wp:group {"align":"full","layout":{"type":"flex","allowOrientation":false,"justifyContent":"space-between"}} -->
+<!-- wp:group {"align":"full","layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignfull">
 	<!-- wp:group {"layout":{"type":"flex","allowOrientation":false}} -->
 	<div class="wp-block-group">

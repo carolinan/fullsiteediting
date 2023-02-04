@@ -280,7 +280,7 @@ button.wc-block-pagination-page {
 		padding: 0;
 	}
 
-	.wc-block-cart .wc-block-cart__submit-container--sticky:before {
+	.wc-block-cart .wc-block-cart__submit-container--sticky::before {
 		box-shadow: none;
 		color: inherit;
 	}

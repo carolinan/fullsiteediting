@@ -16,14 +16,6 @@
 function full_site_editing_register_block_styles() {
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/template-part',
-		array(
-			'name'  => 'full-site-editing-sticky',
-			'label' => __( 'Sticky header', 'full-site-editing' ),
-		)
-	);
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/button',
 		array(
 			'name'  => 'full-site-editing-flat-button',

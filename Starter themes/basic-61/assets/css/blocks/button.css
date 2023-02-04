@@ -1,18 +1,11 @@
-.wp-block-button__link {
-	box-shadow: var(--wp--custom--small-button-shadow);
-}
-
 .wp-block-button__link:focus,
 .wp-block-button__link:hover {
-	color: var(--wp--preset--color--foreground);
 	filter: brightness(94%) !important;
-	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
 .wp-block-button__link:active {
 	border-color: rgba(0, 0, 0, 0.05);
 	box-shadow: var(--wp--custom--button-highlight);
-	color: var(--wp--preset--color--foreground);
 	filter: brightness(93%) !important;
 	margin-top: 1px;
 	margin-bottom: -1px;
@@ -21,8 +14,6 @@
 .wp-block-button__link:visited {
 	background-color: initial;
 	border-color: rgba(0, 0, 0, 0.05);
-	color: var(--wp--preset--color--foreground);
-	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
 .is-style-outline > .wp-block-button__link,
@@ -37,5 +28,5 @@
 
 .wp-block-button__link svg {
 	vertical-align: middle;
-	fill: currentColor;
+	fill: currentcolor;
 }

@@ -19,14 +19,13 @@ define( 'FULL_SITE_EDITING_VERSION', wp_get_theme()->get( 'Version' ) );
  * Add theme support.
  */
 function full_site_editing_setup() {
-	add_theme_support( 'wp-block-styles' );
 	add_editor_style( './assets/css/style-shared.min.css' );
 
 	/*
 	 * Load additional block styles.
 	 * See details on how to add more styles in the readme.txt.
 	 */
-	$styled_blocks = [ 'button', 'file', 'quote', 'search' ];
+	$styled_blocks = [ 'button', 'quote' ];
 	foreach ( $styled_blocks as $block_name ) {
 		$args = array(
 			'handle' => "full-site-editing-$block_name",
@@ -64,6 +63,3 @@ add_action( 'wp_enqueue_scripts', 'full_site_editing_styles' );
 
 // Block style examples.
 require_once get_theme_file_path( 'inc/register-block-styles.php' );
-
-// Block pattern helper for the privacy policy.
-require_once get_theme_file_path( 'inc/block-pattern-helper.php' );

@@ -6,9 +6,9 @@ Theme URI:
 Description: A full site editing theme.
 Tags: full-site-editing, editor-style, block-styles, block-patterns
 Text Domain: full-site-editing
-Requires at least: 6.0
+Requires at least: 6.1
 Requires PHP: 7.4
-Tested up to: 6.0
+Tested up to: 6.1
 Version: 1.0.0
 
 License: GNU General Public License v2 or later
@@ -37,21 +37,4 @@ html {
 body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-}
-
-/*
- * Increase horizontal padding on smaller screens.
- * Temporary solution to avoid text content
- * running up to the edge of the browser window,
- * making the text difficult to read.
-*/
-@media ( max-width: 1024px ) {
-
-	main > :not(.alignfull),
-	main .wp-block-query > :not(.alignfull),
-	main .entry-content > :not(.alignfull),
-	main .entry-content .wp-block-columns.alignfull p {
-		padding-left: var(--wp--custom--h-spacing);
-		padding-right: var(--wp--custom--h-spacing);
-	}
 }

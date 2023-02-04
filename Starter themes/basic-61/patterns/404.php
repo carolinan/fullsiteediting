@@ -22,9 +22,9 @@
 <!-- /wp:spacer -->
 <!-- wp:group {"style":{"border":{"style":"solid","radius":"4px"}},"borderColor":"transparent","backgroundColor":"secondary","layout":{"inherit":true}} -->
 <div class="wp-block-group has-border-color has-transparent-border-color has-secondary-background-color has-background" style="border-radius:4px;border-style:solid">
-<!-- wp:heading {"textAlign":"left"} -->
-<h2 class="has-text-align-left"><?php esc_html_e( 'Latest posts', 'full-site-editing' ); ?></h2>
-<!-- /wp:heading -->
-<!-- wp:latest-posts {"postsToShow":3,"displayAuthor":true,"displayPostDate":true,"displayFeaturedImage":true,"featuredImageAlign":"left"} /-->
+	<!-- wp:heading {"textAlign":"left"} -->
+	<h2 class="has-text-align-left"><?php esc_html_e( 'Latest posts', 'full-site-editing' ); ?></h2>
+	<!-- /wp:heading -->
+	<!-- wp:latest-posts {"postsToShow":3,"displayAuthor":true,"displayPostDate":true,"displayFeaturedImage":true,"featuredImageAlign":"left"} /-->
 </div>
 <!-- /wp:group -->

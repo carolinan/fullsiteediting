@@ -1,0 +1,100 @@
+
+/*
+ * Product page categories and tags.
+ */
+.product_meta > * {
+	display: block;
+}
+
+.woocommerce .quantity .qty {
+	min-height: 38px;
+}
+
+/*
+ * Breadcrumbs & in stock/out of stock.
+ */
+.woocommerce .woocommerce-breadcrumb,
+.woocommerce .woocommerce-breadcrumb a,
+.woocommerce div.product .stock {
+	color: var(--wp--preset--color--contrast);
+}
+
+/* Remove underline from products on the cart page */
+.wc-block-components-totals-wrapper::after,
+.is-large.wc-block-cart .wc-block-cart-items::after,
+.is-large.wc-block-cart .wc-block-cart-items td::after {
+	border-width: 0;
+}
+
+/* Remove uppercase from cart page */
+table.wc-block-cart-items .wc-block-cart-items__header th,
+.is-large.wc-block-cart .wc-block-cart__totals-title {
+	text-transform: initial;
+}
+
+.wc-block-grid.has-3-columns:not(.alignwide):not(.alignfull) {
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.wc-block-components-quantity-selector .wc-block-components-quantity-selector__button {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* On-sale badge */
+.woocommerce span.onsale,
+.wc-block-components-product-sale-badge {
+	background: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--base);
+	box-sizing: initial;
+	min-height: 3.236rem;
+	min-width: 3.236rem;
+	padding: 0.202rem;
+	font-weight: 700;
+	font-size: var(--wp--preset--font-size--extra-small);
+	z-index: 9;
+	position: absolute;
+	text-align: center;
+	line-height: 3.236;
+	top: 4px;
+	left: 4px;
+	right: auto;
+	margin: 0;
+	border: none;
+	border-radius: 100%;
+}
+
+/* Related products on-sale badge */
+.woocommerce ul.products li.product .onsale {
+	top: 4px;
+	left: 4px;
+	right: auto;
+	margin: 0;
+}
+
+.wc-block-components-product-price,
+.woocommerce div.product p.price,
+.woocommerce div.product span.price,
+.woocommerce ul.products li.product .price {
+	color: var(--wp--preset--color--primary);
+	font-weight: 700;
+}
+
+/* Product search pagination */
+.wc-block-components-pagination__page,
+.wc-block-components-pagination__page--active[disabled] {
+	color: var(--wp--preset--color--contrast);
+	font-size: var(--wp--preset--font-size--small);
+	font-family: var(--wp--preset--font-family--system);
+	line-height: 1.7;
+}
+
+.wc-block-components-pagination__page .current {
+	font-weight: 700;
+}
+
+.wc-block-components-pagination__page:hover,
+.wc-block-components-pagination__page--active[disabled]:hover,
+.wc-block-components-pagination__page--active[disabled]:focus {
+	color: var(--wp--preset--color--primary);
+}

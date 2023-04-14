@@ -31,3 +31,20 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }
+
+/** 
+	* Navigation 
+	**/
+ 
+/* Enlarged target area of mobile menu button for accessibility */ 
+.wp-block-navigation__responsive-container-open, 
+.wp-block-navigation__responsive-container-close {
+  padding: 12px; 
+}
+/* Consistent padding around the mobile menu button whether menu is open or closed */ 
+.wp-block-navigation__responsive-container.is-menu-open {
+  padding-top: var(--wp--preset--spacing--40);
+  padding-right: var(--wp--preset--spacing--30);
+  padding-bottom: var(--wp--preset--spacing--40);
+  padding-left: var(--wp--preset--spacing--30);
+}

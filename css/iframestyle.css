@@ -1,0 +1,424 @@
+body,html {
+    background-color: #fafafa;
+    background-image: url(backgrounddiagonal.gif);
+    color: #330;
+    font-family: "Liberation Sans","DejaVu Sans",Arial,Helvetica,sans-serif;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0
+}
+
+body * {
+    padding: .25em
+}
+
+dl,pre {
+    padding: 1em
+}
+
+dl {
+    background-image: url(parchment-desat-bg.webp);
+    border: .1em dashed #ddd;
+    font-family: sans-serif;
+    margin: 1em 0 2em .5em;
+    width: 90%
+}
+
+dl dd dl {
+    background-color: #eee;
+    border: medium;
+    margin-bottom: 0
+}
+
+dl dd ul {
+    background-color: rgba(255,255,235,.7);
+    list-style-position: inside;
+    margin-left: -.5em;
+    padding: .2em
+}
+
+dl dd ul li {
+    background-color: transparent;
+    font-family: Arial,"DejaVu Sans","Helvetica",sans-serif;
+    text-indent: .5em
+}
+
+dl dt,li {
+    font-family: serif
+}
+
+dl dd ul,dl dt {
+    background-image: none
+}
+
+dl dt {
+    font-weight: 600;
+    background-color: #fff
+}
+
+h1,h2,h3,h4,h5,h6 {
+    padding: .5em .25em;
+    background-color: #fefefe; 
+    background-position: 0 30%
+}
+
+li {
+    font-size: .95em;
+    font-weight: 400
+}
+
+p {
+    padding: .25em 1em
+}
+
+pre {
+    background-color: #e0e0da;
+    background-image: url(code-bg.jpg);
+    border: .2em .2em double double #eca #eca;
+    color: #00c;
+    display: block;
+    margin: .5em auto;
+    white-space: pre;
+    width: 92%
+}
+
+* html p.displaynone {
+    display: none;
+    margin-left: 8em;
+    width: 100%
+}
+
+* html.unfloat {
+    height: 1%
+}
+
+.antihead {
+    margin-top: -.5em
+}
+
+.attn {
+    background-color: #003;
+    color: #dd3;
+    font-family: "Comic Sans MS","comic sans",cursive
+}
+
+.bg_grey {
+    background-color: #ddd
+}
+
+.bg_lightx2grey {
+    background-color: #eee
+}
+
+.bg_white {
+    background-color: #fff
+}
+
+.bold {
+    font-weight: 800
+}
+
+.bottomsmaller {
+    background-color: #cdd;
+    border: .1em .1em dashed dashed #999 #999;
+    color: navy;
+    display: block;
+    font-family: Arial,"Helvetica",sans-serif;
+    font-size: .8em;
+    margin: .5em 2em;
+    padding: 1.5em;
+    text-align: justify
+}
+
+.center,.closeme {
+    text-align: center
+}
+
+.closeme {
+    color: #03f;
+    font-family: serif
+}
+
+.code {
+    background-color: #eee;
+    color: #337;
+    display: inline-block;
+    font-family: monospace
+}
+
+.content {
+    background-color: #fefef8;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin: .5em auto;
+    padding: .25em
+}
+
+.content p {
+    background-color: inherit;
+    background-position: bottom center;
+    background-repeat: repeat-x
+}
+
+.content p * {
+    background-color: rgba(255,255,255,.6)
+}
+
+.coral {
+    color: coral
+}
+
+.darkorange {
+    color: #ff8c00
+}
+
+.defListTitle {
+    border: 0;
+    color: #d02;
+    font-family: serif;
+    font-style: italic;
+    margin-bottom: .3em;
+    width: 50%
+}
+
+.error {
+    background-color: #06c;
+    color: #fff;
+    display: table-cell;
+    padding: .2em
+}
+
+.floatLeft,.floatLt,.floatleft,.floatlt {
+    float: left;
+    position: relative
+}
+
+.floatRight,.floatRt,.floatright,.floatrt {
+    float: right;
+    position: relative
+}
+
+.hidden,li.hidden,li.hiddenitem {
+    visibility: hidden
+}
+
+.indentOne {
+    text-indent: 1em
+}
+
+.indianred {
+    color: #cd5c5c
+}
+
+.italic {
+    font-style: italic
+}
+
+.keyTerms,div.content {
+    background-color: #fafafa
+}
+
+.keyTerms {
+    display: block;
+    font-family: sans-serif;
+    margin: 0 2em;
+    padding: .2em 1em;
+    text-align: justify
+}
+
+.keyTerms h4 {
+    border: .2em .2em outset outset #aaa #aaa;
+    padding: .3em;
+    width: 8em
+}
+
+.keyTerms ul li {
+    font-size: .8em;
+    margin-bottom: 2em
+}
+
+.keyTerms ul li pre {
+    background-image: none;
+    font-size: larger
+}
+
+.keyTerms ul li sup {
+    font-size: 1em
+}
+
+.keyTerms ul li sup code {
+    font-size: larger
+}
+
+.mediumblue {
+    color: #0000cd
+}
+
+.parchment {
+    background-image: url(parchmosteven.jpg)
+}
+
+.pseudocode {
+    background-color: #f0f0ea;
+    color: #080;
+    font-family: "Liberation Mono","DejaVu Sans Mono","Lucida Console","Monaco",monospace;
+    font-size: .9em;
+    margin: .2em
+}
+
+.right {
+    text-align: right
+}
+
+.sans,.sans-serif,.sanserif {
+    font-family: sans-serif
+}
+
+.sansSerif,.sansSerifBold {
+    font-family: "DejaVu Sans","Liberation Sans",Arial,"Helvetica",sans-serif
+}
+
+.sansSerifBold {
+    font-weight: 700
+}
+
+.serif,.serifBold {
+    font-family: "DejaVu Serif Condensed","Liberation Serif","Book Antiqua","Palatino Linotype","Palatino",serif
+}
+
+.serifBold {
+    font-weight: 700
+}
+
+.showMatches {
+    background-color: #dde;
+    border: .1em .1em double double #960 #960;
+    font-family: monospace;
+    margin: 1.5em auto;
+    padding: .2em 2em;
+    width: 80%
+}
+
+.smaller {
+    font-size: smaller
+}
+
+.steelblue {
+    color: #4682b4
+}
+
+.tableHeadrow {
+    font-family: serif;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle
+}
+
+.testValue {
+    background-color: #ffd;
+    color: #0d0;
+    font-family: monospace;
+    font-size: .9em;
+    white-space: pre
+}
+
+.toggler,.trigger {
+    color: navy;
+    cursor: help;
+    font-family: "Liberation Sans","DejaVu Sans",Arial,Helvetica,sans-serif;
+    font-variant: small-caps;
+    letter-spacing: .1em;
+    line-height: 2em;
+    vertical-align: middle
+}
+
+.unfloat {
+    display: inline-block
+}
+
+.violet {
+    color: violet
+}
+
+.width_150 {
+    width: 150px
+}
+
+.width_200 {
+    width: 200px
+}
+
+.width_25 {
+    width: 25px
+}
+
+.width_37 {
+    width: 37px
+}
+
+.width_40 {
+    width: 40px
+}
+
+div.content {
+    margin: 0;
+    padding: 0
+}
+
+div.content div p {
+    background-position: 0 5%;
+    background-repeat: repeat-x;
+    color: green;
+    margin: 0;
+    padding: 1em
+}
+
+span.pointer,span.toggler {
+    cursor: pointer;
+    font-family: "liberation mono","dejavu sans mono","lucida console",monospace;
+    font-size: .8em;
+    font-variant: small-caps;
+    padding-left: 0
+}
+
+#pagewidth {
+    background-color: rgba(255,255,255,.3);
+    display: block;
+    margin: 0 auto;
+    width: 90%
+}
+
+#dbFormContainer,.align-left,.alignleft,.alignleft *,.left,.left-align,.leftalign {
+    text-align: left
+}
+
+.inline,ul#imgShow {
+    display: inline
+}
+
+#collapser-0,.collapsableDd,.displayNone,.displaynone,.target,li.db .nav,li.exeicon,li.forbidden,li.forbiddenitem,li.hiddenitem {
+    display: none
+}
+
+#calContainer,div.centered {
+    display: block;
+    margin: 0 auto;
+    text-align: center
+}
+
+#controList,#urlSplit,li.nobull,ul.nobull li {
+    list-style-type: none
+}
+
+a:hover {
+    color: red
+}
+
+a:link {
+    color: #00f
+}
+
+a:visited {
+    color: green
+}

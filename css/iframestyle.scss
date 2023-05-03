@@ -1,0 +1,181 @@
+/** iframestyle.css
+* a component of anniedebrowsa for styling iframe display **/
+body, html{
+  background-color: #fafafa;
+  color: #330;
+  font-family: "Liberation Sans", "DejaVu Sans Condensed", Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  margin: 0;
+  padding: 0;
+}
+/*
+body * {
+    padding:0.25em;
+}
+*/
+
+dl{
+  background-color: #fefefe;
+  border: 0.1em dashed #DDDDDD;
+  margin: 1em 0 2em 0.5em;
+  padding: 1em;
+  width: 90%;
+}
+
+dl dd dl{
+  background-image: none;
+  border: none;
+  margin-bottom: 0;
+}
+
+dl dd ul{
+  background-image: none;
+  background-color: rgba(255, 255, 235, 0.7);
+  list-style-position: inside;
+  margin-left: -0.5em;
+  padding: 0.2em;
+}
+
+dl dt{
+  font-weight: 600;
+  background-image: none;
+  background-color: rgba(255, 255, 255, 1.0);
+/* font-family:            "Liberation Sans","DejaVu Sans Condensed",Arial,Helvetica,
+    font-family:            "Liberation Serif", "DejaVu Serif Condensed", Georgia, serif;*/
+}
+
+h1, h2, h3, h4, h5, h6{
+  border-right: 18pt solid #E3E7F7;
+  color: rgb(51, 51, 0);
+  font-family: "Liberation Serif", "DejaVu Serif Condensed", Georgia, serif;
+  text-shadow: 0em 0.04em 0em rgba(255, 255, 255, 0.9);
+  padding: 0.5em 0.25em;
+  background-color: #fefefe;
+  background-position: 0px 30%;
+  letter-spacing: -0.04em;
+  background-image: none;
+}
+
+li{
+  font-size: 0.95em;
+  font-weight: 400;
+}
+
+p{
+  padding: 0.25em 1em;
+}
+
+pre{
+  background-color: rgb(224, 224, 224);
+  background-image: url("code-bg.jpg");
+  border: 0.2em double #aaa;
+  color: #c60;
+  display: block;
+  margin: 0.5em auto;
+  padding: 1em 1em;
+  white-space: pre-wrap;
+  width: 92%;
+}
+
+table, thead, tfoot, tr, td, th, caption {
+  cursor: help;
+  border: 0.1em #000 outset;
+  padding: 0.2em 0.4em 0.3em 0.4em;
+  margin: auto;
+  border-radius: 0.25em;
+  caption-side: after;
+}
+
+th {
+  border-radius: 0.6em 0.6em 0.3em 0.3em;
+  background-color: #FFF;
+}
+
+tbody td {
+  background-color: #fAFAFA;
+}
+
+caption {
+  border: none;
+  font-size: smaller;
+  caption-side: after;
+}
+
+thead, tfoot {
+  text-align: right;
+}
+
+tfoot {
+  font-style: italic;
+  font-family: "Palatino Linotype", Palatino, "Liberation Serif", serif;
+  background-color: #F0F0FF;
+}
+
+* html p.displaynone{
+  display: none;
+  margin-left: 8em;
+  width: 100%;
+}
+
+* html.unfloat{
+  height: 1%;
+}
+
+#_notes_dl dt {
+  text-transform: uppercase;
+  font-weight: bold;
+/* border-right:           9pt solid #e5e5e5; */
+  border-left: 4pt solid #F9322C;
+  padding-left: 1em;
+}
+
+#_notes_dl dd dl dt {
+/* border-right:           6pt solid #e5e5e5; */
+  border-left: 6pt solid #e5e5e5;
+}
+
+dl dd {
+  margin: 1em 0 2em 2em;
+}
+
+.dd_div {
+  margin: 0.5em;
+}
+
+.code {
+  background-color: #101010;
+  color: #F0F0F9;
+  padding: 0.5em;
+  white-space: pre-wrap;
+}
+
+.code:before {
+  content: 'user@laragigs $> ';
+  color: lawngreen;
+}
+
+h1 {
+  border-right: 1rem solid #F9322C ;
+}
+
+h2 {
+  border-right-width: 1pt;
+}
+
+h3 {
+  border-right: 0;
+}
+
+.content code {
+  background-color: #EAEAEA;
+}
+
+section#footer {
+  font-style: italic;  
+  /* padding: 0.5em 0 1em 2em; */   
+  background-color: #aaa;         
+  background: var(--bs-bg-dark)
+  color: var(--bs-text-light) 
+  text-end p-1
+  
+}

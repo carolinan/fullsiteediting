@@ -1,0 +1,125 @@
+<?php 
+if (!defined('ABSOLUTELOCATION')) {
+    define('ABSOLUTELOCATION', rtrim(dirname(__FILE__), "inc"));
+}
+$abspath = ABSOLUTELOCATION;
+$serversoftware = $_SERVER['SERVER_SOFTWARE'];
+$servername = $_SERVER['SERVER_NAME'];
+date_default_timezone_set('EST');
+$page_heading = 'Screenshots Dir';
+$title = 'screenshots rendering page';
+$lastMod = "Modified: " . date("D M j Y G:i:s T", getlastmod());
+require 'class/class-cwthumbs.php';
+
+
+$cwThumbsClass = new cwThumbs;
+
+if(isset($_POST['imgDirSearch'])){
+    $newimagesdir = $_POST['imgDirSearch'];
+    // makeThumbs($dir,$abspath)
+    $cwThumbs = $cwThumbsClass->makeThumbs($newimagesdir,$none=NULL);
+}
+
+else {
+     $cwThumbs = $cwThumbsClass->makeThumbs("screenshots",$none=NULL);   
+}
+
+$imgDir = $cwThumbsClass->imagesDir;
+$imgNumber = $cwThumbsClass->thumbsCount;
+
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <?php print $title; ?>
+  </title>
+  <link rel="icon" type="image/ico" href="favicon.ico">
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+  <style>
+/** if needed add style here */
+  </style>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+        crossorigin="anonymous">    <!-- BOOTSTRAP STYLE -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link 
+        href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" 
+        rel="stylesheet">
+    <link 
+        href="css/notes.css" 
+        rel="stylesheet" 
+        type="text/css">
+    <script src="js/showme-hideme.js"></script>
+</head>
+
+<body>
+
+  <div id="pagewidth" class="container">
+ 
+    <section id="header">  <!-- #HEADER -->
+        <h1 class="bg-dark text-light text-end pe-3"><?php print $page_heading; ?></h1>
+        <ul class="nobull"><li><a href="http://beelink.localhost/index.php" target="_blank">beelink</a></li><li><a href="http://htdocsh.localhost/index.php" target="_blank">htdocsH</a></li><li><a href="http://htdocsl.localhost/index.php" target="_blank">htdocsL</a></li><li><a href="http://portable.localhost/index.php" target="_blank">portable</a></li><li><a href="http://github.localhost/index.php" target="_blank">github</a></li></ul>
+    </section>
+    <section class="content">
+                    <?php echo '<p>ABSOLUTELOCATION of this script file: <br><strong><code>' . $abspath . '</code></strong></p>'; 
+            echo '<p>Server software: '.$serversoftware.'</p>
+                <p>Server Name: '.$servername .'</p>'; ?>
+      <div class="notes">                           
+        <dl id="outerDL">
+         
+        <dt class="pointer">Change Image Directory: <span class="normal black pointer" id="morehd1" onclick="showHide('moreinfo1')">[click...]</span></dt>
+        <dd id="moreinfo1" class="displaynone">
+            <form id="changeImageForm" method="post" action="<?php print $_SERVER['PHP_SELF']; ?>">
+                <input type="text" id="imgDirSearch" name="imgDirSearch" value="" /><br />
+                <input type="submit" id="SendImgDir" name="SendImgDir" value="Get New Images!" />
+            </form>
+        </dd>
+        <dt class="pointer">Show Image Contact Sheet: <span class="normal blue pointer" id="morehd2" onclick="showHide('moreinfo2')">[click...]</span></dt>
+        <dd id="moreinfo2" class="displaynone">
+        <?php
+            $contactSheet = "<ul id=\"imgShow\"> \n";
+            if(isset($cwThumbs) && is_array($cwThumbs)){
+                foreach($cwThumbs as $cwKey => $cwImg){
+                    $cwImg = $imgDir .'/' . $cwImg;
+                    $imgCounter = $imgNumber[$cwKey];
+                    $contactSheet .= "<li class=\"imgShowItem\"><a onclick=\"popMeUp('".$cwImg.
+                    "')\"><img src=\"".$cwImg."\" alt=\"".$cwImg."\" title=\"img_".$imgCounter.": ".$cwImg."\" /></a></li> \n";
+                }
+            }
+            else{
+                $contactSheet .= '<li class="bold nobull noBull">Sorry, but there is an error in the source, specific to the image resources contact-sheet previews. <br />Specifically, the ADB PHP-class, <em>cwThumbs</em> fails the logical condition of <br /><pre>
+
+                 does not exists, is not an array, is has not been properly set.</li>'."\n";
+            }
+            $contactSheet .= "</ul> \n";
+
+            print $contactSheet;
+            print " \n <hr id=\"clearImgShow\" /> \n";
+        ?>
+                </dd>
+            </dl>
+            <!-- END OUTERDL -->
+
+
+        </div><!-- END CENTERED -->
+ 
+</div>                                        <!--    .notes      -->
+    </section>
+    <section class="footer px-4">                   <!--    .FOOTER     -->
+        <div class="row gx-5">
+            <div class="col"><div class="p-3 border bg-light"> Based on Notes by <a href="https://github.com/ajaxStardust" target="_blank" title="View original">@ajaxStardust</a> <em>Laravel</em> notes:</div></div>
+            <div class="col"><div class="p-3 border bg-light text-end"><kbd><?php echo $lastMod; ?></kbd></div></div>
+        </div>
+    </section>      
+  </div>                                            <!--    .content  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

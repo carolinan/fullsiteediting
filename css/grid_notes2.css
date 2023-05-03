@@ -1,0 +1,12 @@
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+.search-results {
+display: grid;
+grid-gap: 10px;
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+padding: 10px;
+}
+
+/** putting remainder inline in css_grid_notes2.phtml */

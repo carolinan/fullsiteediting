@@ -14,7 +14,7 @@
 		"@wordpress/eslint-plugin": "^13.10.0",
 		"@wordpress/babel-preset-default": "^7.10.0",
 		"@babel/core": "^7.20.12",
-		"stylelint": "^14.16.1",
+		"stylelint": "^15.10.1",
 		"eslint": "^8.33.0",
 		"postcss": "^8.4.21",
 		"postcss-cli": "^10.1.0",

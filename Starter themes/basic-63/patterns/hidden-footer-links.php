@@ -9,7 +9,6 @@
  * @since 1.0.0
  */
 ?>
-
 <!-- wp:group {"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-group">
 	<!-- wp:paragraph {"fontSize":"extra-small"} -->

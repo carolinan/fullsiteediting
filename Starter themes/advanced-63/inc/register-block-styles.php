@@ -24,14 +24,6 @@ function full_site_editing_register_block_styles() {
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/navigation',
-		array(
-			'name'  => 'full-site-editing-navigation-button',
-			'label' => __( 'Button style', 'full-site-editing' ),
-		)
-	);
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/list',
 		array(
 			'name'  => 'full-site-editing-list-underline',
@@ -60,6 +52,14 @@ function full_site_editing_register_block_styles() {
 		array(
 			'name'  => 'full-site-editing-box-shadow',
 			'label' => __( 'Box shadow', 'full-site-editing' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/details',
+		array(
+			'name'  => 'full-site-editing-plus',
+			'label' => __( 'Plus & minus', 'full-site-editing' ),
 		)
 	);
 }

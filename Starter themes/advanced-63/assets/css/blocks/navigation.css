@@ -1,0 +1,6 @@
+/* Accessibility: Increase icon size so that the button is easier to click */
+.wp-block-navigation__responsive-container-close svg,
+.wp-block-navigation__responsive-container-open svg {
+	width: 48px;
+	height: 48px;
+}

@@ -1,8 +1,9 @@
 const gulp = require('gulp'),
 	clean = require('gulp-clean'),
 	concatCss = require('gulp-concat-css'),
-	cssnano = require('gulp-cssnano'),
-	rename = require('gulp-rename');
+	postcss = require('gulp-postcss'),
+	rename = require('gulp-rename'),
+	cssnano = require('cssnano');
 
 gulp.task('watch', function () {
 	gulp.watch(['assets/css/**/*.css']).on(
@@ -35,13 +36,13 @@ gulp.task('clean-blocks', function () {
 gulp.task('minify-shared', function () {
 	return gulp.src('assets/css/*.css')
 		.pipe(concatCss('style-shared.min.css'))
-		.pipe(cssnano())
+		.pipe(postcss(cssnano()))
 		.pipe(gulp.dest('assets/css/'));
 });
 
 gulp.task('minify-blocks', function () {
 	return gulp.src('assets/css/blocks/*.css')
-		.pipe(cssnano())
+		.pipe(postcss(cssnano()))
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(gulp.dest('assets/css/blocks'));
 });

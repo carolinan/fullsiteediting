@@ -8,6 +8,7 @@
  * @package full-site-editing
  * @since 1.0.0
  */
+
 ?>
 <!-- wp:media-text {"mediaPosition":"right","mediaId":139,"mediaType":"image","verticalAlignment":"bottom"} -->
 <div class="wp-block-media-text has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-bottom"><div class="wp-block-media-text__content">

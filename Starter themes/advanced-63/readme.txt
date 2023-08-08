@@ -35,7 +35,7 @@ Note, the tools are optional and requires:
 node minimum version 14.15.0
 npm from 6.14.8 up to 7. It will not work with higher versions.
 
-You can install the tools by opening yor terminal in the themes root folder
+You can install the tools by opening your terminal in the themes root folder
 and entering the following commands:
 npm install
 composer install

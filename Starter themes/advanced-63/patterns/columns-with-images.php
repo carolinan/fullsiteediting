@@ -8,6 +8,7 @@
  * @package full-site-editing
  * @since 1.0.0
  */
+
 ?>
 <div class="wp-block-columns alignwide">
 	<!-- wp:column -->

@@ -1,6 +1,6 @@
 === Full Site Editing ===
 Contributors: poena
-Tested up to: 6.2
+Tested up to: 6.4
 Requires at least: 6.1
 Requires PHP: 7.4
 Version: 1.0.0

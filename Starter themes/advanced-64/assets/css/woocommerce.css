@@ -1,0 +1,25 @@
+/*
+ * This is needed because WooCommerce still forces two different styles
+ * for the on sales badge, one for the archive and one for the single product.
+ */
+.woocommerce span.onsale,
+.wc-block-grid .wc-block-grid__product-onsale,
+.wc-block-grid__product-image .wc-block-grid__product-onsale {
+	background-color: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--contrast);
+	border-radius: 100%;
+	border: none;
+	height: 3.7rem;
+	width: 3.7rem;
+	font-size: 1rem;
+	text-transform: capitalize;
+	text-align: center;
+	line-height: 3.236;
+}
+
+/**
+* This is needed to overrride the color of the WooCommerce "in stock" message
+*/
+.woocommerce div.product .stock {
+	color:var(--wp--preset--color--primary);
+}

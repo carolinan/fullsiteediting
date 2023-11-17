@@ -1,0 +1,38 @@
+{
+	"name": "full-site-editing",
+	"version": "1.0.0",
+	"description": "Full site editing theme",
+	"author": "Carolina Nymark",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"Theme"
+	],
+	"homepage": "https://fullsiteediting.com",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/carolinan/fullsiteediting"
+	},
+	"engines": {
+		"node": ">=14.15.0",
+		"npm": ">=6.14.8 <7"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.23.3",
+		"@wordpress/babel-preset-default": "^7.29.0",
+		"@wordpress/scripts": "^26.16.0",
+		"cssnano": "^6.0.1",
+		"gulp": "^4.0.2",
+		"gulp-clean": "^0.4.0",
+		"gulp-cli": "^2.3.0",
+		"gulp-concat-css": "^3.1.0",
+		"gulp-postcss": "^9.0.1",
+		"gulp-rename": "^2.0.0",
+		"postcss": "^8.4.31",
+		"postcss-cli": "^10.1.0"
+	},
+	"scripts": {
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js"
+	}
+}

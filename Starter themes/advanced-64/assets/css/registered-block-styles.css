@@ -1,0 +1,48 @@
+/*
+ * CSS for registered block styles.
+ * See inc/register-block-styles.php.
+ */
+
+/* Flat button */
+.is-style-full-site-editing-flat-button .wp-block-button__link,
+.is-style-full-site-editing-flat-button .wp-block-button__link:hover,
+.is-style-full-site-editing-flat-button .wp-block-button__link:focus,
+.is-style-full-site-editing-flat-button .wp-block-button__link:active,
+.is-style-full-site-editing-flat-button .wp-block-button__link:visited {
+	box-shadow: none;
+	border-radius: 0;
+	margin-top: initial;
+	margin-bottom: initial;
+}
+
+/* Box shadow */
+.is-style-full-site-editing-box-shadow {
+	box-shadow: var(--wp--preset--shadow--natural);
+}
+
+/* Lists */
+.is-style-full-site-editing-list-underline li {
+	border-bottom: 1px solid currentcolor;
+}
+
+.is-style-full-site-editing-list-underline ul {
+	border-top: 1px solid currentcolor;
+}
+
+.is-style-full-site-editing-list-underline ul li {
+	border: none;
+}
+
+details.is-style-full-site-editing-plus > summary {
+	list-style-type: "+ ";
+}
+
+details[open].is-style-full-site-editing-plus > summary {
+	list-style-type: "- ";
+}
+
+details.is-style-full-site-editing-plus > summary::marker {
+	font-weight: 700;
+	font-size: 1em;
+	font-family: var(--wp--preset--font-family--monospace);
+}

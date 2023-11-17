@@ -1,5 +1,3 @@
 # Block based themes
 
-This folder contains the course material for the lessons about block based themes,
-located at:
-https://fullsiteediting.com/lessons/creating-block-based-themes/
+This folder is now empty, each example theme has moved into the Lessons folder.

@@ -1,108 +1,10 @@
 {
-	"Post Title": {
-		"scope": "html,php",
-		"prefix": "post-title, wp:post-title",
-		"body": [
-			"<!-- wp:post-title /-->"
-		],
-	},
-	"Post Author": {
-		"scope": "html,php",
-		"prefix": "post-author, wp:post-author",
-		"body": [
-			"<!-- wp:post-author /-->"
-		],
-	},
-	"Post Date": {
-		"scope": "html,php",
-		"prefix": "post-date, wp:post-date",
-		"body": [
-			"<!-- wp:post-date /-->"
-		],
-	},
-	"Post Excerpt": {
-		"scope": "html,php",
-		"prefix": "post-excerpt, wp:post-excerpt",
-		"body": [
-			"<!-- wp:post-excerpt /-->"
-		],
-	},
-	"Post Tags": {
-		"scope": "html,php",
-		"prefix": "post-tags, wp:post-tags",
-		"body": [
-			"<!-- wp:post-tags /-->"
-		],
-	},
-	"Post featured image": {
-		"scope": "html,php",
-		"prefix": "post-featured-image, wp:post-featured-image, block-featured-image",
-		"body": [
-			"<!-- wp:post-featured-image /-->"
-		],
-	},
-	"Post Content": {
-		"scope": "html,php",
-		"prefix": "post-content, wp:post-content",
-		"body": [
-			"<!-- wp:post-content /-->"
-		],
-	},
-	"Post comments count": {
-		"scope": "html,php",
-		"prefix": "post-comments-count, wp:post-comments-count",
-		"body": [
-			"<!-- wp:post-comments-count /-->"
-		],
-	},
-	"Post comments": {
-		"scope": "html,php",
-		"prefix": "post-comments, wp:post-comments",
-		"body": [
-			"<!-- wp:post-comments /-->"
-		],
-	},
-	"Post comments form": {
-		"scope": "html,php",
-		"prefix": "post-comment-form, wp:post-comments-form",
-		"body": [
-			"<!-- wp:post-comments-form /-->"
-		],
-	},
-	"Site Title": {
-		"scope": "html,php",
-		"prefix": "block-site-title, wp:site-title",
-		"body": [
-			"<!-- wp:site-title /-->"
-		],
-	},
-	"Query": {
-		"scope": "html,php",
-		"prefix": "block-query, wp:query",
-		"body": [
-			"<!-- wp:query {\"queryId\":0} --><!-- /wp:query /-->"
-		],
-	},
-	"Loop": {
-		"scope": "html,php",
-		"prefix": "block-loop, query-loop, wp:query-loop",
-		"body": [
-			"<!-- wp:query-loop --><!-- /wp:query-loop -->"
-		],
-	},
-	"Query pagination": {
-		"scope": "html,php",
-		"prefix": "block-query-pagination, query-pagination, wp:query-pagination",
-		"body": [
-			"<!-- wp:query-pagination /-->"
-		],
-	},
 	"Archives block": {
 		"scope": "html,php",
 		"prefix": "block-archive, wp:archives",
 		"body": [
 			"<!-- wp:archives {\"displayAsDropdown\":false,\"showPostCounts\":false} /-->"
-		],
+		]
 	},
 	"Audio block": {
 		"scope": "html,php",
@@ -112,14 +14,28 @@
 				"<audio controls=\"\" src=\"data:audio/mpeg;base64,/+MYxAAAAANIAAAAAExBTUUzLjk4LjIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\"></audio>",
 			"</figure>",
 			"<!-- /wp:core/audio -->"
-		],
+		]
 	},
-	"Reusable block": {
+	"Author Biography block": {
 		"scope": "html,php",
-		"prefix": "reusable, wp:core, block-reusable",
+		"prefix": "block-author-biography, wp:post-author-biography",
 		"body": [
-			"<!-- wp:core/block {\"ref\":123} /-->"
-		],
+			"<!-- wp:post-author-biography /-->"
+		]
+	},
+	"Author Name block": {
+		"scope": "html,php",
+		"prefix": "block-author-name, wp:post-author-name",
+		"body": [
+			"<!-- wp:post-author-name /-->"
+		]
+	},
+	"Avatar block": {
+		"scope": "html,php",
+		"prefix": "block-avatar, wp:avatar",
+		"body": [
+			"<!-- wp:avatar /-->"
+		]
 	},
 	"Buttons block": {
 		"scope": "html,php",
@@ -136,35 +52,28 @@
 					"<!-- /wp:button -->",
 				"</div>",
 			"<!-- /wp:buttons -->"
-		],
+		]
 	},
 	"Calendar block": {
 		"scope": "html,php",
 		"prefix": "block-calendar wp:calendar",
 		"body": [
 			"<!-- wp:calendar /-->"
-		],
+		]
 	},
 	"Categories block": {
 		"scope": "html,php",
 		"prefix": "block-categories, wp:core/categories",
 		"body": [
 			"<!-- wp:core/categories {\"showPostCounts\":false,\"displayAsDropdown\":false,\"showHierarchy\":false} /-->"
-		],
-	},
-	"Freeform, Classic block block": {
-		"scope": "html,php",
-		"prefix": "block-freeform, block-classic, wp:core/freeform",
-		"body": [
-			"<!-- wp:core/freeform --><!-- /wp:core/freeform -->"
-		],
+		]
 	},
 	"Code block": {
 		"scope": "html,php",
 		"prefix": "block-code, wp:core/code",
 		"body": [
 			"<!-- wp:core/code --><!-- /wp:core/code -->"
-		],
+		]
 	},
 	"Columns block": {
 		"scope": "html,php",
@@ -177,8 +86,99 @@
 				"</div>",
 				"<!-- /wp:column -->",
 				"</div>",
-			"<!-- /wp:columns -->",
-		],
+			"<!-- /wp:columns -->"
+		]
+	},
+	"Comment Author Name block": {
+		"scope": "html,php",
+		"prefix": "block-comment-author-name, wp:comment-author-name",
+		"body": [
+			"<!-- wp:comment-author-name /-->"
+		]
+	},
+	"Comment Content block": {
+		"scope": "html,php",
+		"prefix": "block-comment-content, wp:comment-content",
+		"body": [
+			"<!-- wp:comment-content /-->"
+		]
+	},
+	"Comment Date block": {
+		"scope": "html,php",
+		"prefix": "block-comment-date, wp:comment-date",
+		"body": [
+			"<!-- wp:comment-date /-->"
+		]
+	},
+	"Comment Edit Link block": {
+		"scope": "html,php",
+		"prefix": "block-comment-edit-link, wp:comment-edit-link",
+		"body": [
+			"<!-- wp:comment-edit-link /-->"
+		]
+	},
+	"Comment Reply Link block": {
+		"scope": "html,php",
+		"prefix": "block-comment-reply-link, wp:comment-reply-link",
+		"body": [
+			"<!-- wp:comment-reply-link /-->"
+		]
+	},
+	"Comment Template block": {
+		"scope": "html,php",
+		"prefix": "block-comment-template, wp:comment-template",
+		"body": [
+			"<!-- wp:comment-template /-->"
+		]
+	},
+	"Comments block": {
+		"scope": "html,php",
+		"prefix": "block-comments, wp:comments",
+		"body": [
+			"<!-- wp:comments /-->"
+		]
+	},
+	"Comments Link block": {
+		"scope": "html,php",
+		"prefix": "block-comments-link, wp:post-comments-link",
+		"body": [
+			"<!-- wp:post-comments-link /-->"
+		]
+	},
+	"Comments Next Page block": {
+		"scope": "html,php",
+		"prefix": "block-comments-next-page, wp:comments-next-page",
+		"body": [
+			"<!-- wp:comments-next-page /-->"
+		]
+	},
+	"Comments Page Numbers block": {
+		"scope": "html,php",
+		"prefix": "block-comments-page-numbers, wp:comments-page-numbers",
+		"body": [
+			"<!-- wp:comments-page-numbers /-->"
+		]
+	},
+	"Comments Pagination block": {
+		"scope": "html,php",
+		"prefix": "block-comments-pagination, wp:comments-pagination",
+		"body": [
+			"<!-- wp:comments-pagination /-->"
+		]
+	},
+	"Comments Previous Page block": {
+		"scope": "html,php",
+		"prefix": "block-comments-previous-page, wp:comments-previous-page",
+		"body": [
+			"<!-- wp:comments-previous-page /-->"
+		]
+	},
+	"Comments Title block": {
+		"scope": "html,php",
+		"prefix": "block-comments-title, wp:comments-title",
+		"body": [
+			"<!-- wp:comments-title /-->"
+		]
 	},
 	"Cover block": {
 		"scope": "html,php",
@@ -191,16 +191,83 @@
 			"</div>",
 			"</div>",
 			"<!-- /wp:cover -->"
-		],
+		]
+	},
+	"Custom Link block": {
+		"scope": "html,php",
+		"prefix": "block-custom-link, wp:custom-link",
+		"body": [
+			"<!-- wp:custom-link /-->"
+		]
+	},
+	"Details block": {
+		"scope": "html,php",
+		"prefix": "block-details, wp:details",
+		"body": [
+			"<!-- wp:details -->",
+			"<details class=\"wp-block-details\">",
+			"<summary></summary>",
+			"</details>",
+			"<!-- /wp:details -->"
+		]
+	},
+	"Embed block": {
+		"scope": "html,php",
+		"prefix": "block-embed, wp:embed",
+		"body": [
+			"<!-- wp:embed /-->"
+		]
 	},
 	"File block": {
 		"scope": "html,php",
 		"prefix": "block-file, wp:file",
 		"body": [
-		"<!-- wp:file {\"id\":123,\"href\":\"\"} -->",
-		"<div class=\"wp-block-file\"><a href=\"\" class=\"wp-block-file__button\" download>Download</a></div>",
-		"<!-- /wp:file -->"
-		],
+			"<!-- wp:file {\"id\":123,\"href\":\"\"} -->",
+			"<div class=\"wp-block-file\"><a href=\"\" class=\"wp-block-file__button\" download>Download</a></div>",
+			"<!-- /wp:file -->"
+		]
+	},
+	"Footnotes block": {
+		"scope": "html,php",
+		"prefix": "block-footnotes, wp:footnotes",
+		"body": [
+			"<!-- wp:footnotes /-->"
+		]
+	},
+	"Form block": {
+		"scope": "html,php",
+		"prefix": "block-form, wp:form",
+		"body": [
+			"<!-- wp:form /-->"
+		]
+	},
+	"Form Input Field block": {
+		"scope": "html,php",
+		"prefix": "block-input-field, wp:input-field",
+		"body": [
+			"<!-- wp:input-field /-->"
+		]
+	},
+	"Form Submit Button block": {
+		"scope": "html,php",
+		"prefix": "block-form-submit-button, wp:form-submit-button",
+		"body": [
+			"<!-- wp:form-submit-button /-->"
+		]
+	},
+	"Form Submission Notification block": {
+		"scope": "html,php",
+		"prefix": "block-form-submission-notification, wp:form-submission-notification",
+		"body": [
+			"<!-- wp:form-submission-notification /-->"
+		]
+	},
+	"Freeform, Classic block block": {
+		"scope": "html,php",
+		"prefix": "block-freeform, block-classic, wp:core/freeform",
+		"body": [
+			"<!-- wp:core/freeform --><!-- /wp:core/freeform -->"
+		]
 	},
 	"Gallery block": {
 		"scope": "html,php",
@@ -222,7 +289,7 @@
 			"</ul>",
 			"</figure>",
 			"<!-- /wp:core/gallery -->"
-		],
+		]
 	},
 	"Group block": {
 		"scope": "html,php",
@@ -234,7 +301,7 @@
 				"</div>",
 			"</div>",
 			"<!-- /wp:group -->"
-		],
+		]
 	},
 	"Headings block": {
 		"scope": "html,php",
@@ -243,14 +310,21 @@
 			"<!-- wp:heading {\"level\":1} -->",
 			"<h1></h1>",
 			"<!-- /wp:heading -->"
-		],
+		]
+	},
+	"Home Link block": {
+		"scope": "html,php",
+		"prefix": "block-home-link, wp:home-link",
+		"body": [
+			"<!-- wp:home-link /-->"
+		]
 	},
 	"HTML block": {
 		"scope": "html,php",
 		"prefix": "block-html, wp:core/html ",
 		"body": [
 			"<!-- wp:core/html --><!-- /wp:core/html -->"
-		],
+		]
 	},
 	"Image block": {
 		"scope": "html,php",
@@ -259,21 +333,21 @@
 			"<!-- wp:core/image -->",
 			"<figure class=\"wp-block-image\"><img src=\"\" alt=\"\" /></figure>",
 			"<!-- /wp:core/image -->"
-		],
+		]
 	},
 	"Latest comments block": {
 		"scope": "html,php",
 		"prefix": "block-latest-comments, wp:latest-comments",
 		"body": [
 			"<!-- wp:latest-comments {\"displayAvatar\":true,\"displayExcerpt\":true,\"displayTimestamp\":true} /-->"
-		],
+		]
 	},
 	"Latest posts block": {
 		"scope": "html,php",
 		"prefix": "block-latest-posts, wp:core/latest-posts",
 		"body": [
 			"<!-- wp:core/latest-posts {\"postsToShow\":5,\"displayAuthor\":false,\"displayPostDate\":false} /-->"
-		],
+		]
 	},
 	"List block": {
 		"scope": "html,php",
@@ -282,7 +356,30 @@
 			"<!-- wp:list -->",
 			"<ul><li></li></ul>",
 			"<!-- /wp:list -->"
-		],
+		]
+	},
+	"List Item block": {
+		"scope": "html,php",
+		"prefix": "block-list-item, wp:list-item",
+		"body": [
+			"<!-- wp:list-item -->",
+			"<li></li>",
+			"<!-- /wp:list-item -->"
+		]
+	},
+	"Login/out block": {
+		"scope": "html,php",
+		"prefix": "block-login-out, wp:login-out",
+		"body": [
+			"<!-- wp:login-out /-->"
+		]
+	},
+	"Loop": {
+		"scope": "html,php",
+		"prefix": "block-loop, query-loop, wp:query-loop",
+		"body": [
+			"<!-- wp:query-loop --><!-- /wp:query-loop -->"
+		]
 	},
 	"Media & text block": {
 		"scope": "html,php",
@@ -297,7 +394,21 @@
 			"</div>",
 			"</div>",
 			"<!-- /wp:media-text -->"
-		],
+		]
+	},
+	"More block": {
+		"scope": "html,php",
+		"prefix": "block-more, wp:more",
+		"body": [
+			"<!-- wp:more /-->"
+		]
+	},
+	"Navigation block": {
+		"scope": "html,php",
+		"prefix": "block-navigation, wp:navigation",
+		"body": [
+			"<!-- wp:navigation --><!-- /wp:navigation -->"
+		]
 	},
 	"Navigation link block": {
 		"scope": "html,php",
@@ -305,14 +416,7 @@
 		"body": [
 			"<!-- wp:navigation-link {\"label\":\"WordPress\",\"url\":\"https: //wordpress.org/\"} -->",
 			"<!-- /wp:navigation-link -->"
-		],
-	},
-	"Navigation block": {
-		"scope": "html,php",
-		"prefix": "block-navigation, wp:navigation",
-		"body": [
-			"<!-- wp:navigation --><!-- /wp:navigation -->"
-		],
+		]
 	},
 	"Next page block": {
 		"scope": "html,php",
@@ -321,14 +425,140 @@
 			"<!-- wp:core/nextpage -->",
 			"<!--nextpage-->",
 			"<!-- /wp:core/nextpage -->"
-		],
+		]
+	},
+	"Page Break block": {
+		"scope": "html,php",
+		"prefix": "block-page-break, wp:page-break",
+		"body": [
+			"<!-- wp:page-break /-->"
+		]
+	},
+	"Page List block": {
+		"scope": "html,php",
+		"prefix": "block-page-list, wp:page-list",
+		"body": [
+			"<!-- wp:page-list /-->"
+		]
+	},
+	"Page List Item block": {
+		"scope": "html,php",
+		"prefix": "block-page-list-item, wp:page-list-item",
+		"body": [
+			"<!-- wp:page-list-item /-->"
+		]
 	},
 	"Paragraph block": {
 		"scope": "html,php",
 		"prefix": "block-paragraph, wp:paragraph",
 		"body": [
 			"<!-- wp:paragraph --><p></p><!-- /wp:paragraph -->"
-		],
+		]
+	},
+	"Pattern block": {
+		"scope": "html,php",
+		"prefix": "block-pattern, wp:pattern",
+		"body": [
+			"<!-- wp:pattern {\"slug\":\"theme/pattern\"} /-->"
+		]
+	},
+	"Post Author": {
+		"scope": "html,php",
+		"prefix": "post-author, wp:post-author",
+		"body": [
+			"<!-- wp:post-author /-->"
+		]
+	},
+	"Post comments": {
+		"scope": "html,php",
+		"prefix": "post-comments, wp:post-comments",
+		"body": [
+			"<!-- wp:post-comments /-->"
+		]
+	},
+	"Post comments count": {
+		"scope": "html,php",
+		"prefix": "post-comments-count, wp:post-comments-count",
+		"body": [
+			"<!-- wp:post-comments-count /-->"
+		]
+	},
+	"Post comments form": {
+		"scope": "html,php",
+		"prefix": "post-comment-form, wp:post-comments-form",
+		"body": [
+			"<!-- wp:post-comments-form /-->"
+		]
+	},
+	"Post Content": {
+		"scope": "html,php",
+		"prefix": "post-content, wp:post-content",
+		"body": [
+			"<!-- wp:post-content /-->"
+		]
+	},
+	"Post Date": {
+		"scope": "html,php",
+		"prefix": "post-date, wp:post-date",
+		"body": [
+			"<!-- wp:post-date /-->"
+		]
+	},
+	"Post Excerpt": {
+		"scope": "html,php",
+		"prefix": "post-excerpt, wp:post-excerpt",
+		"body": [
+			"<!-- wp:post-excerpt /-->"
+		]
+	},
+	"Post featured image": {
+		"scope": "html,php",
+		"prefix": "post-featured-image, wp:post-featured-image, block-featured-image",
+		"body": [
+			"<!-- wp:post-featured-image /-->"
+		]
+	},
+	"Post Navigation Link block": {
+		"scope": "html,php",
+		"prefix": "block-post-navigation-link, wp:post-navigation-link",
+		"body": [
+			"<!-- wp:post-navigation-link /-->"
+		]
+	},
+	"Post Tags": {
+		"scope": "html,php",
+		"prefix": "post-tags, wp:post-tags",
+		"body": [
+			"<!-- wp:post-tags /-->"
+		]
+	},
+	"Post Template block": {
+		"scope": "html,php",
+		"prefix": "block-post-template, wp:post-template",
+		"body": [
+			"<!-- wp:post-template /-->"
+		]
+	},
+	"Post Terms block": {
+		"scope": "html,php",
+		"prefix": "block-post-terms, wp:post-terms",
+		"body": [
+			"<!-- wp:post-terms /-->"
+		]
+	},
+	"Post Time To Read block": {
+		"scope": "html,php",
+		"prefix": "block-post-time-to-read, wp:post-time-to-read",
+		"body": [
+			"<!-- wp:post-time-to-read /-->"
+		]
+	},
+	"Post Title": {
+		"scope": "html,php",
+		"prefix": "post-title, wp:post-title",
+		"body": [
+			"<!-- wp:post-title /-->"
+		]
 	},
 	"Preformatted block": {
 		"scope": "html,php",
@@ -337,7 +567,7 @@
 			"<!-- wp:core/preformatted -->",
 			"<pre class=\"wp-block-preformatted\"></pre>",
 			"<!-- /wp:core/preformatted -->"
-		],
+		]
 	},
 	"Pullquote block": {
 		"scope": "html,php",
@@ -350,7 +580,56 @@
 			"</blockquote>",
 			"</figure>",
 			"<!-- /wp:core/pullquote -->"
-		],
+		]
+	},
+	"Query": {
+		"scope": "html,php",
+		"prefix": "block-query, wp:query",
+		"body": [
+			"<!-- wp:query {\"queryId\":0} --><!-- /wp:query /-->"
+		]
+	},
+	"Query No Results block": {
+		"scope": "html,php",
+		"prefix": "block-query-no-results, wp:query-no-results",
+		"body": [
+			"<!-- wp:query-no-results /-->"
+		]
+	},
+	"Query pagination": {
+		"scope": "html,php",
+		"prefix": "block-query-pagination, query-pagination, wp:query-pagination",
+		"body": [
+			"<!-- wp:query-pagination /-->"
+		]
+	},
+	"Query Pagination Next block": {
+		"scope": "html,php",
+		"prefix": "block-query-pagination-next, wp:query-pagination-next",
+		"body": [
+			"<!-- wp:query-pagination-next /-->"
+		]
+	},
+	"Query Pagination Numbers block": {
+		"scope": "html,php",
+		"prefix": "block-query-pagination-numbers, wp:query-pagination-numbers",
+		"body": [
+			"<!-- wp:query-pagination-numbers /-->"
+		]
+	},
+	"Query Pagination Previous block": {
+		"scope": "html,php",
+		"prefix": "block-query-pagination-previous, wp:query-pagination-previous",
+		"body": [
+			"<!-- wp:query-pagination-previous /-->"
+		]
+	},
+	"Query Title block": {
+		"scope": "html,php",
+		"prefix": "block-query-title, wp:query-title",
+		"body": [
+			"<!-- wp:query-title /-->"
+		]
 	},
 	"Quote block": {
 		"scope": "html,php",
@@ -358,22 +637,36 @@
 		"body": [
 			"<!-- wp:quote -->",
 			"<blockquote class=\"wp-block-quote\"><p></p></blockquote>",
-			"<!-- /wp:quote -->",
-		],
+			"<!-- /wp:quote -->"
+		]
+	},
+	"Read More block": {
+		"scope": "html,php",
+		"prefix": "block-read-more, wp:read-more",
+		"body": [
+			"<!-- wp:read-more /-->"
+		]
+	},
+	"Reusable block": {
+		"scope": "html,php",
+		"prefix": "reusable, wp:core, block-reusable",
+		"body": [
+			"<!-- wp:core/block {\"ref\":123} /-->"
+		]
 	},
 	"RSS block": {
 		"scope": "html,php",
 		"prefix": "block-rss, wp:rss",
 		"body": [
 			"<!-- wp:rss {\"blockLayout\":\"grid\",\"displayDate\":true,\"displayExcerpt\":true,\"displayAuthor\":true,\"excerptLength\":20,\"feedURL\":\"https://wordpress.org/news/\",\"itemsToShow\": 4} /-->"
-		],
+		]
 	},
 	"Search block": {
 		"scope": "html,php",
 		"prefix": "block-search, wp:search",
 		"body": [
 			"<!-- wp:search /-->"
-		],
+		]
 	},
 	"Separator block": {
 		"scope": "html,php",
@@ -381,22 +674,29 @@
 		"body": [
 			"<!-- wp:core/separator -->",
 			"<hr class=\"wp-block-separator\" />",
-			"<!-- /wp:core/separator -->",
-		],
+			"<!-- /wp:core/separator -->"
+		]
 	},
 	"Shortcode block": {
 		"scope": "html,php",
 		"prefix": "block-shortcode, wp:core/shortcode",
 		"body": [
 			"<!-- wp:core/shortcode --><!-- /wp:core/shortcode -->"
-		],
+		]
+	},
+	"Site Title": {
+		"scope": "html,php",
+		"prefix": "block-site-title, wp:site-title",
+		"body": [
+			"<!-- wp:site-title /-->"
+		]
 	},
 	"Social link block": {
 		"scope": "html,php",
 		"prefix": "block-social-link, wp:social-link",
 		"body": [
 			"<!-- wp:social-link {\"service\":\"spotify\",\"url\":\"https://example.com/\"} /-->"
-		],
+		]
 	},
 	"Social links block": {
 		"scope": "html,php",
@@ -407,7 +707,7 @@
 					"<!-- wp:social-link {\"service\":\"spotify\",\"url\":\"https://example.com/\"} /-->",
 				"</ul>",
 			"<!-- /wp:social-links -->"
-		],
+		]
 	},
 	"Spacer block": {
 		"scope": "html,php",
@@ -415,8 +715,15 @@
 		"body": [
 			"<!-- wp:spacer -->",
 			"<div style=\"height:100px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>",
-			"<!-- /wp:spacer -->",
-		],
+			"<!-- /wp:spacer -->"
+		]
+	},
+	"Submenu block": {
+		"scope": "html,php",
+		"prefix": "block-submenu, wp:submenu",
+		"body": [
+			"<!-- wp:submenu /-->"
+		]
 	},
 	"Table block": {
 		"scope": "html,php",
@@ -425,14 +732,35 @@
 			"<!-- wp:table -->",
 			"<figure class=\"wp-block-table\"><table><tbody><tr><td></td><td></td></tr><tr><td></td><td></td></tr></tbody></table></figure>",
 			"<!-- /wp:table -->"
-		],
-		},
+		]
+	},
+	"Table of Contents block": {
+		"scope": "html,php",
+		"prefix": "block-table-of-contents, wp:table-of-contents",
+		"body": [
+			"<!-- wp:table-of-contents /-->"
+		]
+	},
 	"Tag cloud block": {
 		"scope": "html,php",
 		"prefix": "block-tag-cloud, wp:tag-cloud",
 		"body": [
-			"<!-- wp:tag-cloud {\"taxonomy\":\"category\"} /-->",
-		],
+			"<!-- wp:tag-cloud {\"taxonomy\":\"category\"} /-->"
+		]
+	},
+	"Template Part block": {
+		"scope": "html,php",
+		"prefix": "block-template-part, wp:template-part",
+		"body": [
+			"<!-- wp:template-part {\"slug\":\"part\"} /-->"
+		]
+	},
+	"Term Description block": {
+		"scope": "html,php",
+		"prefix": "block-term-description, wp:term-description",
+		"body": [
+			"<!-- wp:term-description /-->"
+		]
 	},
 	"Verse block": {
 		"scope": "html,php",
@@ -440,16 +768,16 @@
 		"body": [
 			"<!-- wp:core/verse -->",
 			"<pre class=\"wp-block-verse\"></pre>",
-			"<!-- /wp:core/verse -->",
-		],
+			"<!-- /wp:core/verse -->"
+		]
 	},
 	"Video block": {
 		"scope": "html,php",
-		"prefix": "block-verse, wp:core/video",
+		"prefix": "block-video, wp:core/video",
 		"body": [
 			"<!-- wp:core/video -->",
-			"<figure class=\"wp-block-video\"><video controls src=\"data:video/mp4;base64,AAAAHGZ0eXBpc29tAAACAGlzb21pc28ybXA0MQAAAAhmcmVlAAAC721kYXQhEAUgpBv/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3pwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcCEQBSCkG//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADengAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAAAAsJtb292AAAAbG12aGQAAAAAAAAAAAAAAAAAAAPoAAAALwABAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAB7HRyYWsAAABcdGtoZAAAAAMAAAAAAAAAAAAAAAIAAAAAAAAALwAAAAAAAAAAAAAAAQEAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAACRlZHRzAAAAHGVsc3QAAAAAAAAAAQAAAC8AAAAAAAEAAAAAAWRtZGlhAAAAIG1kaGQAAAAAAAAAAAAAAAAAAKxEAAAIAFXEAAAAAAAtaGRscgAAAAAAAAAAc291bgAAAAAAAAAAAAAAAFNvdW5kSGFuZGxlcgAAAAEPbWluZgAAABBzbWhkAAAAAAAAAAAAAAAkZGluZgAAABxkcmVmAAAAAAAAAAEAAAAMdXJsIAAAAAEAAADTc3RibAAAAGdzdHNkAAAAAAAAAAEAAABXbXA0YQAAAAAAAAABAAAAAAAAAAAAAgAQAAAAAKxEAAAAAAAzZXNkcwAAAAADgICAIgACAASAgIAUQBUAAAAAAfQAAAHz+QWAgIACEhAGgICAAQIAAAAYc3R0cwAAAAAAAAABAAAAAgAABAAAAAAcc3RzYwAAAAAAAAABAAAAAQAAAAIAAAABAAAAHHN0c3oAAAAAAAAAAAAAAAIAAAFzAAABdAAAABRzdGNvAAAAAAAAAAEAAAAsAAAAYnVkdGEAAABabWV0YQAAAAAAAAAhaGRscgAAAAAAAAAAbWRpcmFwcGwAAAAAAAAAAAAAAAAtaWxzdAAAACWpdG9vAAAAHWRhdGEAAAABAAAAAExhdmY1Ni40MC4xMDE=\"></video></figure>",
+			"<figure class=\"wp-block-video\"><video controls></video></figure>",
 			"<!-- /wp:core/video -->"
-		],
+		]
 	}
 }

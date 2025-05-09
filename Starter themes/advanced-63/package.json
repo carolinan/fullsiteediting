@@ -28,7 +28,7 @@
 		"gulp-concat-css": "^3.1.0",
 		"gulp-postcss": "^9.0.1",
 		"gulp-rename": "^2.0.0",
-		"postcss": "^8.4.27",
+		"postcss": "^8.4.31",
 		"postcss-cli": "^10.1.0"
 	},
 	"scripts": {
